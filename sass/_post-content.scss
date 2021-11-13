@@ -1,11 +1,20 @@
 .post-content {
+
+  @extend %fixed-width-container;
+
   table,
   blockquote,
   pre,
   div,
   ul,
   ol,
-  dl {
+  dl,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     & + h1 {
       @extend %sp--ph1;
     }
@@ -33,15 +42,87 @@
   }
 
   > hr {
-    margin-top: .75rem;
-    margin-bottom: 1.75rem;
+    margin-top: $sp-unit * 1.5;
+    margin-bottom: $sp-unit * 3.5;
   }
 
   > div {
-    @extend .u-margin-bottom--small;
+    margin-bottom: $sp-unit * 2.2;
+  }
+
+  td,
+  th {
+    &[align="left"] {
+      @extend .u-align--left;
+    }
+
+    &[align="right"] {
+      @extend .u-align--right;
+    }
+
+    &[align="center"] {
+      @extend .u-align--center;
+    }
   }
 
   .footnotes {
     @extend %sp--ph1;
+
+    p {
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .footnote-return {
+    margin-left: 0.25rem;
+  }
+
+  div {
+    @extend %paragraph;
+  }
+
+  ul.task-list {
+    list-style: none;
+    padding-left: 0;
+
+    ul.task-list {
+      margin-bottom: 0;
+      margin-left: $sp-unit * 4;
+    }
+
+    li label {
+      margin-bottom: 0;
+      padding-top: 0;
+    }
+
+    .task-list-item {
+      margin-top: $sp-unit * 0.8;
+      margin-right: $sp-unit * 1.5;
+    }
+  }
+}
+
+.p-aside {
+  @extend .u-sticky;
+}
+
+#TableOfContents {
+  @extend .p-table-of-contents__nav;
+
+  ul {
+    @extend .p-list;
+
+    li a {
+      @extend .p-table-of-contents__link;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-x-large) {
+  .post-content {
+    ul.task-list .task-list-item {
+      margin-top: $sp-unit;
+    }
   }
 }
