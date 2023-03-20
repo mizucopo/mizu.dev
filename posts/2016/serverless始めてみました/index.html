@@ -1,101 +1,115 @@
-<!doctype html><html lang=ja-jp><head><title>Serverless 始めてみました | みず ねっとわーくさーびす</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="最近の流行りのサーバーレスなアプリケーションを作成してみようと、Serverless Framework を触ってみました。
-基本的に、AWS Lambdaを活用したServerless Frameworkを触ってみる - Qiita の焼き直しです。"><meta name=keywords content="AWS,Serverless Framework"><meta name=msapplication-TileColor content="#b91d47"><meta name=theme-color content="#ffffff"><link rel=canonical href=https://mizu.dev/posts/2016/serverless%E5%A7%8B%E3%82%81%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F/><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#696969><meta name=msapplication-TileColor content="#ffffff"><meta name=theme-color content="#ffffff"><meta property="og:title" content="Serverless 始めてみました"><meta property="og:description" content="最近の流行りのサーバーレスなアプリケーションを作成してみようと、Serverless Framework を触ってみました。
-基本的に、AWS Lambdaを活用したServerless Frameworkを触ってみる - Qiita の焼き直しです。"><meta property="og:type" content="article"><meta property="og:url" content="https://mizu.dev/posts/2016/serverless%E5%A7%8B%E3%82%81%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F/"><meta property="og:image" content="https://mizu.dev/posts/2016/0324_main.jpg"><meta property="article:published_time" content="2016-03-24T13:43:00+09:00"><meta property="article:modified_time" content="2016-03-24T13:43:00+09:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://mizu.dev/posts/2016/0324_main.jpg"><meta name=twitter:title content="Serverless 始めてみました"><meta name=twitter:description content="最近の流行りのサーバーレスなアプリケーションを作成してみようと、Serverless Framework を触ってみました。
-基本的に、AWS Lambdaを活用したServerless Frameworkを触ってみる - Qiita の焼き直しです。"><meta itemprop=name content><meta itemprop=description content><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/mizu.css></head><body><header id=navigation class=p-navigation><div class=p-navigation__row><div class=p-navigation__banner><div class=p-navigation__logo><a class="p-navigation__link u-vertically-center p-link--logo" href=https://mizu.dev/>みず ねっとわーくさーびす</a></div><a href=#navigation class=p-navigation__toggle--open title=Menu aria-label="Open Menu"><i class=p-icon--menu></i></a><a href=#navigation-closed class=p-navigation__toggle--close title="Close Menu" aria-label="Close Menu"><i class=p-icon--close></i></a></div><nav class=p-navigation__nav><span class=u-off-screen><a href=#main-content>Jump to main content</a></span><ul class=p-navigation__items role=menu><li class=p-navigation__item role=menuitem><a class=p-navigation__link href=https://mizu.dev/about>About</a></li><li class=p-navigation__item role=menuitem><a class=p-navigation__link href=https://mizu.dev/tags>Tags</a></li></ul><form class=p-search-box action=https://www.google.com/search target=_blank><input type=search class=p-search-box__input name=q placeholder=Search required aria-label=Query>
-<input type=hidden name=sitesearch value=https://mizu.dev/>
-<button type=reset class=p-search-box__reset alt=reset aria-label=Reset>
-<i class=p-icon--close></i></button>
-<button type=submit class=p-search-box__button alt=search aria-label=Search>
-<i class=p-icon--search></i></button></form></nav></div></header><div id=main-content><header class="p-strip page-banner"><div class=row><h1>Serverless 始めてみました</h1></div><div class=row><div class=col-8><div class=p-media-object><div class=p-media-object__details><p class=p-media-object__content><span class=u-capitalized>on</span>
-2016-03-24</p></div></div></div><div class="col-4 col--share-links"><ul class="p-inline-list-icons p-inline-list-icons--share-links u-no-padding--left u-no-margin--left u-unselectable"><li class=p-inline-list__item><i class=p-icon--share></i></li><li class=p-inline-list__item><a class=p-icon--twitter title="Share on Twitter" target=_blank rel=noreferrer href="http://twitter.com/share?text=Serverless%20%e5%a7%8b%e3%82%81%e3%81%a6%e3%81%bf%e3%81%be%e3%81%97%e3%81%9f&url=https%3a%2f%2fmizu.dev%2fposts%2f2016%2fserverless%25E5%25A7%258B%25E3%2582%2581%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2f">Twitter</a></li></ul></div></div><div class=row><div class=col-12><a class=p-link--hashtag href=https://mizu.dev/tags/aws/>#AWS</a>&ensp;
-<a class=p-link--hashtag href=https://mizu.dev/tags/serverless-framework/>#Serverless Framework</a>&ensp;</div></div></header><section class="p-strip is-shallow"><main class=post-content><p><img src=/posts/2016/0324_main.jpg alt=メイン></p><p>最近の流行りのサーバーレスなアプリケーションを作成してみようと、Serverless Framework を触ってみました。</p><p>基本的に、<a href=http://qiita.com/susieyy/items/1c2af0ef7b88b742c37a>AWS Lambdaを活用したServerless Frameworkを触ってみる - Qiita</a> の焼き直しです。</p><h2 id=serverless-framework-とは>Serverless Framework とは</h2><ul><li><p><a href=https://github.com/serverless/serverless>Severless Framework</a></p><p>Serverless Framework はサーバレスなアプリケーションサービスを構築するためのフレームワークで、AWSの各種サービスを相互活用して動作します。
-AWS Lambdaを中心に添えた構成によりメンテナンス性とスケーラビリティがが高いサービスを構築することができます。</p></li></ul><p>とのことです。</p><h2 id=serverless-framework-のインストール>Serverless Framework のインストール</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ npm install -g serverless
-</code></pre></div><p>今回利用するのは、<code>serverless@0.5.0</code>になります。</p><h2 id=プロジェクトの作成>プロジェクトの作成</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ serverless project create
- _______                             __
-|   _   .-----.----.--.--.-----.----|  .-----.-----.-----.
-|   |___|  -__|   _|  |  |  -__|   _|  |  -__|__ --|__ --|
-|____   |_____|__|  <span style=color:#ae81ff>\_</span>__/|_____|__| |__|_____|_____|_____|
-|   |   |             The Serverless Application Framework
-|       |                           serverless.com, v0.5.0
-<span style=color:#e6db74>`</span>-------<span style=color:#960050;background-color:#1e0010>&#39;</span>
-
-Serverless: Initializing Serverless Project...
-Serverless: Enter a name <span style=color:#66d9ef>for</span> this project:  <span style=color:#f92672>(</span>serverless-4y33cs<span style=color:#f92672>)</span> slssHello
-Serverless: Enter a new stage name <span style=color:#66d9ef>for</span> this project:  dev
-Serverless: For the <span style=color:#e6db74>&#34;dev&#34;</span> stage, <span style=color:#66d9ef>do</span> you want to use an existing Amazon Web Services profile or create a new one?
-  &gt; Existing Profile
-    Create A New Profile
-Serverless: Select a profile <span style=color:#66d9ef>for</span> your project:
-  &gt; default
-Serverless: Creating stage <span style=color:#e6db74>&#34;dev&#34;</span>...
-Serverless: Select a new region <span style=color:#66d9ef>for</span> your stage:
-  &gt; us-east-1
-    us-west-2
-    eu-west-1
-    eu-central-1
-    ap-northeast-1
-Serverless: Creating region <span style=color:#e6db74>&#34;us-east-1&#34;</span> in stage <span style=color:#e6db74>&#34;dev&#34;</span>...
-Serverless: Deploying resources to stage <span style=color:#e6db74>&#34;dev&#34;</span> in region <span style=color:#e6db74>&#34;us-east-1&#34;</span> via Cloudformation <span style=color:#f92672>(</span>~3 minutes<span style=color:#f92672>)</span>...
-Serverless: Successfully deployed <span style=color:#e6db74>&#34;dev&#34;</span> resources to <span style=color:#e6db74>&#34;us-east-1&#34;</span>
-Serverless: Successfully created region <span style=color:#e6db74>&#34;us-east-1&#34;</span> within stage <span style=color:#e6db74>&#34;dev&#34;</span>
-Serverless: Successfully created stage <span style=color:#e6db74>&#34;dev&#34;</span>
-Serverless: Successfully initialized project <span style=color:#e6db74>&#34;slssHello&#34;</span>
-</code></pre></div><p>適当に下記設定にしてみました。</p><ul><li>Project<ul><li>slssHello<ul><li>lowerCamelCase が良いのかな。</li></ul></li></ul></li><li>Stage<ul><li>dev</li></ul></li><li>AWS Profile<ul><li>default<ul><li>~/.aws/credentials に設定されていたものを利用。</li></ul></li></ul></li><li>Region<ul><li>us-east-1</li></ul></li></ul><p>プロジェクト作成後、CloudFormationが実行されます。
-その設定ファイルは、<code>s-resources-cf.json</code>ですね。</p><p><code>$ slss dash summary</code>を実行すると、サマリが表示されるようですね。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ slss dash summary
- _______                             __
-|   _   .-----.----.--.--.-----.----|  .-----.-----.-----.
-|   |___|  -__|   _|  |  |  -__|   _|  |  -__|__ --|__ --|
-|____   |_____|__|  <span style=color:#ae81ff>\_</span>__/|_____|__| |__|_____|_____|_____|
-|   |   |             The Serverless Application Framework
-|       |                           serverless.com, v0.5.0
-<span style=color:#e6db74>`</span>-------<span style=color:#960050;background-color:#1e0010>&#39;</span>
-
-Serverless: <span style=color:#ae81ff>1</span> stages ------------------------------
-Serverless:     |_ dev <span style=color:#f92672>(</span><span style=color:#ae81ff>1</span> regions<span style=color:#f92672>)</span>
-Serverless:         |_ us-east-1
-
-Serverless: <span style=color:#ae81ff>0</span> functions --------------------------
-
-Serverless: SUMMARY -------------------------------
-Serverless: stages     : <span style=color:#ae81ff>1</span>
-Serverless: regions    : <span style=color:#ae81ff>1</span>
-Serverless: functions  : <span style=color:#ae81ff>0</span>
-Serverless: endpoints  : <span style=color:#ae81ff>0</span>
-Serverless: events     : <span style=color:#ae81ff>0</span>
-</code></pre></div><h2 id=function-の作成>function の作成</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ slss <span style=color:#66d9ef>function</span> create
-Serverless: Enter a new <span style=color:#66d9ef>function</span> name:  echo
-Serverless: Please, <span style=color:#66d9ef>select</span> a runtime <span style=color:#66d9ef>for</span> this new Function
-  &gt; nodejs
-    python2.7
-Serverless: For this new Function, would you like to create an Endpoint, Event, or just the Function?
-  &gt; Create Endpoint
-    Create Event
-    Just the Function...
-Serverless: Successfully created <span style=color:#66d9ef>function</span>: <span style=color:#e6db74>&#34;echo&#34;</span>
-</code></pre></div><p>このエントリを作成する前は、v0.4.2 を利用していたのですが、component はなくなっているようです。</p><h3 id=function-echo-の実行>function echo の実行</h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ slss <span style=color:#66d9ef>function</span> run echo
-Serverless: Running echo...
-Serverless: -----------------
-Serverless: Success! - This Response Was Returned:
-Serverless: <span style=color:#f92672>{</span>
-    <span style=color:#e6db74>&#34;message&#34;</span>: <span style=color:#e6db74>&#34;Go Serverless! Your Lambda function executed successfully!&#34;</span>
-<span style=color:#f92672>}</span>
-</code></pre></div><p><code>./echo/handler.js</code> を変更すると、表示するメッセージは変えられるようです。</p><h3 id=function-echo-のデプロイ>function echo のデプロイ</h3><p>コスト節約のため、デプロイする前に、Lambda の MemorySize を変更します。<br><code>./echo/s-function.json</code> を変更し、128MB に変更しました。</p><p>では、デプロイ。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ slss <span style=color:#66d9ef>function</span> deploy echo
-Serverless: Deploying functions in <span style=color:#e6db74>&#34;dev&#34;</span> to the following regions: us-east-1
-Serverless: ------------------------
-Serverless: Successfully deployed functions in <span style=color:#e6db74>&#34;dev&#34;</span> to the following regions:
-Serverless: us-east-1 ------------------------
-Serverless:   echo <span style=color:#f92672>(</span>slssHello-echo<span style=color:#f92672>)</span>: arn:aws:lambda:us-east-1:xxxx:function:slssHello-echo:dev
-</code></pre></div><p>マネジメントコンソールをみると、function が作成されているのが確認できる。</p><p><img src=/posts/2016/0324_lambda.jpg alt="slssHello-echo が作成されている"></p><h2 id=api-gateway-にデプロイ>API Gateway にデプロイ</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ slss endpoint deploy
-
-Serverless: Deploying endpoints in <span style=color:#e6db74>&#34;dev&#34;</span> to the following regions: us-east-1
-Serverless: Successfully deployed endpoints in <span style=color:#e6db74>&#34;dev&#34;</span> to the following regions:
-Serverless: us-east-1 ------------------------
-Serverless:   GET - echo - https://xxxx.execute-api.us-east-1.amazonaws.com/dev/echo
-</code></pre></div><p>デプロイできました。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ curl -s <span style=color:#e6db74>&#34;https://xxxx.execute-api.us-east-1.amazonaws.com/dev/echo&#34;</span> | jq .
-<span style=color:#f92672>{</span>
-  <span style=color:#e6db74>&#34;message&#34;</span>: <span style=color:#e6db74>&#34;Go Serverless! Your Lambda function executed successfully!&#34;</span>
-<span style=color:#f92672>}</span>
-</code></pre></div><p>curl で実行すると、メッセージが返ってきました。</p><p><img src=/posts/2016/0324_api_gateway.jpg alt="API Gatewayの設定値"></p><p>このように設定されています。</p><h2 id=まとめ>まとめ</h2><p>とりあえず、Lambda + API Gateway のAPI作成できました。<br>次は、定期的に Slack へメッセージ送信をやってみようと思います。</p><h3 id=今回作成したソース>今回作成したソース</h3><ul><li><a href=https://github.com/mizucopo/slssHello>https://github.com/mizucopo/slssHello</a></li></ul></main></section><footer class="p-strip is-wrapper"><div class=row><div class=p-article-pagination><a class=p-article-pagination__link--previous href=https://mizu.dev/posts/2016/raspberrypiraspberian%E3%81%ABsensuclient%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%82%88%E3%81%86%E3%81%A8%E3%81%97%E3%81%9F%E3%81%8C%E6%8C%AB%E6%8A%98/ aria-label="Previous Post"><span class=p-article-pagination__label>Previous</span>
-<span class=p-article-pagination__title>RaspberryPi (Raspberian) に SensuClient を導入しようとしたが挫折</span></a>
-<a class=p-article-pagination__link--next href=https://mizu.dev/posts/2016/serverless%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6s3%E3%81%AE%E7%B7%8F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92slack%E3%81%B8%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B/ aria-label="Next Post"><span class=p-article-pagination__label>Next</span>
-<span class=p-article-pagination__title>Serverless を利用して S3 の総ファイルサイズを Slack へ投稿する</span></a></div></div></footer></div><footer class="p-strip is-shallow page-footer"><div class=row><div class="col-12 u-align--center"><p>© 2022 みず ねっとわーくさーびす</p></div></div></footer><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-315446-3','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+<!doctype html><html lang=ja-jp><head><title>Serverless 始めてみました ::
+みず ねっとわーくさーびす — みずの備忘録</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+最近の流行りのサーバーレスなアプリケーションを作成してみようと、Serverless Framework を触ってみました。
+基本的に、AWS Lambdaを活用したServerless Frameworkを触ってみる - Qiita の焼き直しです。
+"><meta name=keywords content="日記"><meta name=robots content="noodp"><link rel=canonical href=https://mizu.dev/posts/2016/serverless%E5%A7%8B%E3%82%81%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F/><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=https://mizu.dev/style.css><link rel=apple-touch-icon-precomposed sizes=144x144 href=https://mizu.dev/img/apple-touch-icon-144-precomposed.png><link rel="shortcut icon" href=https://mizu.dev/img/favicon.png><link href=/fonts/Inter-Italic.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/fonts/Inter-Regular.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/fonts/Inter-Medium.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/fonts/Inter-MediumItalic.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/fonts/Inter-Bold.woff2 rel=preload type=font/woff2 as=font crossorigin><link href=/fonts/Inter-BoldItalic.woff2 rel=preload type=font/woff2 as=font crossorigin><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://mizu.dev/posts/2016/0324_main.jpg"><meta name=twitter:title content="Serverless 始めてみました"><meta name=twitter:description content="
+最近の流行りのサーバーレスなアプリケーションを作成してみようと、Serverless Framework を触ってみました。
+基本的に、AWS Lambdaを活用したServerless Frameworkを触ってみる - Qiita の焼き直しです。"><meta property="og:title" content="Serverless 始めてみました"><meta property="og:description" content="
+最近の流行りのサーバーレスなアプリケーションを作成してみようと、Serverless Framework を触ってみました。
+基本的に、AWS Lambdaを活用したServerless Frameworkを触ってみる - Qiita の焼き直しです。"><meta property="og:type" content="article"><meta property="og:url" content="https://mizu.dev/posts/2016/serverless%E5%A7%8B%E3%82%81%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F/"><meta property="og:image" content="https://mizu.dev/posts/2016/0324_main.jpg"><meta property="article:section" content="posts"><meta property="article:published_time" content="2016-03-24T13:43:00+09:00"><meta property="article:modified_time" content="2016-03-24T13:43:00+09:00"><script async src="https://www.googletagmanager.com/gtag/js?id=G-RSW394YHD3"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-RSW394YHD3")</script></head><body class=dark-theme><div class=container><header class=header><span class=header__inner><a href=https://mizu.dev/ class=logo style=text-decoration:none><span class=logo__mark><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44"><path fill="none" d="M15 8l14.729 14.382L15 35.367"/></svg></span><span class=logo__text>みず ねっとわーくさーびす</span>
+<span class=logo__cursor></span></a>
+<span class=header__right><nav class=menu><ul class="menu__inner menu__inner--desktop"><li><a href=/about>About</a></li><li><a href=/tags>Tags</a></li></ul><ul class="menu__inner menu__inner--mobile"><li><a href=/about>About</a></li><li><a href=/tags>Tags</a></li></ul></nav><span class=menu-trigger><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span><span class=theme-toggle><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41c10.4934.0 19-8.5066 19-19C41 11.5066 32.4934 3 22 3 11.5066 3 3 11.5066 3 22s8.5066 19 19 19zM7 22C7 13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22z"/></svg></span></span></span></header><div class=content><article class=post><h1 class=post-title>Serverless 始めてみました</h1><div class=post-meta><time class=post-date>2016-03-24</time>
+<span class=post-read-time>— 3 min read</span>
+<span class=post-share>—
+<a title="Share on Twitter" target=_blank rel=noreferrer href="http://twitter.com/share?text=Serverless%20%e5%a7%8b%e3%82%81%e3%81%a6%e3%81%bf%e3%81%be%e3%81%97%e3%81%9f&amp;url=https%3a%2f%2fmizu.dev%2fposts%2f2016%2fserverless%25E5%25A7%258B%25E3%2582%2581%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2f"><style>svg{height:12px}</style><svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg"><path style="fill:#3ba9ee" d="M630 425A195 195 0 01331 6e2a142 142 0 0097-30 70 70 0 01-58-47 70 70 0 0031-2 70 70 0 01-57-66 70 70 0 0028 5 70 70 0 01-18-90 195 195 0 00141 72 67 67 0 01116-62 117 117 0 0043-17 65 65 0 01-31 38 117 117 0 0039-11 65 65 0 01-32 35z"/></svg>Twitter</a></span></div><span class=post-tags><a href=https://mizu.dev/tags/aws/>#AWS</a>&nbsp;
+<a href=https://mizu.dev/tags/serverless-framework/>#Serverless Framework</a>&nbsp;</span><div class=post-content><p><img src=/posts/2016/0324_main.jpg alt=メイン></p><p>最近の流行りのサーバーレスなアプリケーションを作成してみようと、Serverless Framework を触ってみました。</p><p>基本的に、<a href=http://qiita.com/susieyy/items/1c2af0ef7b88b742c37a>AWS Lambdaを活用したServerless Frameworkを触ってみる - Qiita</a> の焼き直しです。</p><h2 id=serverless-framework-とは>Serverless Framework とは
+<a href=#serverless-framework-%e3%81%a8%e3%81%af class=h-anchor aria-hidden=true>#</a></h2><ul><li><p><a href=https://github.com/serverless/serverless>Severless Framework</a></p><p>Serverless Framework はサーバレスなアプリケーションサービスを構築するためのフレームワークで、AWSの各種サービスを相互活用して動作します。
+AWS Lambdaを中心に添えた構成によりメンテナンス性とスケーラビリティがが高いサービスを構築することができます。</p></li></ul><p>とのことです。</p><h2 id=serverless-framework-のインストール>Serverless Framework のインストール
+<a href=#serverless-framework-%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab class=h-anchor aria-hidden=true>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ npm install -g serverless
+</span></span></code></pre></div><p>今回利用するのは、<code>serverless@0.5.0</code>になります。</p><h2 id=プロジェクトの作成>プロジェクトの作成
+<a href=#%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e3%81%ae%e4%bd%9c%e6%88%90 class=h-anchor aria-hidden=true>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ serverless project create
+</span></span><span style=display:flex><span> _______                             __
+</span></span><span style=display:flex><span>|   _   .-----.----.--.--.-----.----|  .-----.-----.-----.
+</span></span><span style=display:flex><span>|   |___|  -__|   _|  |  |  -__|   _|  |  -__|__ --|__ --|
+</span></span><span style=display:flex><span>|____   |_____|__|  <span style=color:#ae81ff>\_</span>__/|_____|__| |__|_____|_____|_____|
+</span></span><span style=display:flex><span>|   |   |             The Serverless Application Framework
+</span></span><span style=display:flex><span>|       |                           serverless.com, v0.5.0
+</span></span><span style=display:flex><span><span style=color:#e6db74>`</span>-------<span style=color:#960050;background-color:#1e0010>&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Serverless: Initializing Serverless Project...
+</span></span><span style=display:flex><span>Serverless: Enter a name <span style=color:#66d9ef>for</span> this project:  <span style=color:#f92672>(</span>serverless-4y33cs<span style=color:#f92672>)</span> slssHello
+</span></span><span style=display:flex><span>Serverless: Enter a new stage name <span style=color:#66d9ef>for</span> this project:  dev
+</span></span><span style=display:flex><span>Serverless: For the <span style=color:#e6db74>&#34;dev&#34;</span> stage, <span style=color:#66d9ef>do</span> you want to use an existing Amazon Web Services profile or create a new one?
+</span></span><span style=display:flex><span>  &gt; Existing Profile
+</span></span><span style=display:flex><span>    Create A New Profile
+</span></span><span style=display:flex><span>Serverless: Select a profile <span style=color:#66d9ef>for</span> your project:
+</span></span><span style=display:flex><span>  &gt; default
+</span></span><span style=display:flex><span>Serverless: Creating stage <span style=color:#e6db74>&#34;dev&#34;</span>...
+</span></span><span style=display:flex><span>Serverless: Select a new region <span style=color:#66d9ef>for</span> your stage:
+</span></span><span style=display:flex><span>  &gt; us-east-1
+</span></span><span style=display:flex><span>    us-west-2
+</span></span><span style=display:flex><span>    eu-west-1
+</span></span><span style=display:flex><span>    eu-central-1
+</span></span><span style=display:flex><span>    ap-northeast-1
+</span></span><span style=display:flex><span>Serverless: Creating region <span style=color:#e6db74>&#34;us-east-1&#34;</span> in stage <span style=color:#e6db74>&#34;dev&#34;</span>...
+</span></span><span style=display:flex><span>Serverless: Deploying resources to stage <span style=color:#e6db74>&#34;dev&#34;</span> in region <span style=color:#e6db74>&#34;us-east-1&#34;</span> via Cloudformation <span style=color:#f92672>(</span>~3 minutes<span style=color:#f92672>)</span>...
+</span></span><span style=display:flex><span>Serverless: Successfully deployed <span style=color:#e6db74>&#34;dev&#34;</span> resources to <span style=color:#e6db74>&#34;us-east-1&#34;</span>
+</span></span><span style=display:flex><span>Serverless: Successfully created region <span style=color:#e6db74>&#34;us-east-1&#34;</span> within stage <span style=color:#e6db74>&#34;dev&#34;</span>
+</span></span><span style=display:flex><span>Serverless: Successfully created stage <span style=color:#e6db74>&#34;dev&#34;</span>
+</span></span><span style=display:flex><span>Serverless: Successfully initialized project <span style=color:#e6db74>&#34;slssHello&#34;</span>
+</span></span></code></pre></div><p>適当に下記設定にしてみました。</p><ul><li>Project<ul><li>slssHello<ul><li>lowerCamelCase が良いのかな。</li></ul></li></ul></li><li>Stage<ul><li>dev</li></ul></li><li>AWS Profile<ul><li>default<ul><li>~/.aws/credentials に設定されていたものを利用。</li></ul></li></ul></li><li>Region<ul><li>us-east-1</li></ul></li></ul><p>プロジェクト作成後、CloudFormationが実行されます。
+その設定ファイルは、<code>s-resources-cf.json</code>ですね。</p><p><code>$ slss dash summary</code>を実行すると、サマリが表示されるようですね。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ slss dash summary
+</span></span><span style=display:flex><span> _______                             __
+</span></span><span style=display:flex><span>|   _   .-----.----.--.--.-----.----|  .-----.-----.-----.
+</span></span><span style=display:flex><span>|   |___|  -__|   _|  |  |  -__|   _|  |  -__|__ --|__ --|
+</span></span><span style=display:flex><span>|____   |_____|__|  <span style=color:#ae81ff>\_</span>__/|_____|__| |__|_____|_____|_____|
+</span></span><span style=display:flex><span>|   |   |             The Serverless Application Framework
+</span></span><span style=display:flex><span>|       |                           serverless.com, v0.5.0
+</span></span><span style=display:flex><span><span style=color:#e6db74>`</span>-------<span style=color:#960050;background-color:#1e0010>&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Serverless: <span style=color:#ae81ff>1</span> stages ------------------------------
+</span></span><span style=display:flex><span>Serverless:     |_ dev <span style=color:#f92672>(</span><span style=color:#ae81ff>1</span> regions<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>Serverless:         |_ us-east-1
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Serverless: <span style=color:#ae81ff>0</span> functions --------------------------
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Serverless: SUMMARY -------------------------------
+</span></span><span style=display:flex><span>Serverless: stages     : <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>Serverless: regions    : <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>Serverless: functions  : <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>Serverless: endpoints  : <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>Serverless: events     : <span style=color:#ae81ff>0</span>
+</span></span></code></pre></div><h2 id=function-の作成>function の作成
+<a href=#function-%e3%81%ae%e4%bd%9c%e6%88%90 class=h-anchor aria-hidden=true>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ slss <span style=color:#66d9ef>function</span> create
+</span></span><span style=display:flex><span>Serverless: Enter a new <span style=color:#66d9ef>function</span> name:  echo
+</span></span><span style=display:flex><span>Serverless: Please, <span style=color:#66d9ef>select</span> a runtime <span style=color:#66d9ef>for</span> this new Function
+</span></span><span style=display:flex><span>  &gt; nodejs
+</span></span><span style=display:flex><span>    python2.7
+</span></span><span style=display:flex><span>Serverless: For this new Function, would you like to create an Endpoint, Event, or just the Function?
+</span></span><span style=display:flex><span>  &gt; Create Endpoint
+</span></span><span style=display:flex><span>    Create Event
+</span></span><span style=display:flex><span>    Just the Function...
+</span></span><span style=display:flex><span>Serverless: Successfully created <span style=color:#66d9ef>function</span>: <span style=color:#e6db74>&#34;echo&#34;</span>
+</span></span></code></pre></div><p>このエントリを作成する前は、v0.4.2 を利用していたのですが、component はなくなっているようです。</p><h3 id=function-echo-の実行>function echo の実行
+<a href=#function-echo-%e3%81%ae%e5%ae%9f%e8%a1%8c class=h-anchor aria-hidden=true>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ slss <span style=color:#66d9ef>function</span> run echo
+</span></span><span style=display:flex><span>Serverless: Running echo...
+</span></span><span style=display:flex><span>Serverless: -----------------
+</span></span><span style=display:flex><span>Serverless: Success! - This Response Was Returned:
+</span></span><span style=display:flex><span>Serverless: <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;message&#34;</span>: <span style=color:#e6db74>&#34;Go Serverless! Your Lambda function executed successfully!&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span></code></pre></div><p><code>./echo/handler.js</code> を変更すると、表示するメッセージは変えられるようです。</p><h3 id=function-echo-のデプロイ>function echo のデプロイ
+<a href=#function-echo-%e3%81%ae%e3%83%87%e3%83%97%e3%83%ad%e3%82%a4 class=h-anchor aria-hidden=true>#</a></h3><p>コスト節約のため、デプロイする前に、Lambda の MemorySize を変更します。<br><code>./echo/s-function.json</code> を変更し、128MB に変更しました。</p><p>では、デプロイ。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ slss <span style=color:#66d9ef>function</span> deploy echo
+</span></span><span style=display:flex><span>Serverless: Deploying functions in <span style=color:#e6db74>&#34;dev&#34;</span> to the following regions: us-east-1
+</span></span><span style=display:flex><span>Serverless: ------------------------
+</span></span><span style=display:flex><span>Serverless: Successfully deployed functions in <span style=color:#e6db74>&#34;dev&#34;</span> to the following regions:
+</span></span><span style=display:flex><span>Serverless: us-east-1 ------------------------
+</span></span><span style=display:flex><span>Serverless:   echo <span style=color:#f92672>(</span>slssHello-echo<span style=color:#f92672>)</span>: arn:aws:lambda:us-east-1:xxxx:function:slssHello-echo:dev
+</span></span></code></pre></div><p>マネジメントコンソールをみると、function が作成されているのが確認できる。</p><p><img src=/posts/2016/0324_lambda.jpg alt="slssHello-echo が作成されている"></p><h2 id=api-gateway-にデプロイ>API Gateway にデプロイ
+<a href=#api-gateway-%e3%81%ab%e3%83%87%e3%83%97%e3%83%ad%e3%82%a4 class=h-anchor aria-hidden=true>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ slss endpoint deploy
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Serverless: Deploying endpoints in <span style=color:#e6db74>&#34;dev&#34;</span> to the following regions: us-east-1
+</span></span><span style=display:flex><span>Serverless: Successfully deployed endpoints in <span style=color:#e6db74>&#34;dev&#34;</span> to the following regions:
+</span></span><span style=display:flex><span>Serverless: us-east-1 ------------------------
+</span></span><span style=display:flex><span>Serverless:   GET - echo - https://xxxx.execute-api.us-east-1.amazonaws.com/dev/echo
+</span></span></code></pre></div><p>デプロイできました。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ curl -s <span style=color:#e6db74>&#34;https://xxxx.execute-api.us-east-1.amazonaws.com/dev/echo&#34;</span> | jq .
+</span></span><span style=display:flex><span><span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#e6db74>&#34;message&#34;</span>: <span style=color:#e6db74>&#34;Go Serverless! Your Lambda function executed successfully!&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span></code></pre></div><p>curl で実行すると、メッセージが返ってきました。</p><p><img src=/posts/2016/0324_api_gateway.jpg alt="API Gatewayの設定値"></p><p>このように設定されています。</p><h2 id=まとめ>まとめ
+<a href=#%e3%81%be%e3%81%a8%e3%82%81 class=h-anchor aria-hidden=true>#</a></h2><p>とりあえず、Lambda + API Gateway のAPI作成できました。<br>次は、定期的に Slack へメッセージ送信をやってみようと思います。</p><h3 id=今回作成したソース>今回作成したソース
+<a href=#%e4%bb%8a%e5%9b%9e%e4%bd%9c%e6%88%90%e3%81%97%e3%81%9f%e3%82%bd%e3%83%bc%e3%82%b9 class=h-anchor aria-hidden=true>#</a></h3><ul><li><a href=https://github.com/mizucopo/slssHello>https://github.com/mizucopo/slssHello</a></li></ul></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=https://mizu.dev/posts/2016/serverless%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6s3%E3%81%AE%E7%B7%8F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92slack%E3%81%B8%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B/><span class=button__icon>←</span>
+<span class=button__text>Serverless を利用して S3 の総ファイルサイズを Slack へ投稿する</span></a></span>
+<span class="button next"><a href=https://mizu.dev/posts/2016/raspberrypiraspberian%E3%81%ABsensuclient%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%82%88%E3%81%86%E3%81%A8%E3%81%97%E3%81%9F%E3%81%8B%E3%82%99%E6%8C%AB%E6%8A%98/><span class=button__text>RaspberryPi (Raspberian) に SensuClient を導入しようとしたが挫折</span>
+<span class=button__icon>→</span></a></span></div></div></article></div><footer class=footer><div class=footer__inner><div class="copyright copyright--user">&copy; 2023 みず ねっとわーくさーびす</div></div></footer><script type=text/javascript src=/bundle.min.js></script></div></body></html>
