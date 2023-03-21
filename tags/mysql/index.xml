@@ -2,4 +2,8 @@
 &lt;p>Q4Mを使用したテーブルにデータをインサートすると&lt;/p>
 &lt;pre>&lt;code>#1598 - Binary logging not possible. Message: Statement cannot be logged to the binary log in row-based nor statement-based format
 &lt;/code>&lt;/pre>
-&lt;p>というエラーが表示される。バイナリログが有効だとインサートにミスるみたい。ということで、バイナリログを使用しないようにする。&lt;/p></description></item></channel></rss>
+&lt;p>というエラーが表示される。バイナリログが有効だとインサートにミスるみたい。ということで、バイナリログを使用しないようにする。&lt;/p>
+&lt;p>…とはいかず、バイナリログを使用するレプリケーションはどうするのか？&lt;/p>
+&lt;p>&lt;a href="http://groups.google.co.jp/group/q4m-general/browse_thread/thread/adc11c0561f54767">http://groups.google.co.jp/group/q4m-general/browse_thread/thread/adc11c0561f54767&lt;/a>&lt;/p>
+&lt;p>上記URLを見る限りでは、専用のDBを作り、それをレプリケーションの対象外にするとある。&lt;/p>
+&lt;p>とりあえず、メモ書き。検証等は一切行っていない。嘘があるかも。&lt;/p></description></item></channel></rss>

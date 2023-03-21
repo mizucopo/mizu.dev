@@ -2,4 +2,6 @@
 &lt;p>直接的な原因はわからないんだけど、&lt;/p>
 &lt;pre>&lt;code>curl_setopt($ch, CURLOPT_FILETIME, true);
 &lt;/code>&lt;/pre>
-&lt;p>をするとタイムゾーンが狂ってしまう。&lt;/p></description></item></channel></rss>
+&lt;p>をするとタイムゾーンが狂ってしまう。&lt;/p>
+&lt;p>アクセス先のレスポンスヘッダの Date が GMT だったらなるのかな？ とりあえず、false にすれば、タイムゾーンは変更されなかった。
+うーむ、謎だ…&lt;/p></description></item></channel></rss>

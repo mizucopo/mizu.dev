@@ -1,11 +1,114 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>パソコン on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/</link><description>Recent content in パソコン on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Thu, 26 May 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/index.xml" rel="self" type="application/rss+xml"/><item><title>CPU (Ryzen 9 3900X) が壊れました</title><link>https://mizu.dev/posts/2022/cpu_ryzen_9_3900x_is_broken/</link><pubDate>Thu, 26 May 2022 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2022/cpu_ryzen_9_3900x_is_broken/</guid><description>
-&lt;p>&lt;img src="https://mizu.dev/posts/2022/cpu/20220525b.jpg" alt="Intel i7-8700K パッケージ">&lt;/p>
+&lt;img src="https://mizu.dev/posts/2022/cpu/20220525b.jpg"/>
 &lt;p>3月末の話になりますが、PCの電源が入らなくなりました。
-いろいろ代替パーツを切り替え問題個所を洗い出したところ、マザーボードもしくはCPUのどちらかが異常ということがわかりました。&lt;/p></description></item><item><title>nVidia RTX3060ti にビデオカードを買い替えました</title><link>https://mizu.dev/posts/2021/bought_a_new_video_card_to_nvidia_rtx3060ti/</link><pubDate>Sun, 03 Oct 2021 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2021/bought_a_new_video_card_to_nvidia_rtx3060ti/</guid><description>
+いろいろ代替パーツを切り替え問題個所を洗い出したところ、マザーボードもしくはCPUのどちらかが異常ということがわかりました。&lt;/p>
+&lt;p>というわけで、マザーボードおよびCPUを修理に出してきました。&lt;/p>
+&lt;p>結果からいうと、CPUの故障ということがわかり、返金対応ということになりました。
+1世代前のCPUが満額返ってくるということで、ちょいラッキー。65,000円。&lt;/p>
+&lt;p>次世代のCPUが秋ぐらいにリリースされそうなので、その間、余ったパーツでしばらく運用します。&lt;/p>
+&lt;p>ちなみに今回の件とは関係ないのですが、PCケースを変更しております。&lt;/p>
+&lt;ul>
+&lt;li>CPU: AMD Ryzen 9 3900X (12Core 24Thread) → Intel Core i7 8700K (6Core 12Thread)&lt;/li>
+&lt;li>CPU Cooler: NH-U12S chromax.black → noctua NH-L9i&lt;/li>
+&lt;li>Mother: B450 I AORUS PRO WIFI → GIGABYTE H370N WIFI&lt;/li>
+&lt;li>Memory: G.skill F4-3600C16-32GVKC (32GB)&lt;/li>
+&lt;li>Video: ELSA GeForce RTX 3060 Ti ERAZOR LHR&lt;/li>
+&lt;li>Power Supply: Corsair SF600 (600W)&lt;/li>
+&lt;li>Case: オープンフレーム ver.mini-ITX → Fractal Design Torrent&lt;/li>
+&lt;li>OS: Windows 10 Pro 21H1 (19043.1237) → Windows 11 Pro 21H2 (22000.675)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://mizu.dev/posts/2022/cpu/20220525a.jpg" alt="PCケース">&lt;/p>
+&lt;ul>
+&lt;li>FIRE STRIKE (v1.1): 22742 → 21800
+&lt;ul>
+&lt;li>グラフィックスのスコア: 28251 → 28668&lt;/li>
+&lt;li>物理スコア: 26295 → 17068&lt;/li>
+&lt;li>総合スコア: 8534 → 9157&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>TIME SPY (v1.2): 11482 → 9754
+&lt;ul>
+&lt;li>グラフィックスのスコア: 11489 → 10577&lt;/li>
+&lt;li>CPUスコア 11449 → 6770&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>PORT ROYAL (v1.2): 6875 → 6518
+&lt;ul>
+&lt;li>グラフィックスのスコア 6875 → 6518&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>CINEBENCH R23.200
+&lt;ul>
+&lt;li>CPU (Multi Core) 17927 → 7119&lt;/li>
+&lt;li>CPU (Single Core) 1273 → 1099&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>上記結果になりました。3回計測してその中央値をとっております。&lt;/p>
+&lt;p>やはりCPUが悪くなっておりますね。知りたくはなかった。。。
+次のアーキテクチャを待ちます。&lt;/p>
+&lt;p>ちなみにマザーボードも異常があり、フロントUSB3.0の端子が壊れていた模様です。
+修理されて返ってきました。&lt;/p></description></item><item><title>nVidia RTX3060ti にビデオカードを買い替えました</title><link>https://mizu.dev/posts/2021/bought_a_new_video_card_to_nvidia_rtx3060ti/</link><pubDate>Sun, 03 Oct 2021 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2021/bought_a_new_video_card_to_nvidia_rtx3060ti/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2021/2021091801.jpg" alt="ELSA GeForce RTX 3060 Ti ERAZOR LHR">&lt;/p>
 &lt;p>&lt;a href="https://www.elsa-jp.co.jp/products/detail/geforce-rtx-3060-ti-erazor-lhr/">ELSA GeForce RTX 3060 Ti ERAZOR LHR&lt;/a> をツクモで特価販売していたので購入してみました。
 購入した理由は、GTX 1080 が壊れたような動作して、フリーズ、ブルースクリーンが頻発するようになって、スペック的には問題ないけど利用するのが辛いなと思ったからです。
-ただ購入するとしても、購入価格帯を3万ぐらいを想定しておりましたが、この価格帯のビデオカードはあまりいいものがなく、3060 Ti になった感じです。&lt;/p></description></item><item><title>サービスの VMware USB Arbitration Service が動かない</title><link>https://mizu.dev/posts/2010/vmware_usb_arbitration_service_for_service_is_not_working/</link><pubDate>Mon, 01 Nov 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/vmware_usb_arbitration_service_for_service_is_not_working/</guid><description>
-&lt;p>VMPlayerでUSBを利用しようとしても、USB機器が認識できない。VMPlayer上のOSの起動時に「VMware USB Arbitration Service」が動いていないよと警告を出しているので、まさにこれが原因。&lt;/p></description></item><item><title>キーボードランチャは使わない！</title><link>https://mizu.dev/posts/2010/i_dont_use_a_keyboard_launcher/</link><pubDate>Sun, 24 Oct 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/i_dont_use_a_keyboard_launcher/</guid><description>
+ただ購入するとしても、購入価格帯を3万ぐらいを想定しておりましたが、この価格帯のビデオカードはあまりいいものがなく、3060 Ti になった感じです。&lt;/p>
+&lt;p>ネットサーフィンしていたら、たまたま &lt;a href="https://akiba-pc.watch.impress.co.jp/docs/wakiba/find/1351832.html">「ツクモの日 祭 第二弾」はPCパーツ系セールで17日スタート！18日販売のGeForce RTX 3060 Tiは格安の65,978円！&lt;/a> を見かけました。
+これを見た時、3060 Ti はお得ではないかと思い、早速翌日の早朝8:30から並び、購入に至りました。
+9:00から整理券を配布しておりましたが、もう少しばかり遅くても買えたのでは思った次第です。&lt;/p>
+&lt;p>&lt;img src="https://mizu.dev/posts/2021/2021091803.jpg" alt="3060Ti整理券番号">&lt;/p>
+&lt;p>早速PCに取り付けまして、下記のようなPCスペックになりました。&lt;/p>
+&lt;ul>
+&lt;li>CPU: AMD Ryzen 9 3900X (12Core 24Thread)&lt;/li>
+&lt;li>CPU Cooler: NH-U12S chromax.black&lt;/li>
+&lt;li>Mother: B450 I AORUS PRO WIFI&lt;/li>
+&lt;li>Memory: G.skill F4-3600C16-32GVKC (32GB)&lt;/li>
+&lt;li>Video: ZOTAC GeForce GTX 1080 AMP Edition → ELSA GeForce RTX 3060 Ti ERAZOR LHR&lt;/li>
+&lt;li>Power Supply: Corsair SF600 (600W)&lt;/li>
+&lt;li>Case: オープンフレーム ver.mini-ITX&lt;/li>
+&lt;li>OS: Windows 10 Pro 21H1 (19043.1237)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://mizu.dev/posts/2021/2021091802.jpg" alt="PC取り付け後">&lt;/p>
+&lt;p>かりかりチューニングするスキルはないので、とりあえずポン付けでのベンチになります。G-SYNCも有効状態になります。&lt;/p>
+&lt;ul>
+&lt;li>FIRE STRIKE (v1.1): 22742
+&lt;ul>
+&lt;li>グラフィックスのスコア: 28251&lt;/li>
+&lt;li>物理スコア: 26295&lt;/li>
+&lt;li>総合スコア: 8534&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>TIME SPY (v1.2): 11482
+&lt;ul>
+&lt;li>グラフィックスのスコア: 11489&lt;/li>
+&lt;li>CPUスコア 11449&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>PORT ROYAL (v1.2): 6875
+&lt;ul>
+&lt;li>グラフィックスのスコア 6875&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>CINEBENCH R23.200
+&lt;ul>
+&lt;li>CPU (Multi Core) 17927&lt;/li>
+&lt;li>CPU (Single Core) 1273&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>上記結果になりました。G-SYNCの無効化、ResizableBAR、メモリXMPなどやればややあがるかもしれません。
+また、交換する前の結果がわからないため、どれぐらいスペックアップしたかどうかわかりませんが、今の所、フリーズやブルースクリーンが発生していないので調子がいいです。
+GeForce の 4000番台を期待しつつ、しばらくこれでいきます。&lt;/p></description></item><item><title>サービスの VMware USB Arbitration Service が動かない</title><link>https://mizu.dev/posts/2010/vmware_usb_arbitration_service_for_service_is_not_working/</link><pubDate>Mon, 01 Nov 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/vmware_usb_arbitration_service_for_service_is_not_working/</guid><description>
+&lt;p>VMPlayerでUSBを利用しようとしても、USB機器が認識できない。VMPlayer上のOSの起動時に「VMware USB Arbitration Service」が動いていないよと警告を出しているので、まさにこれが原因。&lt;/p>
+&lt;p>サービスを起動させようとするが、エラー31などといって、起動できず。&lt;br>
+どうも「AMD USB フィルター ドライバ」が悪さをしているみたい。&lt;/p>
+&lt;p>&lt;img src="https://mizu.dev/posts/2010/20101101.png" alt="">&lt;/p>
+&lt;p>調べると、チップセットドライバのインストール時に「AMD USB フィルター ドライバ」のチェックを外せとのこと。まぁ、インストール済みなので、チップセットドライバのアンインストールでカスタマーイズ(?)を選び、上記チェックを外して、アンインストールを実行。「VMware USB Arbitration Service」が起動するようになった。&lt;br>
+ネットで調べるところ、Xperiaの利用者でも、同様の問題があるみたい。&lt;/p></description></item><item><title>キーボードランチャは使わない！</title><link>https://mizu.dev/posts/2010/i_dont_use_a_keyboard_launcher/</link><pubDate>Sun, 24 Oct 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/i_dont_use_a_keyboard_launcher/</guid><description>
 &lt;p>キーボードランチャ の craft launch を今まで使用してきましたが、OSを再インストールの際、使用するのはやめてみようと思う(ソフトウェアに問題があるとかそういうわけではありません)。
-スタートメニューにある 「プログラムとファイルの検索」を利用して、プログラムを立ち上げるのが、これからのやり方。&lt;/p></description></item></channel></rss>
+スタートメニューにある 「プログラムとファイルの検索」を利用して、プログラムを立ち上げるのが、これからのやり方。&lt;/p>
+&lt;p>&lt;img src="https://mizu.dev/posts/2010/2010102401.png" alt="">&lt;/p>
+&lt;p>デフォルトのままだと使いづらいのでグループポリシーにて、「ファイルを検索しない」「インターネットを検索しない」を有効化する。&lt;/p>
+&lt;p>&lt;img src="https://mizu.dev/posts/2010/2010102402.png" alt="">&lt;/p>
+&lt;p>また、手動でインストールしたプログラムは検索対象外となるので、&lt;code>C:\Users\XXXX\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\&lt;/code> にショートカットを作成する。これで検索対象になる。
+まだ設定したばっかりなので、このまま使い続けるかどうかわかりらないけど、とりあえず、やってみる。&lt;/p></description></item></channel></rss>

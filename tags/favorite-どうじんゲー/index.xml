@@ -1,12 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Favorite どうじんゲー on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/favorite-%E3%81%A9%E3%81%86%E3%81%98%E3%82%93%E3%82%B2%E3%83%BC/</link><description>Recent content in Favorite どうじんゲー on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 17 Mar 2020 19:14:26 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/favorite-%E3%81%A9%E3%81%86%E3%81%98%E3%82%93%E3%82%B2%E3%83%BC/index.xml" rel="self" type="application/rss+xml"/><item><title>Favoriteどうじんゲーのサイトを閉じました</title><link>https://mizu.dev/posts/2020/favorite_doujin_game_website_closed/</link><pubDate>Tue, 17 Mar 2020 19:14:26 +0900</pubDate><guid>https://mizu.dev/posts/2020/favorite_doujin_game_website_closed/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2020/2020-03-16_23h38_05.png" alt="Favorite どうじんゲーのトップ">&lt;/p>
-&lt;p>&lt;a href="https://mizu.dev/posts/2020/stop_sakura_vps/">さくらVPSを停止しました&lt;/a> の記事の続きです。&lt;/p></description></item><item><title>コンテンツのサイズに応じて、アイテム数を変更するように変更</title><link>https://mizu.dev/posts/2011/change_the_number_of_items_according_to_the_size_of_the_content/</link><pubDate>Sat, 03 Sep 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/change_the_number_of_items_according_to_the_size_of_the_content/</guid><description>
-コンテンツのサイズに応じて、サイドバーのアイテム数を動的に変更するようにしました。</description></item><item><title>各同人ゲーム紹介ページ と どうじんニュース のページのデザイン修正</title><link>https://mizu.dev/posts/2011/design_correction_of_doujin_game_introduction_page_and_doujin_news_page/</link><pubDate>Sat, 03 Sep 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/design_correction_of_doujin_game_introduction_page_and_doujin_news_page/</guid><description>
-各 同人ゲーム紹介ページ と どうじんニュース にある 関連ゲーム と おすすめの商品 のデザインを修正しました。</description></item><item><title>Favorite どうじんゲー の英語版をサービス停止しました</title><link>https://mizu.dev/posts/2011/favorite_doujin_game_english_version_has_been_suspended/</link><pubDate>Mon, 18 Jul 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/favorite_doujin_game_english_version_has_been_suspended/</guid><description>
-題名のとおり、Favorite どうじんゲー の英語版のサービスを停止しました。 長らくご哀願していただき、ありがとうございました。 日本語版はこれまでどおり、通常運営していく予定です。</description></item><item><title>Favorite どうじんゲーのスマートフォンサイトのヘッダーメニューのフォントサイズを変更しました</title><link>https://mizu.dev/posts/2011/changed_the_font_size_of_the_header_menu_of_favorite_dojin_game_smartphone_site/</link><pubDate>Sun, 08 May 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/changed_the_font_size_of_the_header_menu_of_favorite_dojin_game_smartphone_site/</guid><description>
-スマートフォンサイトのヘッダーメニューのフォントを大きくしました。 縦表示でのメニュー選択がしやすくなったかと思います。</description></item><item><title>Favorite どうじんゲー を ジャンプリストに対応させました</title><link>https://mizu.dev/posts/2011/favorite_doujin_game_is_now_supported_on_the_jump_list/</link><pubDate>Wed, 27 Apr 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/favorite_doujin_game_is_now_supported_on_the_jump_list/</guid><description>
+&lt;p>&lt;a href="https://mizu.dev/posts/2020/stop_sakura_vps/">さくらVPSを停止しました&lt;/a> の記事の続きです。&lt;/p>
+&lt;p>さくらVPSの解約に伴い、それ上で動いていた「Favorite どうじんゲー」のサイトも閉じることになりました。
+確か2000年5月頃からサイトを公開しており、約20年間で幕を閉じた感じになります。&lt;/p>
+&lt;p>&lt;img src="https://mizu.dev/posts/2020/2020-03-16_23h38_28.png" alt="Favorite どうじんゲーのゲーム一覧">
+&lt;img src="https://mizu.dev/posts/2020/2020-03-16_23h39_25.png" alt="Favorite どうじんゲーのゲーム紹介">&lt;/p>
+&lt;p>サイトを作ろうと思ったきっかけは、同人ゲームの情報を集める際に、いろんな同人ゲーム作成サークルのホームページを巡回していたのですね。
+サークルのホームページは素晴らしいのですのですが、必要な情報にアクセスするのが、サークルごと異なるのでめんどくさく、それを集約するサイトがあれば便利ではないのかというのがサイトづくりのきっかけです。&lt;/p>
+&lt;p>基本的には、こんな同人ゲームがあるよーという紹介ページで、レビューは行わない方針でやってました。&lt;/p>
+&lt;p>20年間という月日で、同人ゲーム紹介ではなく、いろんな機能も追加しておりました。&lt;/p>
+&lt;ul>
+&lt;li>同人ゲームニュース&lt;/li>
+&lt;li>同人ゲームの修正パッチの情報や、こんなゲームがリリースされるよといった情報を公開&lt;/li>
+&lt;li>同人ゲームアンテナ&lt;/li>
+&lt;li>同人ゲーム作成サークルのサイトの更新を検知する。&lt;/li>
+&lt;/ul>
+&lt;p>上記のような機能を追加していたのですが、これは失敗だったなーと思っております。
+やはり、初期構想の紹介ページの充実さに注力していけば、同人ゲームの紹介している数や、どんなサイトなのかわかりやすかったかと思います。&lt;/p>
+&lt;p>約20年間、本当にありがとうございました。&lt;/p></description></item><item><title>コンテンツのサイズに応じて、アイテム数を変更するように変更</title><link>https://mizu.dev/posts/2011/change_the_number_of_items_according_to_the_size_of_the_content/</link><pubDate>Sat, 03 Sep 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/change_the_number_of_items_according_to_the_size_of_the_content/</guid><description>
+&lt;p>コンテンツのサイズに応じて、サイドバーのアイテム数を動的に変更するようにしました。&lt;/p>
+&lt;p>&lt;img src="https://mizu.dev/posts/2011/20110903.png" alt="">&lt;/p></description></item><item><title>各同人ゲーム紹介ページ と どうじんニュース のページのデザイン修正</title><link>https://mizu.dev/posts/2011/design_correction_of_doujin_game_introduction_page_and_doujin_news_page/</link><pubDate>Sat, 03 Sep 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/design_correction_of_doujin_game_introduction_page_and_doujin_news_page/</guid><description>
+&lt;p>各 同人ゲーム紹介ページ と どうじんニュース にある 関連ゲーム と　おすすめの商品 のデザインを修正しました。&lt;/p>
+&lt;p>&lt;img src="https://mizu.dev/posts/2011/2011090302.png" alt="">&lt;/p></description></item><item><title>Favorite どうじんゲー の英語版をサービス停止しました</title><link>https://mizu.dev/posts/2011/favorite_doujin_game_english_version_has_been_suspended/</link><pubDate>Mon, 18 Jul 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/favorite_doujin_game_english_version_has_been_suspended/</guid><description>
+&lt;p>題名のとおり、Favorite どうじんゲー の英語版のサービスを停止しました。&lt;br>
+長らくご哀願していただき、ありがとうございました。&lt;br>
+日本語版はこれまでどおり、通常運営していく予定です。&lt;/p></description></item><item><title>Favorite どうじんゲーのスマートフォンサイトのヘッダーメニューのフォントサイズを変更しました</title><link>https://mizu.dev/posts/2011/changed_the_font_size_of_the_header_menu_of_favorite_dojin_game_smartphone_site/</link><pubDate>Sun, 08 May 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/changed_the_font_size_of_the_header_menu_of_favorite_dojin_game_smartphone_site/</guid><description>
+&lt;p>&lt;img src="https://mizu.dev/posts/2011/20110508.png" alt="">&lt;/p>
+&lt;p>スマートフォンサイトのヘッダーメニューのフォントを大きくしました。&lt;/p>
+&lt;p>縦表示でのメニュー選択がしやすくなったかと思います。&lt;/p></description></item><item><title>Favorite どうじんゲー を ジャンプリストに対応させました</title><link>https://mizu.dev/posts/2011/favorite_doujin_game_is_now_supported_on_the_jump_list/</link><pubDate>Wed, 27 Apr 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/favorite_doujin_game_is_now_supported_on_the_jump_list/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2011/20110427.png" alt="">&lt;/p>
-&lt;p>IE9の公開に伴い、Favorite どうじんゲー をジャンプリストに対応させました。&lt;/p></description></item><item><title>英語版をリリースしました</title><link>https://mizu.dev/posts/2011/the_english_version_has_been_released/</link><pubDate>Fri, 11 Feb 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/the_english_version_has_been_released/</guid><description>
-&lt;p>Favorite どうじんゲーですが、英語版をリリースしました。&lt;/p></description></item><item><title>更新履歴とポイントに対応</title><link>https://mizu.dev/posts/2011/compatible_with_updates_and_points/</link><pubDate>Tue, 25 Jan 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/compatible_with_updates_and_points/</guid><description>
+&lt;p>IE9の公開に伴い、Favorite どうじんゲー をジャンプリストに対応させました。&lt;/p>
+&lt;p>Favorite どうじんゲーのサイトをピン止めしていただけるとご利用いただけます。&lt;/p>
+&lt;h2 id="ピン止めのやり方">
+ピン止めのやり方
+&lt;a href="#%e3%83%94%e3%83%b3%e6%ad%a2%e3%82%81%e3%81%ae%e3%82%84%e3%82%8a%e6%96%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;a href="http://windows.microsoft.com/ja-JP/internet-explorer/products/ie-9/features/pinned-sites">http://windows.microsoft.com/ja-JP/internet-explorer/products/ie-9/features/pinned-sites&lt;/a>&lt;/p>
+&lt;h2 id="ジャンプリストの利用の仕方">
+ジャンプリストの利用の仕方
+&lt;a href="#%e3%82%b8%e3%83%a3%e3%83%b3%e3%83%97%e3%83%aa%e3%82%b9%e3%83%88%e3%81%ae%e5%88%a9%e7%94%a8%e3%81%ae%e4%bb%95%e6%96%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;a href="http://windows.microsoft.com/ja-JP/internet-explorer/products/ie-9/features/seamless-with-windows-7">http://windows.microsoft.com/ja-JP/internet-explorer/products/ie-9/features/seamless-with-windows-7&lt;/a>&lt;/p></description></item><item><title>英語版をリリースしました</title><link>https://mizu.dev/posts/2011/the_english_version_has_been_released/</link><pubDate>Fri, 11 Feb 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/the_english_version_has_been_released/</guid><description>
+&lt;p>Favorite どうじんゲーですが、英語版をリリースしました。&lt;/p>
+&lt;p>英語版は、ページ編集機能がない、ほとんどリードオンリーのサイトになります。また、英語にするのに自動翻訳を使用しておりますので、あやしい英語など多数あるかと思います。&lt;/p>
+&lt;p>&lt;img src="https://mizu.dev/posts/2011/20110211.png" alt="">&lt;/p>
+&lt;p>また、今回の更新にあたり、システムの大部分をキャッシュ化しており、高速にページ表示が可能となりました。…なったはずです。&lt;/p></description></item><item><title>更新履歴とポイントに対応</title><link>https://mizu.dev/posts/2011/compatible_with_updates_and_points/</link><pubDate>Tue, 25 Jan 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/compatible_with_updates_and_points/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2011/20110125.png" alt="">&lt;/p>
-&lt;p>Favorite どうじんゲー のバージョンアップ情報です。&lt;/p></description></item></channel></rss>
+&lt;p>Favorite どうじんゲー のバージョンアップ情報です。&lt;/p>
+&lt;ul>
+&lt;li>同人ゲーム紹介ページ 更新履歴の機能追加&lt;/li>
+&lt;li>どうじんニュース記事ページ 更新履歴の機能追加&lt;/li>
+&lt;li>ポイントシステムの導入&lt;/li>
+&lt;li>ユーザー情報の編集&lt;/li>
+&lt;/ul>
+&lt;p>大きな変更としては、ポイントシステムの導入かな。これで少しでも更新ペースが上がってくれれば。&lt;/p></description></item></channel></rss>

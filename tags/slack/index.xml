@@ -1,3 +1,124 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Slack on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/slack/</link><description>Recent content in Slack on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Fri, 25 Mar 2016 03:54:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/slack/index.xml" rel="self" type="application/rss+xml"/><item><title>Serverless を利用して S3 の総ファイルサイズを Slack へ投稿する</title><link>https://mizu.dev/posts/2016/using_serverless_to_post_total_s3_file_size_to_slack/</link><pubDate>Fri, 25 Mar 2016 03:54:00 +0900</pubDate><guid>https://mizu.dev/posts/2016/using_serverless_to_post_total_s3_file_size_to_slack/</guid><description>
 &lt;p>ファイルのバックアップにS3を利用しています。&lt;br>
-S3をどれぐらい容量を使っているか、毎回手動チェックするのはめんどくさいので、1日おきにSlackへ投稿するシステムを作ってみる。&lt;/p></description></item></channel></rss>
+S3をどれぐらい容量を使っているか、毎回手動チェックするのはめんどくさいので、1日おきにSlackへ投稿するシステムを作ってみる。&lt;/p>
+&lt;h1 id="プロジェクト作成">
+プロジェクト作成
+&lt;a href="#%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e4%bd%9c%e6%88%90" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ slss project create
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> _______ __
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| _ .-----.----.--.--.-----.----| .-----.-----.-----.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| |___| -__| _| | | -__| _| | -__|__ --|__ --|
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|____ |_____|__| &lt;span style="color:#ae81ff">\_&lt;/span>__/|_____|__| |__|_____|_____|_____|
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| | | The Serverless Application Framework
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| | serverless.com, v0.5.0
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">`&lt;/span>-------&lt;span style="color:#960050;background-color:#1e0010">&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Initializing Serverless Project...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Enter a name &lt;span style="color:#66d9ef">for&lt;/span> this project: &lt;span style="color:#f92672">(&lt;/span>serverless-4j5kik&lt;span style="color:#f92672">)&lt;/span> slssAWSChat
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Enter a new stage name &lt;span style="color:#66d9ef">for&lt;/span> this project: dev
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: For the &lt;span style="color:#e6db74">&amp;#34;dev&amp;#34;&lt;/span> stage, &lt;span style="color:#66d9ef">do&lt;/span> you want to use an existing Amazon Web Services profile or create a new one?
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;gt; Existing Profile
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Create A New Profile
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Select a profile &lt;span style="color:#66d9ef">for&lt;/span> your project:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;gt; default
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Creating stage &lt;span style="color:#e6db74">&amp;#34;dev&amp;#34;&lt;/span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Select a new region &lt;span style="color:#66d9ef">for&lt;/span> your stage:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;gt; us-east-1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> us-west-2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> eu-west-1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> eu-central-1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ap-northeast-1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Creating region &lt;span style="color:#e6db74">&amp;#34;us-east-1&amp;#34;&lt;/span> in stage &lt;span style="color:#e6db74">&amp;#34;dev&amp;#34;&lt;/span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Deploying resources to stage &lt;span style="color:#e6db74">&amp;#34;dev&amp;#34;&lt;/span> in region &lt;span style="color:#e6db74">&amp;#34;us-east-1&amp;#34;&lt;/span> via Cloudformation &lt;span style="color:#f92672">(&lt;/span>~3 minutes&lt;span style="color:#f92672">)&lt;/span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Successfully deployed &lt;span style="color:#e6db74">&amp;#34;dev&amp;#34;&lt;/span> resources to &lt;span style="color:#e6db74">&amp;#34;us-east-1&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Successfully created region &lt;span style="color:#e6db74">&amp;#34;us-east-1&amp;#34;&lt;/span> within stage &lt;span style="color:#e6db74">&amp;#34;dev&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Successfully created stage &lt;span style="color:#e6db74">&amp;#34;dev&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Successfully initialized project &lt;span style="color:#e6db74">&amp;#34;slssAWSChat&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>IAMポリシーを変更して、再度デプロイする。
+変更内容は下記を追加する。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Effect&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Allow&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Action&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#e6db74">&amp;#34;s3:ListBucket&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#e6db74">&amp;#34;s3:ListAllMyBuckets&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#e6db74">&amp;#34;s3:GetObject&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;Resource&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;arn:aws:s3:::*&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="slack-の-incoming-webhooks-を追加する">
+Slack の Incoming WebHooks を追加する
+&lt;a href="#slack-%e3%81%ae-incoming-webhooks-%e3%82%92%e8%bf%bd%e5%8a%a0%e3%81%99%e3%82%8b" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;a href="https://slack.com/apps">Slack App Directory&lt;/a> にアクセスし、Incoming WebHooks を追加する。&lt;/p>
+&lt;p>&lt;img src="https://mizu.dev/posts/2016/0325_slack_incoming.jpg" alt="追加後の画像">&lt;/p>
+&lt;p>Webhook URL は、後で使用するので、URL を控える。&lt;/p>
+&lt;h2 id="function-を追加する">
+Function を追加する
+&lt;a href="#function-%e3%82%92%e8%bf%bd%e5%8a%a0%e3%81%99%e3%82%8b" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ slss &lt;span style="color:#66d9ef">function&lt;/span> create s3Report
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Please, &lt;span style="color:#66d9ef">select&lt;/span> a runtime &lt;span style="color:#66d9ef">for&lt;/span> this new Function
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;gt; nodejs
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> python2.7
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: For this new Function, would you like to create an Endpoint, Event, or just the Function?
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Create Endpoint
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;gt; Create Event
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Just the Function...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Successfully created &lt;span style="color:#66d9ef">function&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;s3Report&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>CloudWatch Events でスケジュール実行するので、&lt;em>Create Event&lt;/em> を選択する。&lt;/p>
+&lt;h3 id="function-を編集">
+Function を編集
+&lt;a href="#function-%e3%82%92%e7%b7%a8%e9%9b%86" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h3>
+&lt;p>ファイルの&lt;code>handler.js&lt;/code>を編集する。&lt;br>
+編集内容については、&lt;a href="https://github.com/mizucopo/slssAWSChat/blob/master/s3Report/handler.js">slssAWSChat/handler.js at master · mizucopo/slssAWSChat&lt;/a> を参考。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ cd ./
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ npm install aws-sdk --save
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>slssAWSChat@0.0.1 /path/to/project_root
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└─┬ aws-sdk@2.2.46
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── sax@1.1.5
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── xml2js@0.4.15
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> └─┬ xmlbuilder@2.6.2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> └── lodash@3.5.0
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ cd ./s3Report
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ echo &lt;span style="color:#e6db74">&amp;#34;{}&amp;#34;&lt;/span> &amp;gt; ./package.json
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ npm install bluebird --save
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>slssAWSChat@0.0.1 /path/to/project_root
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── bluebird@3.3.4
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="slack-に投稿するスケジュールの登録">
+Slack に投稿するスケジュールの登録
+&lt;a href="#slack-%e3%81%ab%e6%8a%95%e7%a8%bf%e3%81%99%e3%82%8b%e3%82%b9%e3%82%b1%e3%82%b8%e3%83%a5%e3%83%bc%e3%83%ab%e3%81%ae%e7%99%bb%e9%8c%b2" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h2>
+&lt;p>ファイルの&lt;code>./s3Report/s-function.json&lt;/code>の&lt;code>events&lt;/code>を編集する。&lt;br>
+今回は日付が変わったタイミングに投稿するようにする。
+設定する際は、タイムゾーンはUTCなので注意。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">&amp;#34;events&amp;#34;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">:&lt;/span> [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;daily&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;type&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;schedule&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;config&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;enabled&amp;#34;&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;schedule&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;cron(0 15 * * ? *)&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>]&lt;span style="color:#960050;background-color:#1e0010">,&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>デプロイする。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ slss event deploy
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Deploying events in &lt;span style="color:#e6db74">&amp;#34;dev&amp;#34;&lt;/span> to the following regions: us-east-1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: Successfully deployed events in &lt;span style="color:#e6db74">&amp;#34;dev&amp;#34;&lt;/span> to the following regions:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: us-east-1 ------------------------
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Serverless: dailyS3Report &lt;span style="color:#f92672">(&lt;/span>schedule event&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Slack に投稿されるのを確認できました。&lt;/p>
+&lt;p>&lt;img src="https://mizu.dev/posts/2016/0325_slack_post.jpg" alt="Slack投稿イメージ">&lt;/p>
+&lt;h2 id="成果物の配布">
+成果物の配布
+&lt;a href="#%e6%88%90%e6%9e%9c%e7%89%a9%e3%81%ae%e9%85%8d%e5%b8%83" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h2>
+&lt;p>今回作成したソースは、&lt;a href="https://github.com/mizucopo/slssAWSChat">GitHub&lt;/a> にあります。
+もし使用する場合、&lt;code>handler.js&lt;/code>の&lt;code>SLACK_CHANNEL&lt;/code>と&lt;code>SLACK_ENDPOINT&lt;/code>を変更してから、利用してください。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/mizucopo/slssAWSChat">https://github.com/mizucopo/slssAWSChat&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>また、手探り状態で作成してきたので、アドバイス等ございましたら、&lt;a href="https://github.com/mizucopo/slssAWSChat/issues">GitHub の Issue&lt;/a> などでご連絡のほどおまちしております。&lt;/p></description></item></channel></rss>

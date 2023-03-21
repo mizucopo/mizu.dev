@@ -3,4 +3,27 @@
 &lt;p>普段、Dropbox Proを利用しています。
 バックアップもでき、ファイルアクセスも容易となかなかに便利です。
 Pro版だと1TB利用でき良いのですが、SSDとの相性が悪いです。
-全て同期したいのですが、ディスクの容量が足りません。&lt;/p></description></item></channel></rss>
+全て同期したいのですが、ディスクの容量が足りません。&lt;/p>
+&lt;p>そこで、Windowsタブレットを母艦に、Dropboxと外付けHDDを利用したファイルサーバーを構築してみました。
+ゴールとしては、自宅のネットワーク経由でファイルにアクセスでき、そこに保存されているものが外部とのバックアップされている状態にする。&lt;/p>
+&lt;p>まずはWindowsタブレットですが、Chuwi hi8にしました。
+なぜ、Windowsタブレットにしたかは安価という点です。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>hi8ですが、充電できるポートがMicroUSB端子で、外付けHDDと同時に利用できない問題が発生。
+USBハブを追加するわけですが、これが充電対応でないといけないわけで、OTG対応のハブを追加購入して対応。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>ちなみに外付けHDDは、前から持っていたものを利用しております。
+バスパワー形式。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>hi8とOTGハブと外付けHDDとの組み合わせですが、電源周りに不安でしたが、特に問題なく利用できております。
+ハードウェア面は、とりあえずクリア。&lt;/p>
+&lt;p>次にDropbox。&lt;/p>
+&lt;p>DropboxはWindowsにログインしないと利用できないアプリケーションで、このまま使うのは不便です。
+やはりサーバーとして利用するなら、ログインせず、利用できる状態でにしたいです。
+ログイン不要で自動起動となると、Windowsのサービス登録が必要です。
+そのサービス登録ですが、下記サイトを参考にサービス登録しました。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://www.jrdata.se/tech/installing-dropbox-as-a-service-on-windows-server-2003-2008-x64">Installing Dropbox as a service on Windows Server 2003, 2008 (x64)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>とりあえず、これで構築完了です。
+バックアップもでき、ファイル共有でどこでもアクセスできる状態になりました。&lt;/p></description></item></channel></rss>

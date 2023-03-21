@@ -1,22 +1,301 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>サーバー on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</link><description>Recent content in サーバー on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Mon, 16 Mar 2020 23:42:47 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/index.xml" rel="self" type="application/rss+xml"/><item><title>さくらVPSを停止しました</title><link>https://mizu.dev/posts/2020/stop_sakura_vps/</link><pubDate>Mon, 16 Mar 2020 23:42:47 +0900</pubDate><guid>https://mizu.dev/posts/2020/stop_sakura_vps/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2020/2020-03-16_23h36_29.png" alt="uptime">&lt;/p>
 &lt;p>長くレンタルしていた、さくらVPSを解約することにしました。&lt;/p>
-&lt;p>運用していたサービスは、「Favorite どうじんゲー」のみで、ほぼほぼ放置して、訪問者もほとんどいなかった状態なので、お金だけ取られていた感じです。&lt;/p></description></item><item><title>RaspberryPi (Raspberian) に SensuClient を導入しようとしたが挫折</title><link>https://mizu.dev/posts/2016/tried_to_install_sensuclient_on_raspberrypi_raspberian_but_failed/</link><pubDate>Mon, 21 Mar 2016 23:29:00 +0900</pubDate><guid>https://mizu.dev/posts/2016/tried_to_install_sensuclient_on_raspberrypi_raspberian_but_failed/</guid><description>
+&lt;p>運用していたサービスは、「Favorite どうじんゲー」のみで、ほぼほぼ放置して、訪問者もほとんどいなかった状態なので、お金だけ取られていた感じです。&lt;/p>
+&lt;p>さて、どれぐらいの期間レンタルしていたかというと、、、&lt;/p>
+&lt;p>&lt;img src="https://mizu.dev/posts/2020/2020-03-16_23h52_34.png" alt="さくらVPSのレンタル期間">&lt;/p>
+&lt;p>2012/04/29 から 2020/03/31 と、約8年間でした。
+&lt;a href="https://mizu.dev/posts/2011/i_moved_the_web_server_to_sakura_vps/">ウェブサーバーをさくらVPSに移行した&lt;/a> の記事から読み取ると、VPSを利用しだしてから9年間ですね。&lt;/p>
+&lt;p>放置運用していたので、セキュリティアップデートも、そのサーバーの再起動を行っていなかったので、uptime が結構すごいことになっていました&lt;/p>
+&lt;p>&lt;img src="https://mizu.dev/posts/2020/2020-03-16_23h36_29.png" alt="nanaho uptime">
+&lt;img src="https://mizu.dev/posts/2020/2020-03-16_23h35_56.png" alt="kuon uptime">&lt;/p>
+&lt;p>1651日も起動しておりました。4年半。&lt;/p>
+&lt;p>3/11の大地震から輪番停電で移行したさくらVPS。
+特に大きな問題もなく運用できました。&lt;/p>
+&lt;p>ただ今は、AWSやGCPなどのパブリッククラウドとか選択肢が多く、新たにサービスを作るときは、改めて検討して利用させていただきます。&lt;/p>
+&lt;p>本当にありがとうございました！&lt;/p></description></item><item><title>RaspberryPi (Raspberian) に SensuClient を導入しようとしたが挫折</title><link>https://mizu.dev/posts/2016/tried_to_install_sensuclient_on_raspberrypi_raspberian_but_failed/</link><pubDate>Mon, 21 Mar 2016 23:29:00 +0900</pubDate><guid>https://mizu.dev/posts/2016/tried_to_install_sensuclient_on_raspberrypi_raspberian_but_failed/</guid><description>
 &lt;p>Raspberry Pi を監視すべく、Sensu Client の導入をしてみたいと思います。&lt;/p>
 &lt;p>当然ながら、ARM版の Sensu はなく、自前でビルドする必要があります。
-ビルドの方法は下記ページに記載しておりますが、最近だとDockerのコンテナでビルドするようです。&lt;/p></description></item><item><title>Alpine の Ruby のイメージに nokogiri をインストール</title><link>https://mizu.dev/posts/2016/install_nokogiri_on_alpine_ruby_image/</link><pubDate>Sun, 20 Mar 2016 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2016/install_nokogiri_on_alpine_ruby_image/</guid><description>
-&lt;p>公式のAlpineのRubyイメージに、nokogiriをインストールをエラーになるので、それの対応方法。&lt;/p></description></item><item><title>Dropboxを利用したファイルサーバー</title><link>https://mizu.dev/posts/2016/file_server_using_dropbox/</link><pubDate>Tue, 01 Mar 2016 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2016/file_server_using_dropbox/</guid><description>
+ビルドの方法は下記ページに記載しておりますが、最近だとDockerのコンテナでビルドするようです。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/sensu/sensu-build">https://github.com/sensu/sensu-build&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="raspberry-pi-に-docker-をインストール">
+Raspberry Pi に Docker をインストール
+&lt;a href="#raspberry-pi-%e3%81%ab-docker-%e3%82%92%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ sudo apt-get install docker.io
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>起動してみます。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ sudo initctl start
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>docker start/running, process &lt;span style="color:#ae81ff">21208&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ sudo initctl status docker
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>docker stop/waiting
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>うーむ、すぐに停止するようです。&lt;/p>
+&lt;p>/var/log/upstart/docker.log を見る限り、下記にエラーがあるようです。&lt;/p>
+&lt;pre>&lt;code>[f59cf284] -job init_networkdriver() = ERR (1)
+&lt;/code>&lt;/pre>
+&lt;p>詳しくはわからないのですが、LXC非対応だからでしょうか。
+Dockerでビルドするのは諦めました。&lt;/p>
+&lt;h2 id="自力でビルドしてみる">
+自力でビルドしてみる
+&lt;a href="#%e8%87%aa%e5%8a%9b%e3%81%a7%e3%83%93%e3%83%ab%e3%83%89%e3%81%97%e3%81%a6%e3%81%bf%e3%82%8b" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="ruby-のインストール">
+Ruby のインストール
+&lt;a href="#ruby-%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h3>
+&lt;p>まずは、Rubyが必要なので、rbenv で Ruby をインストール&lt;/p>
+&lt;p>&lt;a href="http://qiita.com/u6k/items/ffb0265f6cbb58f2227d">rbenvを使用したRuby環境構築 (Raspbian) - Qiita&lt;/a> を参考に2.3.0をインストール。
+依存パッケージは、libssl-dev libreadline-dev でいけました。
+Gem のインストールに bundle が必要なので、bundler のインストールも忘れずに。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ gem install bundler
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://github.com/sensu/sensu-build#build-packages-on-the-currentlocal-platform">sensu/sensu-build: Omnibus build tooling for Sensu.&lt;/a> のページを参考にしてビルドをしてみました。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ cd /tmp
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ wget https://github.com/sensu/sensu-build/archive/0.22.2-1.zip
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ unzip 0.22.2-1.zip
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ export SENSU_VERSION&lt;span style="color:#f92672">=&lt;/span>0.22.2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ export BUILD_NUMBER&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ bundle install
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Fetching gem metadata from https://rubygems.org/..........
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Fetching version metadata from https://rubygems.org/..
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Using rake 10.4.2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Installing json 1.6.6 with native extensions
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> current directory: /home/mizu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/json-1.6.6/ext/json/ext/generator
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>/home/mizu/.rbenv/versions/2.3.0/bin/ruby -r ./siteconf20160319-24369-1ajseh4.rb extconf.rb
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>creating Makefile
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>current directory: /home/mizu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/json-1.6.6/ext/json/ext/generator
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>make &lt;span style="color:#e6db74">&amp;#34;DESTDIR=&amp;#34;&lt;/span> clean
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>current directory: /home/mizu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/json-1.6.6/ext/json/ext/generator
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>make &lt;span style="color:#e6db74">&amp;#34;DESTDIR=&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>compiling generator.c
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>In file included from generator.c:1:0:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>../fbuffer/fbuffer.h: In &lt;span style="color:#66d9ef">function&lt;/span> ‘fbuffer_to_s’:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>../fbuffer/fbuffer.h:151:47: error: macro &lt;span style="color:#e6db74">&amp;#34;rb_str_new&amp;#34;&lt;/span> requires &lt;span style="color:#ae81ff">2&lt;/span> arguments, but only &lt;span style="color:#ae81ff">1&lt;/span> given
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> VALUE result &lt;span style="color:#f92672">=&lt;/span> rb_str_new&lt;span style="color:#f92672">(&lt;/span>FBUFFER_PAIR&lt;span style="color:#f92672">(&lt;/span>fb&lt;span style="color:#f92672">))&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ^
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>../fbuffer/fbuffer.h:151:20: warning: initialization makes integer from pointer without a cast
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> VALUE result &lt;span style="color:#f92672">=&lt;/span> rb_str_new&lt;span style="color:#f92672">(&lt;/span>FBUFFER_PAIR&lt;span style="color:#f92672">(&lt;/span>fb&lt;span style="color:#f92672">))&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ^
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>In file included from generator.c:2:0:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>generator.c: In &lt;span style="color:#66d9ef">function&lt;/span> ‘cState_aref’:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>generator.h:96:27: warning: variable ‘state’ set but not used &lt;span style="color:#f92672">[&lt;/span>-Wunused-but-set-variable&lt;span style="color:#f92672">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> JSON_Generator_State *state; &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> ^
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>generator.c:632:5: note: in expansion of macro ‘GET_STATE’
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> GET_STATE&lt;span style="color:#f92672">(&lt;/span>self&lt;span style="color:#f92672">)&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ^
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>generator.c: In &lt;span style="color:#66d9ef">function&lt;/span> ‘isArrayOrObject’:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>generator.c:863:10: warning: unused variable ‘c’ &lt;span style="color:#f92672">[&lt;/span>-Wunused-variable&lt;span style="color:#f92672">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> char c, *p &lt;span style="color:#f92672">=&lt;/span> RSTRING_PTR&lt;span style="color:#f92672">(&lt;/span>string&lt;span style="color:#f92672">)&lt;/span>, *q &lt;span style="color:#f92672">=&lt;/span> p + string_len - 1;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ^
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Makefile:238: recipe &lt;span style="color:#66d9ef">for&lt;/span> target &lt;span style="color:#e6db74">&amp;#39;generator.o&amp;#39;&lt;/span> failed
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>make: *** &lt;span style="color:#f92672">[&lt;/span>generator.o&lt;span style="color:#f92672">]&lt;/span> Error &lt;span style="color:#ae81ff">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>make failed, exit code &lt;span style="color:#ae81ff">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Gem files will remain installed in /home/mizu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/json-1.6.6 &lt;span style="color:#66d9ef">for&lt;/span> inspection.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Results logged to /home/mizu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/extensions/armv7l-linux/2.3.0-static/json-1.6.6/gem_make.out
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Using backports 2.6.2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Using clamp 0.3.1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Using ipaddress 0.8.0
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Using mixlib-cli 1.5.0
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Using mixlib-config 2.2.1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Using mixlib-log 1.6.0
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Using mixlib-shellout 1.4.0
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Using systemu 2.2.0
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Using yajl-ruby 1.2.1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Using bundler 1.11.2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>An error occurred &lt;span style="color:#66d9ef">while&lt;/span> installing json &lt;span style="color:#f92672">(&lt;/span>1.6.6&lt;span style="color:#f92672">)&lt;/span>, and Bundler cannot &lt;span style="color:#66d9ef">continue&lt;/span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Make sure that &lt;span style="color:#e6db74">`&lt;/span>gem install json -v &lt;span style="color:#e6db74">&amp;#39;1.6.6&amp;#39;&lt;/span>&lt;span style="color:#e6db74">`&lt;/span> succeeds before bundling.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>json のインストールでこけているみたい。&lt;br>
+同じような悩みをもっている人がいるみたいだけど、いまいち解決方法が見つからない。。。&lt;br>
+助けて。。。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/joemiller/bunchr/issues/9">https://github.com/joemiller/bunchr/issues/9&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Alpine の Ruby のイメージに nokogiri をインストール</title><link>https://mizu.dev/posts/2016/install_nokogiri_on_alpine_ruby_image/</link><pubDate>Sun, 20 Mar 2016 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2016/install_nokogiri_on_alpine_ruby_image/</guid><description>
+&lt;p>公式のAlpineのRubyイメージに、nokogiriをインストールをエラーになるので、それの対応方法。&lt;/p>
+&lt;h2 id="デフォルトの状態だとエラーになる">
+デフォルトの状態だとエラーになる
+&lt;a href="#%e3%83%87%e3%83%95%e3%82%a9%e3%83%ab%e3%83%88%e3%81%ae%e7%8a%b6%e6%85%8b%e3%81%a0%e3%81%a8%e3%82%a8%e3%83%a9%e3%83%bc%e3%81%ab%e3%81%aa%e3%82%8b" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h2>
+&lt;p>まずは、コンテナの起動。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ docker run -it ruby:alpine /bin/sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>起動後、nokogiri をインストールしようとするとエラーになる。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># gem install nokogiri&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Fetching: mini_portile2-2.0.0.gem &lt;span style="color:#f92672">(&lt;/span>100%&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Successfully installed mini_portile2-2.0.0
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Fetching: nokogiri-1.6.7.2.gem &lt;span style="color:#f92672">(&lt;/span>100%&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Building native extensions. This could take a &lt;span style="color:#66d9ef">while&lt;/span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ERROR: Error installing nokogiri:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ERROR: Failed to build gem native extension.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> current directory: /usr/local/bundle/gems/nokogiri-1.6.7.2/ext/nokogiri
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>/usr/local/bin/ruby -r ./siteconf20160320-5-1grlmdx.rb extconf.rb
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>checking &lt;span style="color:#66d9ef">if&lt;/span> the C compiler accepts ... *** extconf.rb failed ***
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Could not create Makefile due to some reason, probably lack of necessary
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>libraries and/or headers. Check the mkmf.log file &lt;span style="color:#66d9ef">for&lt;/span> more details. You may
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>need configuration options.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Provided configuration options:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --with-opt-dir
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --without-opt-dir
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --with-opt-include
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --without-opt-include&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>opt-dir&lt;span style="color:#e6db74">}&lt;/span>/include
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --with-opt-lib
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --without-opt-lib&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>opt-dir&lt;span style="color:#e6db74">}&lt;/span>/lib
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --with-make-prog
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --without-make-prog
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --srcdir&lt;span style="color:#f92672">=&lt;/span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --curdir
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --ruby&lt;span style="color:#f92672">=&lt;/span>/usr/local/bin/&lt;span style="color:#66d9ef">$(&lt;/span>RUBY_BASE_NAME&lt;span style="color:#66d9ef">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --help
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --clean
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>/usr/local/lib/ruby/2.3.0/mkmf.rb:456:in &lt;span style="color:#e6db74">`&lt;/span>try_do&lt;span style="color:#e6db74">&amp;#39;: The compiler failed to generate an executable file. (RuntimeError)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">You have to install development tools first.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> from /usr/local/lib/ruby/2.3.0/mkmf.rb:571:in `block in try_compile&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> from /usr/local/lib/ruby/2.3.0/mkmf.rb:522:in &lt;span style="color:#e6db74">`&lt;/span>with_werror&lt;span style="color:#e6db74">&amp;#39;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> from /usr/local/lib/ruby/2.3.0/mkmf.rb:571:in `try_compile&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> from extconf.rb:80:in &lt;span style="color:#e6db74">`&lt;/span>nokogiri_try_compile&lt;span style="color:#e6db74">&amp;#39;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> from extconf.rb:87:in `block in add_cflags&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> from /usr/local/lib/ruby/2.3.0/mkmf.rb:629:in &lt;span style="color:#e6db74">`&lt;/span>with_cflags&lt;span style="color:#e6db74">&amp;#39;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> from extconf.rb:86:in `add_cflags&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> from extconf.rb:336:in &lt;span style="color:#e6db74">`&lt;/span>&amp;lt;main&amp;gt;&lt;span style="color:#960050;background-color:#1e0010">&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>To see why this extension failed to compile, please check the mkmf.log which can be found here:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> /usr/local/bundle/extensions/x86_64-linux/2.3.0-static/nokogiri-1.6.7.2/mkmf.log
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>extconf failed, exit code &lt;span style="color:#ae81ff">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Gem files will remain installed in /usr/local/bundle/gems/nokogiri-1.6.7.2 &lt;span style="color:#66d9ef">for&lt;/span> inspection.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Results logged to /usr/local/bundle/extensions/x86_64-linux/2.3.0-static/nokogiri-1.6.7.2/gem_make.out
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="エラーの対応方法">
+エラーの対応方法
+&lt;a href="#%e3%82%a8%e3%83%a9%e3%83%bc%e3%81%ae%e5%af%be%e5%bf%9c%e6%96%b9%e6%b3%95" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="関連パッケージのインストール">
+関連パッケージのインストール
+&lt;a href="#%e9%96%a2%e9%80%a3%e3%83%91%e3%83%83%e3%82%b1%e3%83%bc%e3%82%b8%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h3>
+&lt;p>必要になるものは、下記3つのパッケージ。&lt;/p>
+&lt;ul>
+&lt;li>build-base&lt;/li>
+&lt;li>libxml2-dev&lt;/li>
+&lt;li>libxslt-dev&lt;/li>
+&lt;/ul>
+&lt;p>パッケージをインストールする。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># apk add --no-cache build-base libxml2-dev libxslt-dev&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>fetch http://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/APKINDEX.tar.gz
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>fetch http://dl-cdn.alpinelinux.org/alpine/v3.3/community/x86_64/APKINDEX.tar.gz
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>1/17&lt;span style="color:#f92672">)&lt;/span> Installing binutils-libs &lt;span style="color:#f92672">(&lt;/span>2.25.1-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>2/17&lt;span style="color:#f92672">)&lt;/span> Installing binutils &lt;span style="color:#f92672">(&lt;/span>2.25.1-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>3/17&lt;span style="color:#f92672">)&lt;/span> Installing gmp &lt;span style="color:#f92672">(&lt;/span>6.1.0-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>4/17&lt;span style="color:#f92672">)&lt;/span> Installing isl &lt;span style="color:#f92672">(&lt;/span>0.14.1-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>5/17&lt;span style="color:#f92672">)&lt;/span> Installing libgomp &lt;span style="color:#f92672">(&lt;/span>5.3.0-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>6/17&lt;span style="color:#f92672">)&lt;/span> Installing libatomic &lt;span style="color:#f92672">(&lt;/span>5.3.0-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>7/17&lt;span style="color:#f92672">)&lt;/span> Installing libgcc &lt;span style="color:#f92672">(&lt;/span>5.3.0-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>8/17&lt;span style="color:#f92672">)&lt;/span> Installing mpfr3 &lt;span style="color:#f92672">(&lt;/span>3.1.2-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>9/17&lt;span style="color:#f92672">)&lt;/span> Installing mpc1 &lt;span style="color:#f92672">(&lt;/span>1.0.3-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>10/17&lt;span style="color:#f92672">)&lt;/span> Installing libstdc++ &lt;span style="color:#f92672">(&lt;/span>5.3.0-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>11/17&lt;span style="color:#f92672">)&lt;/span> Installing gcc &lt;span style="color:#f92672">(&lt;/span>5.3.0-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>12/17&lt;span style="color:#f92672">)&lt;/span> Installing make &lt;span style="color:#f92672">(&lt;/span>4.1-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>13/17&lt;span style="color:#f92672">)&lt;/span> Installing musl-dev &lt;span style="color:#f92672">(&lt;/span>1.1.12-r2&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>14/17&lt;span style="color:#f92672">)&lt;/span> Installing libc-dev &lt;span style="color:#f92672">(&lt;/span>0.7-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>15/17&lt;span style="color:#f92672">)&lt;/span> Installing fortify-headers &lt;span style="color:#f92672">(&lt;/span>0.7-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>16/17&lt;span style="color:#f92672">)&lt;/span> Installing g++ &lt;span style="color:#f92672">(&lt;/span>5.3.0-r0&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">(&lt;/span>17/17&lt;span style="color:#f92672">)&lt;/span> Installing build-base &lt;span style="color:#f92672">(&lt;/span>0.4-r1&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Executing busybox-1.24.1-r7.trigger
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>OK: &lt;span style="color:#ae81ff">178&lt;/span> MiB in &lt;span style="color:#ae81ff">55&lt;/span> packages
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>ただ、インストールしても、nokogiriのインストールはエラーになる。&lt;/p>
+&lt;h3 id="gem-install-オプションの変更">
+gem install オプションの変更
+&lt;a href="#gem-install-%e3%82%aa%e3%83%97%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%ae%e5%a4%89%e6%9b%b4" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h3>
+&lt;p>gemのオプションを指定してインストールを実行。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># gem install nokogiri \&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt; -- --use-system-libraries &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span>&amp;gt; --with-xml2-config&lt;span style="color:#f92672">=&lt;/span>/usr/bin/xml2-config &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span>&amp;gt; --with-xslt-config&lt;span style="color:#f92672">=&lt;/span>/usr/bin/xslt-config
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Building native extensions with: &lt;span style="color:#e6db74">&amp;#39;--use-system-libraries --with-xml2-config=/usr/bin/xml2-config --with-xslt-config=/usr/bin/xslt-config&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>This could take a &lt;span style="color:#66d9ef">while&lt;/span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Successfully installed nokogiri-1.6.7.2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">1&lt;/span> gem installed
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>エラーなく、nokogiriのインストールできました。&lt;/p>
+&lt;h2 id="おまけ">
+おまけ
+&lt;a href="#%e3%81%8a%e3%81%be%e3%81%91" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h2>
+&lt;p>Dockerfile を用意したので、参考になれば。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-dockerfile" data-lang="dockerfile">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">FROM&lt;/span>&lt;span style="color:#e6db74"> ruby:alpine&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">&lt;/span>&lt;span style="color:#66d9ef">MAINTAINER&lt;/span>&lt;span style="color:#e6db74"> mizu &amp;lt;mizu.copo@gmail.com&amp;gt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">&lt;/span>&lt;span style="color:#66d9ef">RUN&lt;/span> set -x &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> apk upgrade --no-cache &lt;span style="color:#ae81ff">\ &lt;/span>&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> apk add --no-cache --virtual build-dependencies &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> build-base &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> apk add --no-cache &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> libxml2-dev &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> libxslt-dev &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> gem install nokogiri &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> -- --use-system-libraries &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> --with-xml2-config&lt;span style="color:#f92672">=&lt;/span>/usr/bin/xml2-config &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> --with-xslt-config&lt;span style="color:#f92672">=&lt;/span>/usr/bin/xslt-config &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> apk del build-dependencies&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Dropboxを利用したファイルサーバー</title><link>https://mizu.dev/posts/2016/file_server_using_dropbox/</link><pubDate>Tue, 01 Mar 2016 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2016/file_server_using_dropbox/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2016/0301hi8.jpg" alt="Chuwi hi8の画像">&lt;/p>
 &lt;p>普段、Dropbox Proを利用しています。
 バックアップもでき、ファイルアクセスも容易となかなかに便利です。
 Pro版だと1TB利用でき良いのですが、SSDとの相性が悪いです。
-全て同期したいのですが、ディスクの容量が足りません。&lt;/p></description></item><item><title>sysv-rc-conf のゴミの削除</title><link>https://mizu.dev/posts/2011/delete_garbage_of_sysvrcconfler/</link><pubDate>Wed, 16 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/delete_garbage_of_sysvrcconfler/</guid><description>
-&lt;p>sysv-rc-conf で不要なサービスが一覧から消えない問題があった。問題というか正しい動きですが。&lt;/p></description></item><item><title>ウェブサーバーをさくらVPSに移した</title><link>https://mizu.dev/posts/2011/i_moved_the_web_server_to_sakura_vps/</link><pubDate>Mon, 14 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/i_moved_the_web_server_to_sakura_vps/</guid><description>
-&lt;p>輪番停電での停電のため、ウェブサーバーを自宅からさくらVPSに移行しました。&lt;/p></description></item><item><title>sambaのwinsサーバーの調子がおかしい</title><link>https://mizu.dev/posts/2010/something_is_wrong_with_the_samba_wins_server/</link><pubDate>Sun, 24 Oct 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/something_is_wrong_with_the_samba_wins_server/</guid><description>
+全て同期したいのですが、ディスクの容量が足りません。&lt;/p>
+&lt;p>そこで、Windowsタブレットを母艦に、Dropboxと外付けHDDを利用したファイルサーバーを構築してみました。
+ゴールとしては、自宅のネットワーク経由でファイルにアクセスでき、そこに保存されているものが外部とのバックアップされている状態にする。&lt;/p>
+&lt;p>まずはWindowsタブレットですが、Chuwi hi8にしました。
+なぜ、Windowsタブレットにしたかは安価という点です。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>hi8ですが、充電できるポートがMicroUSB端子で、外付けHDDと同時に利用できない問題が発生。
+USBハブを追加するわけですが、これが充電対応でないといけないわけで、OTG対応のハブを追加購入して対応。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>ちなみに外付けHDDは、前から持っていたものを利用しております。
+バスパワー形式。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>hi8とOTGハブと外付けHDDとの組み合わせですが、電源周りに不安でしたが、特に問題なく利用できております。
+ハードウェア面は、とりあえずクリア。&lt;/p>
+&lt;p>次にDropbox。&lt;/p>
+&lt;p>DropboxはWindowsにログインしないと利用できないアプリケーションで、このまま使うのは不便です。
+やはりサーバーとして利用するなら、ログインせず、利用できる状態でにしたいです。
+ログイン不要で自動起動となると、Windowsのサービス登録が必要です。
+そのサービス登録ですが、下記サイトを参考にサービス登録しました。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://www.jrdata.se/tech/installing-dropbox-as-a-service-on-windows-server-2003-2008-x64">Installing Dropbox as a service on Windows Server 2003, 2008 (x64)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>とりあえず、これで構築完了です。
+バックアップもでき、ファイル共有でどこでもアクセスできる状態になりました。&lt;/p></description></item><item><title>sysv-rc-conf のゴミの削除</title><link>https://mizu.dev/posts/2011/delete_garbage_of_sysvrcconfler/</link><pubDate>Wed, 16 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/delete_garbage_of_sysvrcconfler/</guid><description>
+&lt;p>sysv-rc-conf で不要なサービスが一覧から消えない問題があった。問題というか正しい動きですが。&lt;/p>
+&lt;p>&lt;code>/etc/rc2.d/K80gomid&lt;/code> , &lt;code>/etc/rc3.d/K8gomid&lt;/code> などにシンボリックリンクが残っていたので、これらを削除し、また、sysv-rc-confのキャッシュファイル &lt;code>/var/lib/sysv-rc-conf/services&lt;/code> を削除すれば、不要なサービスが一覧から削除される。&lt;/p>
+&lt;p>なお、&lt;code>/etc/init.d/gomid&lt;/code> など不要なサービスを削除した上でのこと。&lt;/p></description></item><item><title>ウェブサーバーをさくらVPSに移した</title><link>https://mizu.dev/posts/2011/i_moved_the_web_server_to_sakura_vps/</link><pubDate>Mon, 14 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/i_moved_the_web_server_to_sakura_vps/</guid><description>
+&lt;p>輪番停電での停電のため、ウェブサーバーを自宅からさくらVPSに移行しました。&lt;/p>
+&lt;p>いままでmemcachedを利用していましたが、環境作るのがめんどくさいので、APCでキャッシュして表示しております。&lt;/p>
+&lt;p>急いで構築したので、安定した環境ではありませんが徐々に環境を整えていこうと思っています。&lt;/p>
+&lt;p>さくらVPSの気をつけるところは、サブネットマスクが 255.255.25&lt;strong>4&lt;/strong>.0 ということだね。&lt;/p></description></item><item><title>sambaのwinsサーバーの調子がおかしい</title><link>https://mizu.dev/posts/2010/something_is_wrong_with_the_samba_wins_server/</link><pubDate>Sun, 24 Oct 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/something_is_wrong_with_the_samba_wins_server/</guid><description>
 &lt;p>んー、どうしても間違ったIPアドレスを返してくれるこまったちゃん。
-ネットでは、wins.dat を削除すればいいよ、と。&lt;/p></description></item><item><title>Q4Mでのレプリケーション</title><link>https://mizu.dev/posts/2010/replication_with_q4m/</link><pubDate>Wed, 21 Apr 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/replication_with_q4m/</guid><description>
+ネットでは、wins.dat を削除すればいいよ、と。&lt;/p>
+&lt;p>&lt;code>/var/cache/samba/wins.dat&lt;/code> にあるとありましたが、存在しません。
+私の環境では、&lt;code>/var/lib/samba/wins.dat&lt;/code> にありました。&lt;/p>
+&lt;p>nmbd を止めて wins.dat を削除。後、nmbdを起動。これで間違ったIPアドレスを返すことはなくなった。&lt;/p></description></item><item><title>Q4Mでのレプリケーション</title><link>https://mizu.dev/posts/2010/replication_with_q4m/</link><pubDate>Wed, 21 Apr 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/replication_with_q4m/</guid><description>
 &lt;p>Q4Mを使用したテーブルにデータをインサートすると&lt;/p>
 &lt;pre>&lt;code>#1598 - Binary logging not possible. Message: Statement cannot be logged to the binary log in row-based nor statement-based format
 &lt;/code>&lt;/pre>
-&lt;p>というエラーが表示される。バイナリログが有効だとインサートにミスるみたい。ということで、バイナリログを使用しないようにする。&lt;/p></description></item><item><title>WordPress 始めました！！</title><link>https://mizu.dev/posts/2009/wordpress_started/</link><pubDate>Fri, 20 Feb 2009 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2009/wordpress_started/</guid><description>
-&lt;p>ということで、MovableType から WordPress に移行しました。&lt;/p></description></item></channel></rss>
+&lt;p>というエラーが表示される。バイナリログが有効だとインサートにミスるみたい。ということで、バイナリログを使用しないようにする。&lt;/p>
+&lt;p>…とはいかず、バイナリログを使用するレプリケーションはどうするのか？&lt;/p>
+&lt;p>&lt;a href="http://groups.google.co.jp/group/q4m-general/browse_thread/thread/adc11c0561f54767">http://groups.google.co.jp/group/q4m-general/browse_thread/thread/adc11c0561f54767&lt;/a>&lt;/p>
+&lt;p>上記URLを見る限りでは、専用のDBを作り、それをレプリケーションの対象外にするとある。&lt;/p>
+&lt;p>とりあえず、メモ書き。検証等は一切行っていない。嘘があるかも。&lt;/p></description></item><item><title>WordPress 始めました！！</title><link>https://mizu.dev/posts/2009/wordpress_started/</link><pubDate>Fri, 20 Feb 2009 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2009/wordpress_started/</guid><description>
+&lt;p>ということで、MovableType から WordPress に移行しました。&lt;/p>
+&lt;p>移行理由は、Perl よりも PHP の方が、扱いになれているというのが理由です。&lt;br>
+OS の再インストールついでに移行しました。&lt;br>
+ただ、過去のデータをどうするか、それが一番の問題です。&lt;/p></description></item></channel></rss>
