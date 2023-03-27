@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>belflaw on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/belflaw/</link><description>Recent content in belflaw on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Thu, 01 Sep 2011 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/belflaw/index.xml" rel="self" type="application/rss+xml"/><item><title>商品画像も一緒にツイートにするようにしました</title><link>https://mizu.dev/posts/2011/i_tried_to_tweet_the_product_image_together/</link><pubDate>Thu, 01 Sep 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/i_tried_to_tweet_the_product_image_together/</guid><description>
-&lt;p>Twitter の &lt;a href="http://twitter.com/#!/belflaw">@belflaw&lt;/a> に商品の登録情報をツイートしていますが、その際、商品の画像を一緒にツイートするようにしました。&lt;/p>
+&lt;p>Twitter の &lt;a href="http://twitter.com/#!/belflaw" target="_blank">@belflaw&lt;/a>
+に商品の登録情報をツイートしていますが、その際、商品の画像を一緒にツイートするようにしました。&lt;/p>
 &lt;p>&lt;img src="https://mizu.dev/posts/2011/20110901.png" alt="">&lt;/p></description></item><item><title>belflaw の対応ショップに、freenote を追加しました</title><link>https://mizu.dev/posts/2011/freenote_has_been_added_to_belflaw_compatible_shop/</link><pubDate>Mon, 01 Aug 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/freenote_has_been_added_to_belflaw_compatible_shop/</guid><description>
-&lt;p>&lt;a href="http://freenote.cc/">freenote&lt;/a> を追加しました。&lt;/p></description></item><item><title>belflaw の対応ショップに、COMIC ZIN を追加しました</title><link>https://mizu.dev/posts/2011/comic_zin_has_been_added_to_the_supported_shop_of_belflaw/</link><pubDate>Mon, 11 Jul 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/comic_zin_has_been_added_to_the_supported_shop_of_belflaw/</guid><description>
-&lt;p>&lt;a href="http://ja.belflaw.com/">belflaw&lt;/a> の対応ショップに COMIC ZIN を追加しました。&lt;/p></description></item><item><title>belflaw の対応ショップに、あきばお～こく と DMM を追加しました</title><link>https://mizu.dev/posts/2011/akibao_koku_added_dmm_has_been_added_to_belflaw_compatible_shop/</link><pubDate>Sun, 03 Jul 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/akibao_koku_added_dmm_has_been_added_to_belflaw_compatible_shop/</guid><description>
-&lt;p>&lt;a href="http://ja.belflaw.com/">belflaw&lt;/a> の対応ショップに あきばお～こく と DMM を追加しました。&lt;/p>
+&lt;p>&lt;a href="http://freenote.cc/" target="_blank">freenote&lt;/a>
+を追加しました。&lt;/p></description></item><item><title>belflaw の対応ショップに、COMIC ZIN を追加しました</title><link>https://mizu.dev/posts/2011/comic_zin_has_been_added_to_the_supported_shop_of_belflaw/</link><pubDate>Mon, 11 Jul 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/comic_zin_has_been_added_to_the_supported_shop_of_belflaw/</guid><description>
+&lt;p>&lt;a href="http://ja.belflaw.com/" target="_blank">belflaw&lt;/a>
+の対応ショップに COMIC ZIN を追加しました。&lt;/p></description></item><item><title>belflaw の対応ショップに、あきばお～こく と DMM を追加しました</title><link>https://mizu.dev/posts/2011/akibao_koku_added_dmm_has_been_added_to_belflaw_compatible_shop/</link><pubDate>Sun, 03 Jul 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/akibao_koku_added_dmm_has_been_added_to_belflaw_compatible_shop/</guid><description>
+&lt;p>&lt;a href="http://ja.belflaw.com/" target="_blank">belflaw&lt;/a>
+の対応ショップに あきばお～こく と DMM を追加しました。&lt;/p>
 &lt;p>DMMは4月対応予定でしたが、ここまで遅れて申し訳ございませんでした。&lt;/p></description></item><item><title>IE9でリクエストが中断される問題</title><link>https://mizu.dev/posts/2011/problem_in_which_requests_are_interrupted_by_ie9/</link><pubDate>Wed, 22 Jun 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/problem_in_which_requests_are_interrupted_by_ie9/</guid><description>
 &lt;p>belflawですが、IE9でログイン後、ウィッシュリストに追加できない問題が発生している。&lt;/p>
 &lt;p>回避方法としては、ログイン後、リロード(F5など押下)すれば、正常通り、ウィッシュリストに追加される。&lt;/p>
@@ -14,16 +18,19 @@
 &lt;p>何故、リクエストせず、中断されるか教えて欲しい。&lt;/p>
 &lt;p>とりあえずのところ、URLにタイムスタンプを入れ、強引にアクセスするようにしようかなと考えている。&lt;/p>
 &lt;p>キャッシュを利用しているのかなと思って、HTTPヘッダに Cache-Control と Pragma を入れてみたけど、変化なしでした。&lt;/p></description></item><item><title>belflaw でウィッシュリストに追加時にツイートする機能を追加</title><link>https://mizu.dev/posts/2011/added_a_function_to_tweet_when_added_to_the_wish_list_with_belflaw/</link><pubDate>Wed, 06 Apr 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/added_a_function_to_tweet_when_added_to_the_wish_list_with_belflaw/</guid><description>
-&lt;p>&lt;a href="http://ja.belflaw.com/">belflaw&lt;/a> をバージョンアップさせました。&lt;/p>
+&lt;p>&lt;a href="http://ja.belflaw.com/" target="_blank">belflaw&lt;/a>
+をバージョンアップさせました。&lt;/p>
 &lt;ul>
 &lt;li>ウィッシュリストに追加時にツイートする (ユーザー設定でツイートの有無は変更できます)&lt;/li>
 &lt;li>ログインしなくてもヘルプが参照できるようになった&lt;/li>
 &lt;li>ヘルプの内容を加筆した&lt;/li>
 &lt;/ul></description></item><item><title>belflaw をFirefox4 に対応させました</title><link>https://mizu.dev/posts/2011/belflaw_is_compatible_with_firefox4/</link><pubDate>Mon, 28 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/belflaw_is_compatible_with_firefox4/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2011/20110328.png" alt="">&lt;/p>
-&lt;p>Firefox4 では、まともに閲覧できなかった &lt;a href="http://ja.belflaw.com/">belflaw&lt;/a> でしたが、本日、Firefox4 の対応させました。&lt;br>
+&lt;p>Firefox4 では、まともに閲覧できなかった &lt;a href="http://ja.belflaw.com/" target="_blank">belflaw&lt;/a>
+でしたが、本日、Firefox4 の対応させました。&lt;br>
 と書きましたが、belflaw は chrome での閲覧を推奨しております。&lt;/p></description></item><item><title>belflawのInternetExplorer周りの修正</title><link>https://mizu.dev/posts/2011/fix_around_belflaw_internetexplorer/</link><pubDate>Fri, 11 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/fix_around_belflaw_internetexplorer/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2011/20110311.png" alt="">&lt;/p>
-&lt;p>&lt;a href="http://imakewebthings.github.com/jquery-waypoints/">waypoints&lt;/a>でスクロールでの自動読み込みに変更。&lt;/p>
+&lt;p>&lt;a href="http://imakewebthings.github.com/jquery-waypoints/" target="_blank">waypoints&lt;/a>
+でスクロールでの自動読み込みに変更。&lt;/p>
 &lt;p>今のところ問題なく動作している。変更したことで、若干だが、Javascriptファイルが綺麗になった。エラーがあったら、コメントなりに書いてもらえると助かる。
 waypointsを利用すれば、iPhoneでposition:fixedが解決できるのかな。時間があれば挑戦してみたい。&lt;/p></description></item></channel></rss>

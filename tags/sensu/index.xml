@@ -3,7 +3,8 @@
 &lt;p>当然ながら、ARM版の Sensu はなく、自前でビルドする必要があります。
 ビルドの方法は下記ページに記載しておりますが、最近だとDockerのコンテナでビルドするようです。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/sensu/sensu-build">https://github.com/sensu/sensu-build&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/sensu/sensu-build" target="_blank">https://github.com/sensu/sensu-build&lt;/a>
+&lt;/li>
 &lt;/ul>
 &lt;h2 id="raspberry-pi-に-docker-をインストール">
 Raspberry Pi に Docker をインストール
@@ -30,11 +31,13 @@ Ruby のインストール
 &lt;a href="#ruby-%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h3>
 &lt;p>まずは、Rubyが必要なので、rbenv で Ruby をインストール&lt;/p>
-&lt;p>&lt;a href="http://qiita.com/u6k/items/ffb0265f6cbb58f2227d">rbenvを使用したRuby環境構築 (Raspbian) - Qiita&lt;/a> を参考に2.3.0をインストール。
+&lt;p>&lt;a href="http://qiita.com/u6k/items/ffb0265f6cbb58f2227d" target="_blank">rbenvを使用したRuby環境構築 (Raspbian) - Qiita&lt;/a>
+を参考に2.3.0をインストール。
 依存パッケージは、libssl-dev libreadline-dev でいけました。
 Gem のインストールに bundle が必要なので、bundler のインストールも忘れずに。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ gem install bundler
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://github.com/sensu/sensu-build#build-packages-on-the-currentlocal-platform">sensu/sensu-build: Omnibus build tooling for Sensu.&lt;/a> のページを参考にしてビルドをしてみました。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://github.com/sensu/sensu-build#build-packages-on-the-currentlocal-platform" target="_blank">sensu/sensu-build: Omnibus build tooling for Sensu.&lt;/a>
+のページを参考にしてビルドをしてみました。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ cd /tmp
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ wget https://github.com/sensu/sensu-build/archive/0.22.2-1.zip
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ unzip 0.22.2-1.zip
@@ -101,5 +104,6 @@ Gem のインストールに bundle が必要なので、bundler のインスト
 同じような悩みをもっている人がいるみたいだけど、いまいち解決方法が見つからない。。。&lt;br>
 助けて。。。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/joemiller/bunchr/issues/9">https://github.com/joemiller/bunchr/issues/9&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/joemiller/bunchr/issues/9" target="_blank">https://github.com/joemiller/bunchr/issues/9&lt;/a>
+&lt;/li>
 &lt;/ul></description></item></channel></rss>

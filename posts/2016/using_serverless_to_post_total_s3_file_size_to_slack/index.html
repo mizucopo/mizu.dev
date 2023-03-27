@@ -52,7 +52,8 @@ S3をどれぐらい容量を使っているか、毎回手動チェックする
 </span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;Resource&#34;</span>: <span style=color:#e6db74>&#34;arn:aws:s3:::*&#34;</span>
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=slack-の-incoming-webhooks-を追加する>Slack の Incoming WebHooks を追加する
-<a href=#slack-%e3%81%ae-incoming-webhooks-%e3%82%92%e8%bf%bd%e5%8a%a0%e3%81%99%e3%82%8b class=h-anchor aria-hidden=true>#</a></h2><p><a href=https://slack.com/apps>Slack App Directory</a> にアクセスし、Incoming WebHooks を追加する。</p><p><img src=/posts/2016/0325_slack_incoming.jpg alt=追加後の画像></p><p>Webhook URL は、後で使用するので、URL を控える。</p><h2 id=function-を追加する>Function を追加する
+<a href=#slack-%e3%81%ae-incoming-webhooks-%e3%82%92%e8%bf%bd%e5%8a%a0%e3%81%99%e3%82%8b class=h-anchor aria-hidden=true>#</a></h2><p><a href=https://slack.com/apps target=_blank>Slack App Directory</a>
+にアクセスし、Incoming WebHooks を追加する。</p><p><img src=/posts/2016/0325_slack_incoming.jpg alt=追加後の画像></p><p>Webhook URL は、後で使用するので、URL を控える。</p><h2 id=function-を追加する>Function を追加する
 <a href=#function-%e3%82%92%e8%bf%bd%e5%8a%a0%e3%81%99%e3%82%8b class=h-anchor aria-hidden=true>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ slss <span style=color:#66d9ef>function</span> create s3Report
 </span></span><span style=display:flex><span>Serverless: Please, <span style=color:#66d9ef>select</span> a runtime <span style=color:#66d9ef>for</span> this new Function
 </span></span><span style=display:flex><span>  &gt; nodejs
@@ -63,7 +64,8 @@ S3をどれぐらい容量を使っているか、毎回手動チェックする
 </span></span><span style=display:flex><span>    Just the Function...
 </span></span><span style=display:flex><span>Serverless: Successfully created <span style=color:#66d9ef>function</span>: <span style=color:#e6db74>&#34;s3Report&#34;</span>
 </span></span></code></pre></div><p>CloudWatch Events でスケジュール実行するので、<em>Create Event</em> を選択する。</p><h3 id=function-を編集>Function を編集
-<a href=#function-%e3%82%92%e7%b7%a8%e9%9b%86 class=h-anchor aria-hidden=true>#</a></h3><p>ファイルの<code>handler.js</code>を編集する。<br>編集内容については、<a href=https://github.com/mizucopo/slssAWSChat/blob/master/s3Report/handler.js>slssAWSChat/handler.js at master · mizucopo/slssAWSChat</a> を参考。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ cd ./
+<a href=#function-%e3%82%92%e7%b7%a8%e9%9b%86 class=h-anchor aria-hidden=true>#</a></h3><p>ファイルの<code>handler.js</code>を編集する。<br>編集内容については、<a href=https://github.com/mizucopo/slssAWSChat/blob/master/s3Report/handler.js target=_blank>slssAWSChat/handler.js at master · mizucopo/slssAWSChat</a>
+を参考。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ cd ./
 </span></span><span style=display:flex><span>$ npm install aws-sdk --save
 </span></span><span style=display:flex><span>slssAWSChat@0.0.1 /path/to/project_root
 </span></span><span style=display:flex><span>└─┬ aws-sdk@2.2.46
@@ -95,8 +97,10 @@ S3をどれぐらい容量を使っているか、毎回手動チェックする
 </span></span><span style=display:flex><span>Serverless: us-east-1 ------------------------
 </span></span><span style=display:flex><span>Serverless:   dailyS3Report <span style=color:#f92672>(</span>schedule event<span style=color:#f92672>)</span>
 </span></span></code></pre></div><p>Slack に投稿されるのを確認できました。</p><p><img src=/posts/2016/0325_slack_post.jpg alt=Slack投稿イメージ></p><h2 id=成果物の配布>成果物の配布
-<a href=#%e6%88%90%e6%9e%9c%e7%89%a9%e3%81%ae%e9%85%8d%e5%b8%83 class=h-anchor aria-hidden=true>#</a></h2><p>今回作成したソースは、<a href=https://github.com/mizucopo/slssAWSChat>GitHub</a> にあります。
-もし使用する場合、<code>handler.js</code>の<code>SLACK_CHANNEL</code>と<code>SLACK_ENDPOINT</code>を変更してから、利用してください。</p><ul><li><a href=https://github.com/mizucopo/slssAWSChat>https://github.com/mizucopo/slssAWSChat</a></li></ul><p>また、手探り状態で作成してきたので、アドバイス等ございましたら、<a href=https://github.com/mizucopo/slssAWSChat/issues>GitHub の Issue</a> などでご連絡のほどおまちしております。</p></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=https://mizu.dev/posts/2020/moved_to_hugo/><span class=button__icon>←</span>
+<a href=#%e6%88%90%e6%9e%9c%e7%89%a9%e3%81%ae%e9%85%8d%e5%b8%83 class=h-anchor aria-hidden=true>#</a></h2><p>今回作成したソースは、<a href=https://github.com/mizucopo/slssAWSChat target=_blank>GitHub</a>
+にあります。
+もし使用する場合、<code>handler.js</code>の<code>SLACK_CHANNEL</code>と<code>SLACK_ENDPOINT</code>を変更してから、利用してください。</p><ul><li><a href=https://github.com/mizucopo/slssAWSChat target=_blank>https://github.com/mizucopo/slssAWSChat</a></li></ul><p>また、手探り状態で作成してきたので、アドバイス等ございましたら、<a href=https://github.com/mizucopo/slssAWSChat/issues target=_blank>GitHub の Issue</a>
+などでご連絡のほどおまちしております。</p></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=https://mizu.dev/posts/2020/moved_to_hugo/><span class=button__icon>←</span>
 <span class=button__text>Hugoに移行しました</span></a></span>
 <span class="button next"><a href=https://mizu.dev/posts/2016/started_serverless/><span class=button__text>Serverless 始めてみました</span>
 <span class=button__icon>→</span></a></span></div></div></article></div><footer class=footer><div class=footer__inner><div class="copyright copyright--user">&copy; 2023 みず ねっとわーくさーびす</div></div></footer><script type=text/javascript src=/bundle.min.js></script></div><script async src="https://www.googletagmanager.com/gtag/js?id=G-RSW394YHD3"></script>

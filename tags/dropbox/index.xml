@@ -23,7 +23,8 @@ USBハブを追加するわけですが、これが充電対応でないとい�
 ログイン不要で自動起動となると、Windowsのサービス登録が必要です。
 そのサービス登録ですが、下記サイトを参考にサービス登録しました。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="http://www.jrdata.se/tech/installing-dropbox-as-a-service-on-windows-server-2003-2008-x64">Installing Dropbox as a service on Windows Server 2003, 2008 (x64)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.jrdata.se/tech/installing-dropbox-as-a-service-on-windows-server-2003-2008-x64" target="_blank">Installing Dropbox as a service on Windows Server 2003, 2008 (x64)&lt;/a>
+&lt;/li>
 &lt;/ul>
 &lt;p>とりあえず、これで構築完了です。
 バックアップもでき、ファイル共有でどこでもアクセスできる状態になりました。&lt;/p></description></item></channel></rss>

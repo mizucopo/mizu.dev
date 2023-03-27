@@ -9,7 +9,8 @@
 <a href=https://mizu.dev/tags/cakephp/>#CakePHP</a>&nbsp;</span><div class=post-content><p>サイト内にてTagCloudを使用しているのだが、今までは、requireしていたので、CakePHPの文化にあわせて、App::importでやってみたい。</p><p><code>/app/config/bootstrap.php</code>に</p><pre><code>Configure::write('pearPaths', '/xampp/php/PEAR/');
 </code></pre><p>Pearを使用するところに</p><pre><code>App::import('pear', 'TagCloud', array('file' =&amp;gt; 'HTML/TagCloud.php'));
 </code></pre><p>でいけるようになった。</p><p><code>/app/vendors</code>に該当ファイルを入れればできるけど、やっぱり、Pearのファイル群は一元管理がいいよね。</p><hr><p>[追記] 2010/04/28
-CakePHP 1.3系では使用できなくなっているので、<a href=/posts/2010/using_pear_with_cakephp_version_13/>cakephp-1.3系-でpearを使う</a>を参照してください。</p></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=https://mizu.dev/posts/2010/escaping_characters_in_cakephp_breadcrumb_list/><span class=button__icon>←</span>
+CakePHP 1.3系では使用できなくなっているので、<a href=/posts/2010/using_pear_with_cakephp_version_13/>cakephp-1.3系-でpearを使う</a>
+を参照してください。</p></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=https://mizu.dev/posts/2010/escaping_characters_in_cakephp_breadcrumb_list/><span class=button__icon>←</span>
 <span class=button__text>CakePHPのパンくずリストの文字のエスケープ処理</span></a></span>
 <span class="button next"><a href=https://mizu.dev/posts/2009/at_purchase_mate/><span class=button__text>@ふぉーむメイトを購入</span>
 <span class=button__icon>→</span></a></span></div></div></article></div><footer class=footer><div class=footer__inner><div class="copyright copyright--user">&copy; 2023 みず ねっとわーくさーびす</div></div></footer><script type=text/javascript src=/bundle.min.js></script></div><script async src="https://www.googletagmanager.com/gtag/js?id=G-RSW394YHD3"></script>

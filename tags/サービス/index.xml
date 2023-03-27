@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>サービス on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/</link><description>Recent content in サービス on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 17 Mar 2020 19:14:26 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/index.xml" rel="self" type="application/rss+xml"/><item><title>Favoriteどうじんゲーのサイトを閉じました</title><link>https://mizu.dev/posts/2020/favorite_doujin_game_website_closed/</link><pubDate>Tue, 17 Mar 2020 19:14:26 +0900</pubDate><guid>https://mizu.dev/posts/2020/favorite_doujin_game_website_closed/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2020/2020-03-16_23h38_05.png" alt="Favorite どうじんゲーのトップ">&lt;/p>
-&lt;p>&lt;a href="https://mizu.dev/posts/2020/stop_sakura_vps/">さくらVPSを停止しました&lt;/a> の記事の続きです。&lt;/p>
+&lt;p>&lt;a href="https://mizu.dev/posts/2020/stop_sakura_vps/">さくらVPSを停止しました&lt;/a>
+の記事の続きです。&lt;/p>
 &lt;p>さくらVPSの解約に伴い、それ上で動いていた「Favorite どうじんゲー」のサイトも閉じることになりました。
 確か2000年5月頃からサイトを公開しており、約20年間で幕を閉じた感じになります。&lt;/p>
 &lt;p>&lt;img src="https://mizu.dev/posts/2020/2020-03-16_23h38_28.png" alt="Favorite どうじんゲーのゲーム一覧">
@@ -24,7 +25,8 @@
 &lt;p>さて、どれぐらいの期間レンタルしていたかというと、、、&lt;/p>
 &lt;p>&lt;img src="https://mizu.dev/posts/2020/2020-03-16_23h52_34.png" alt="さくらVPSのレンタル期間">&lt;/p>
 &lt;p>2012/04/29 から 2020/03/31 と、約8年間でした。
-&lt;a href="https://mizu.dev/posts/2011/i_moved_the_web_server_to_sakura_vps/">ウェブサーバーをさくらVPSに移行した&lt;/a> の記事から読み取ると、VPSを利用しだしてから9年間ですね。&lt;/p>
+&lt;a href="https://mizu.dev/posts/2011/i_moved_the_web_server_to_sakura_vps/">ウェブサーバーをさくらVPSに移行した&lt;/a>
+の記事から読み取ると、VPSを利用しだしてから9年間ですね。&lt;/p>
 &lt;p>放置運用していたので、セキュリティアップデートも、そのサーバーの再起動を行っていなかったので、uptime が結構すごいことになっていました&lt;/p>
 &lt;p>&lt;img src="https://mizu.dev/posts/2020/2020-03-16_23h36_29.png" alt="nanaho uptime">
 &lt;img src="https://mizu.dev/posts/2020/2020-03-16_23h35_56.png" alt="kuon uptime">&lt;/p>
@@ -37,14 +39,18 @@
 &lt;p>&lt;img src="https://mizu.dev/posts/2011/20110903.png" alt="">&lt;/p></description></item><item><title>各同人ゲーム紹介ページ と どうじんニュース のページのデザイン修正</title><link>https://mizu.dev/posts/2011/design_correction_of_doujin_game_introduction_page_and_doujin_news_page/</link><pubDate>Sat, 03 Sep 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/design_correction_of_doujin_game_introduction_page_and_doujin_news_page/</guid><description>
 &lt;p>各 同人ゲーム紹介ページ と どうじんニュース にある 関連ゲーム と　おすすめの商品 のデザインを修正しました。&lt;/p>
 &lt;p>&lt;img src="https://mizu.dev/posts/2011/2011090302.png" alt="">&lt;/p></description></item><item><title>商品画像も一緒にツイートにするようにしました</title><link>https://mizu.dev/posts/2011/i_tried_to_tweet_the_product_image_together/</link><pubDate>Thu, 01 Sep 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/i_tried_to_tweet_the_product_image_together/</guid><description>
-&lt;p>Twitter の &lt;a href="http://twitter.com/#!/belflaw">@belflaw&lt;/a> に商品の登録情報をツイートしていますが、その際、商品の画像を一緒にツイートするようにしました。&lt;/p>
+&lt;p>Twitter の &lt;a href="http://twitter.com/#!/belflaw" target="_blank">@belflaw&lt;/a>
+に商品の登録情報をツイートしていますが、その際、商品の画像を一緒にツイートするようにしました。&lt;/p>
 &lt;p>&lt;img src="https://mizu.dev/posts/2011/20110901.png" alt="">&lt;/p></description></item><item><title>belflaw の対応ショップに、freenote を追加しました</title><link>https://mizu.dev/posts/2011/freenote_has_been_added_to_belflaw_compatible_shop/</link><pubDate>Mon, 01 Aug 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/freenote_has_been_added_to_belflaw_compatible_shop/</guid><description>
-&lt;p>&lt;a href="http://freenote.cc/">freenote&lt;/a> を追加しました。&lt;/p></description></item><item><title>Favorite どうじんゲー の英語版をサービス停止しました</title><link>https://mizu.dev/posts/2011/favorite_doujin_game_english_version_has_been_suspended/</link><pubDate>Mon, 18 Jul 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/favorite_doujin_game_english_version_has_been_suspended/</guid><description>
+&lt;p>&lt;a href="http://freenote.cc/" target="_blank">freenote&lt;/a>
+を追加しました。&lt;/p></description></item><item><title>Favorite どうじんゲー の英語版をサービス停止しました</title><link>https://mizu.dev/posts/2011/favorite_doujin_game_english_version_has_been_suspended/</link><pubDate>Mon, 18 Jul 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/favorite_doujin_game_english_version_has_been_suspended/</guid><description>
 &lt;p>題名のとおり、Favorite どうじんゲー の英語版のサービスを停止しました。&lt;br>
 長らくご哀願していただき、ありがとうございました。&lt;br>
 日本語版はこれまでどおり、通常運営していく予定です。&lt;/p></description></item><item><title>belflaw の対応ショップに、COMIC ZIN を追加しました</title><link>https://mizu.dev/posts/2011/comic_zin_has_been_added_to_the_supported_shop_of_belflaw/</link><pubDate>Mon, 11 Jul 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/comic_zin_has_been_added_to_the_supported_shop_of_belflaw/</guid><description>
-&lt;p>&lt;a href="http://ja.belflaw.com/">belflaw&lt;/a> の対応ショップに COMIC ZIN を追加しました。&lt;/p></description></item><item><title>belflaw の対応ショップに、あきばお～こく と DMM を追加しました</title><link>https://mizu.dev/posts/2011/akibao_koku_added_dmm_has_been_added_to_belflaw_compatible_shop/</link><pubDate>Sun, 03 Jul 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/akibao_koku_added_dmm_has_been_added_to_belflaw_compatible_shop/</guid><description>
-&lt;p>&lt;a href="http://ja.belflaw.com/">belflaw&lt;/a> の対応ショップに あきばお～こく と DMM を追加しました。&lt;/p>
+&lt;p>&lt;a href="http://ja.belflaw.com/" target="_blank">belflaw&lt;/a>
+の対応ショップに COMIC ZIN を追加しました。&lt;/p></description></item><item><title>belflaw の対応ショップに、あきばお～こく と DMM を追加しました</title><link>https://mizu.dev/posts/2011/akibao_koku_added_dmm_has_been_added_to_belflaw_compatible_shop/</link><pubDate>Sun, 03 Jul 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/akibao_koku_added_dmm_has_been_added_to_belflaw_compatible_shop/</guid><description>
+&lt;p>&lt;a href="http://ja.belflaw.com/" target="_blank">belflaw&lt;/a>
+の対応ショップに あきばお～こく と DMM を追加しました。&lt;/p>
 &lt;p>DMMは4月対応予定でしたが、ここまで遅れて申し訳ございませんでした。&lt;/p></description></item><item><title>Favorite どうじんゲーのスマートフォンサイトのヘッダーメニューのフォントサイズを変更しました</title><link>https://mizu.dev/posts/2011/changed_the_font_size_of_the_header_menu_of_favorite_dojin_game_smartphone_site/</link><pubDate>Sun, 08 May 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/changed_the_font_size_of_the_header_menu_of_favorite_dojin_game_smartphone_site/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2011/20110508.png" alt="">&lt;/p>
 &lt;p>スマートフォンサイトのヘッダーメニューのフォントを大きくしました。&lt;/p>
@@ -56,23 +62,28 @@
 ピン止めのやり方
 &lt;a href="#%e3%83%94%e3%83%b3%e6%ad%a2%e3%82%81%e3%81%ae%e3%82%84%e3%82%8a%e6%96%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h2>
-&lt;p>&lt;a href="http://windows.microsoft.com/ja-JP/internet-explorer/products/ie-9/features/pinned-sites">http://windows.microsoft.com/ja-JP/internet-explorer/products/ie-9/features/pinned-sites&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://windows.microsoft.com/ja-JP/internet-explorer/products/ie-9/features/pinned-sites" target="_blank">http://windows.microsoft.com/ja-JP/internet-explorer/products/ie-9/features/pinned-sites&lt;/a>
+&lt;/p>
 &lt;h2 id="ジャンプリストの利用の仕方">
 ジャンプリストの利用の仕方
 &lt;a href="#%e3%82%b8%e3%83%a3%e3%83%b3%e3%83%97%e3%83%aa%e3%82%b9%e3%83%88%e3%81%ae%e5%88%a9%e7%94%a8%e3%81%ae%e4%bb%95%e6%96%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h2>
-&lt;p>&lt;a href="http://windows.microsoft.com/ja-JP/internet-explorer/products/ie-9/features/seamless-with-windows-7">http://windows.microsoft.com/ja-JP/internet-explorer/products/ie-9/features/seamless-with-windows-7&lt;/a>&lt;/p></description></item><item><title>belflaw でウィッシュリストに追加時にツイートする機能を追加</title><link>https://mizu.dev/posts/2011/added_a_function_to_tweet_when_added_to_the_wish_list_with_belflaw/</link><pubDate>Wed, 06 Apr 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/added_a_function_to_tweet_when_added_to_the_wish_list_with_belflaw/</guid><description>
-&lt;p>&lt;a href="http://ja.belflaw.com/">belflaw&lt;/a> をバージョンアップさせました。&lt;/p>
+&lt;p>&lt;a href="http://windows.microsoft.com/ja-JP/internet-explorer/products/ie-9/features/seamless-with-windows-7" target="_blank">http://windows.microsoft.com/ja-JP/internet-explorer/products/ie-9/features/seamless-with-windows-7&lt;/a>
+&lt;/p></description></item><item><title>belflaw でウィッシュリストに追加時にツイートする機能を追加</title><link>https://mizu.dev/posts/2011/added_a_function_to_tweet_when_added_to_the_wish_list_with_belflaw/</link><pubDate>Wed, 06 Apr 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/added_a_function_to_tweet_when_added_to_the_wish_list_with_belflaw/</guid><description>
+&lt;p>&lt;a href="http://ja.belflaw.com/" target="_blank">belflaw&lt;/a>
+をバージョンアップさせました。&lt;/p>
 &lt;ul>
 &lt;li>ウィッシュリストに追加時にツイートする (ユーザー設定でツイートの有無は変更できます)&lt;/li>
 &lt;li>ログインしなくてもヘルプが参照できるようになった&lt;/li>
 &lt;li>ヘルプの内容を加筆した&lt;/li>
 &lt;/ul></description></item><item><title>belflaw をFirefox4 に対応させました</title><link>https://mizu.dev/posts/2011/belflaw_is_compatible_with_firefox4/</link><pubDate>Mon, 28 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/belflaw_is_compatible_with_firefox4/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2011/20110328.png" alt="">&lt;/p>
-&lt;p>Firefox4 では、まともに閲覧できなかった &lt;a href="http://ja.belflaw.com/">belflaw&lt;/a> でしたが、本日、Firefox4 の対応させました。&lt;br>
+&lt;p>Firefox4 では、まともに閲覧できなかった &lt;a href="http://ja.belflaw.com/" target="_blank">belflaw&lt;/a>
+でしたが、本日、Firefox4 の対応させました。&lt;br>
 と書きましたが、belflaw は chrome での閲覧を推奨しております。&lt;/p></description></item><item><title>belflawのInternetExplorer周りの修正</title><link>https://mizu.dev/posts/2011/fix_around_belflaw_internetexplorer/</link><pubDate>Fri, 11 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/fix_around_belflaw_internetexplorer/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2011/20110311.png" alt="">&lt;/p>
-&lt;p>&lt;a href="http://imakewebthings.github.com/jquery-waypoints/">waypoints&lt;/a>でスクロールでの自動読み込みに変更。&lt;/p>
+&lt;p>&lt;a href="http://imakewebthings.github.com/jquery-waypoints/" target="_blank">waypoints&lt;/a>
+でスクロールでの自動読み込みに変更。&lt;/p>
 &lt;p>今のところ問題なく動作している。変更したことで、若干だが、Javascriptファイルが綺麗になった。エラーがあったら、コメントなりに書いてもらえると助かる。
 waypointsを利用すれば、iPhoneでposition:fixedが解決できるのかな。時間があれば挑戦してみたい。&lt;/p></description></item><item><title>英語版をリリースしました</title><link>https://mizu.dev/posts/2011/the_english_version_has_been_released/</link><pubDate>Fri, 11 Feb 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/the_english_version_has_been_released/</guid><description>
 &lt;p>Favorite どうじんゲーですが、英語版をリリースしました。&lt;/p>
@@ -92,5 +103,7 @@ waypointsを利用すれば、iPhoneでposition:fixedが解決できるのかな
 &lt;p>私が運営しているサイトの Favorite どうじんゲー ですが、各同人ゲーム紹介ページ、ニュースページに、おすすめの商品を表示するようにしました。&lt;/p></description></item><item><title>ヴィーナス&amp;ブレイブス 強者ランキング PSP対応</title><link>https://mizu.dev/posts/2011/venus_and_braves_strong_ranking_psp_compatible/</link><pubDate>Wed, 19 Jan 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/venus_and_braves_strong_ranking_psp_compatible/</guid><description>
 &lt;p>私が運営している強者ランキングですが、明日、PSP版が発売と言うことで、PSP版に対応させたランキングにシステムアップデート行いました。&lt;/p>
 &lt;p>&lt;img src="https://mizu.dev/posts/2011/20110119.jpg" alt="">&lt;/p>
-&lt;p>&lt;a href="http://copo.jp/vivid/vbrank/">http://copo.jp/vivid/vbrank/&lt;/a>&lt;/p>
-&lt;p>ついでにということで、&lt;a href="http://copo.jp/vivid/vbrank/vbranks/rss.rss">RSS発行&lt;/a>など機能追加、また、強者の編集ができないという、とんでもないバグを修正しました。&lt;/p></description></item></channel></rss>
+&lt;p>&lt;a href="http://copo.jp/vivid/vbrank/" target="_blank">http://copo.jp/vivid/vbrank/&lt;/a>
+&lt;/p>
+&lt;p>ついでにということで、&lt;a href="http://copo.jp/vivid/vbrank/vbranks/rss.rss" target="_blank">RSS発行&lt;/a>
+など機能追加、また、強者の編集ができないという、とんでもないバグを修正しました。&lt;/p></description></item></channel></rss>

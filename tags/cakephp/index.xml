@@ -43,7 +43,8 @@ function startup() {
 また、ラインの出力は hr() メソッド。&lt;/p></description></item><item><title>CakePHP 1.3.8 での shell で -app パラメータが効かない問題点</title><link>https://mizu.dev/posts/2011/problem_with_app_parameter_not_working_in_shell_in_cakephp_138/</link><pubDate>Mon, 28 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/problem_with_app_parameter_not_working_in_shell_in_cakephp_138/</guid><description>
 &lt;p>CakePHP を ver1.3.8にバージョンアップしたら、cronで動かしていた shellが動かなくなる問題が起こった。&lt;/p>
 &lt;p>調べると -app の引数がうまく利用されていない。&lt;/p>
-&lt;p>とりあえず、「&lt;a href="https://github.com/cakephp/cakephp/commit/e2773242f7aad215834071837461b946f0dc5c5c">Commit e2773242f7aad215834071837461b946f0dc5c5c to cakephp/cakephp - GitHub&lt;/a>」を参考に、該当ファイルを修正すると動くようになった。&lt;/p></description></item><item><title>debug=0 でのSQLログの取得</title><link>https://mizu.dev/posts/2011/acquisition_of_sql_log_with_debug_eq_0/</link><pubDate>Thu, 10 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/acquisition_of_sql_log_with_debug_eq_0/</guid><description>
+&lt;p>とりあえず、「&lt;a href="https://github.com/cakephp/cakephp/commit/e2773242f7aad215834071837461b946f0dc5c5c" target="_blank">Commit e2773242f7aad215834071837461b946f0dc5c5c to cakephp/cakephp - GitHub&lt;/a>
+」を参考に、該当ファイルを修正すると動くようになった。&lt;/p></description></item><item><title>debug=0 でのSQLログの取得</title><link>https://mizu.dev/posts/2011/acquisition_of_sql_log_with_debug_eq_0/</link><pubDate>Thu, 10 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/acquisition_of_sql_log_with_debug_eq_0/</guid><description>
 &lt;p>&lt;code>Configure::read('debug') = 0&lt;/code> だと、SQLログは変数($db-&amp;gt;_queriesLog)に格納されない。&lt;/p>
 &lt;p>本番運用でのSQLログを取得するためには、$db-&amp;gt;fullDebug = true; にして運用する必要がある。&lt;/p>
 &lt;pre>&lt;code>$db =&amp;amp; ConnectionManager::getDataSource('default');
@@ -68,7 +69,8 @@ $db-&amp;gt;fullDebug = true;
 &lt;pre>&lt;code>$this-&amp;gt;element('sql_dump');
 &lt;/code>&lt;/pre>
 &lt;p>を記述すること。これでおｋ&lt;/p></description></item><item><title>CakePHP 1.3系 でPearを使う</title><link>https://mizu.dev/posts/2010/using_pear_with_cakephp_version_13/</link><pubDate>Wed, 28 Apr 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/using_pear_with_cakephp_version_13/</guid><description>
-&lt;p>&lt;a href="https://mizu.dev/posts/2010/using_pear_with_cakephp/">CakePHP でPearを使う&lt;/a> が 1.3系のCakePHPでは使用できなくなっている。&lt;/p>
+&lt;p>&lt;a href="https://mizu.dev/posts/2010/using_pear_with_cakephp/">CakePHP でPearを使う&lt;/a>
+が 1.3系のCakePHPでは使用できなくなっている。&lt;/p>
 &lt;p>1.3系 では、/app/config/bootstrap.php に&lt;/p>
 &lt;pre>&lt;code>App::build(array('pears' =&amp;gt; array('/usr/share/php')), true);
 &lt;/code>&lt;/pre>
@@ -91,4 +93,5 @@ $link が null だった場合、エスケープされず、そのまま使用�
 &lt;p>&lt;code>/app/vendors&lt;/code>に該当ファイルを入れればできるけど、やっぱり、Pearのファイル群は一元管理がいいよね。&lt;/p>
 &lt;hr>
 &lt;p>[追記] 2010/04/28
-CakePHP 1.3系では使用できなくなっているので、&lt;a href="https://mizu.dev/posts/2010/using_pear_with_cakephp_version_13/">cakephp-1.3系-でpearを使う&lt;/a>を参照してください。&lt;/p></description></item></channel></rss>
+CakePHP 1.3系では使用できなくなっているので、&lt;a href="https://mizu.dev/posts/2010/using_pear_with_cakephp_version_13/">cakephp-1.3系-でpearを使う&lt;/a>
+を参照してください。&lt;/p></description></item></channel></rss>

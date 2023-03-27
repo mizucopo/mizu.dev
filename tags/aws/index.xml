@@ -50,7 +50,8 @@ S3をどれぐらい容量を使っているか、毎回手動チェックする
 Slack の Incoming WebHooks を追加する
 &lt;a href="#slack-%e3%81%ae-incoming-webhooks-%e3%82%92%e8%bf%bd%e5%8a%a0%e3%81%99%e3%82%8b" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h2>
-&lt;p>&lt;a href="https://slack.com/apps">Slack App Directory&lt;/a> にアクセスし、Incoming WebHooks を追加する。&lt;/p>
+&lt;p>&lt;a href="https://slack.com/apps" target="_blank">Slack App Directory&lt;/a>
+にアクセスし、Incoming WebHooks を追加する。&lt;/p>
 &lt;p>&lt;img src="https://mizu.dev/posts/2016/0325_slack_incoming.jpg" alt="追加後の画像">&lt;/p>
 &lt;p>Webhook URL は、後で使用するので、URL を控える。&lt;/p>
 &lt;h2 id="function-を追加する">
@@ -72,7 +73,8 @@ Function を編集
 &lt;a href="#function-%e3%82%92%e7%b7%a8%e9%9b%86" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h3>
 &lt;p>ファイルの&lt;code>handler.js&lt;/code>を編集する。&lt;br>
-編集内容については、&lt;a href="https://github.com/mizucopo/slssAWSChat/blob/master/s3Report/handler.js">slssAWSChat/handler.js at master · mizucopo/slssAWSChat&lt;/a> を参考。&lt;/p>
+編集内容については、&lt;a href="https://github.com/mizucopo/slssAWSChat/blob/master/s3Report/handler.js" target="_blank">slssAWSChat/handler.js at master · mizucopo/slssAWSChat&lt;/a>
+を参考。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ cd ./
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ npm install aws-sdk --save
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>slssAWSChat@0.0.1 /path/to/project_root
@@ -116,22 +118,27 @@ Slack に投稿するスケジュールの登録
 成果物の配布
 &lt;a href="#%e6%88%90%e6%9e%9c%e7%89%a9%e3%81%ae%e9%85%8d%e5%b8%83" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h2>
-&lt;p>今回作成したソースは、&lt;a href="https://github.com/mizucopo/slssAWSChat">GitHub&lt;/a> にあります。
+&lt;p>今回作成したソースは、&lt;a href="https://github.com/mizucopo/slssAWSChat" target="_blank">GitHub&lt;/a>
+にあります。
 もし使用する場合、&lt;code>handler.js&lt;/code>の&lt;code>SLACK_CHANNEL&lt;/code>と&lt;code>SLACK_ENDPOINT&lt;/code>を変更してから、利用してください。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/mizucopo/slssAWSChat">https://github.com/mizucopo/slssAWSChat&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/mizucopo/slssAWSChat" target="_blank">https://github.com/mizucopo/slssAWSChat&lt;/a>
+&lt;/li>
 &lt;/ul>
-&lt;p>また、手探り状態で作成してきたので、アドバイス等ございましたら、&lt;a href="https://github.com/mizucopo/slssAWSChat/issues">GitHub の Issue&lt;/a> などでご連絡のほどおまちしております。&lt;/p></description></item><item><title>Serverless 始めてみました</title><link>https://mizu.dev/posts/2016/started_serverless/</link><pubDate>Thu, 24 Mar 2016 13:43:00 +0900</pubDate><guid>https://mizu.dev/posts/2016/started_serverless/</guid><description>
+&lt;p>また、手探り状態で作成してきたので、アドバイス等ございましたら、&lt;a href="https://github.com/mizucopo/slssAWSChat/issues" target="_blank">GitHub の Issue&lt;/a>
+などでご連絡のほどおまちしております。&lt;/p></description></item><item><title>Serverless 始めてみました</title><link>https://mizu.dev/posts/2016/started_serverless/</link><pubDate>Thu, 24 Mar 2016 13:43:00 +0900</pubDate><guid>https://mizu.dev/posts/2016/started_serverless/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2016/0324_main.jpg" alt="メイン">&lt;/p>
 &lt;p>最近の流行りのサーバーレスなアプリケーションを作成してみようと、Serverless Framework を触ってみました。&lt;/p>
-&lt;p>基本的に、&lt;a href="http://qiita.com/susieyy/items/1c2af0ef7b88b742c37a">AWS Lambdaを活用したServerless Frameworkを触ってみる - Qiita&lt;/a> の焼き直しです。&lt;/p>
+&lt;p>基本的に、&lt;a href="http://qiita.com/susieyy/items/1c2af0ef7b88b742c37a" target="_blank">AWS Lambdaを活用したServerless Frameworkを触ってみる - Qiita&lt;/a>
+の焼き直しです。&lt;/p>
 &lt;h2 id="serverless-framework-とは">
 Serverless Framework とは
 &lt;a href="#serverless-framework-%e3%81%a8%e3%81%af" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h2>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;a href="https://github.com/serverless/serverless">Severless Framework&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://github.com/serverless/serverless" target="_blank">Severless Framework&lt;/a>
+&lt;/p>
 &lt;p>Serverless Framework はサーバレスなアプリケーションサービスを構築するためのフレームワークで、AWSの各種サービスを相互活用して動作します。
 AWS Lambdaを中心に添えた構成によりメンテナンス性とスケーラビリティがが高いサービスを構築することができます。&lt;/p>
 &lt;/li>
@@ -303,5 +310,6 @@ API Gateway にデプロイ
 &lt;a href="#%e4%bb%8a%e5%9b%9e%e4%bd%9c%e6%88%90%e3%81%97%e3%81%9f%e3%82%bd%e3%83%bc%e3%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h3>
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/mizucopo/slssHello">https://github.com/mizucopo/slssHello&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/mizucopo/slssHello" target="_blank">https://github.com/mizucopo/slssHello&lt;/a>
+&lt;/li>
 &lt;/ul></description></item></channel></rss>
