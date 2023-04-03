@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on みず ねっとわーくさーびす</title><link>https://mizu.dev/posts/</link><description>Recent content in Posts on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Sun, 02 Apr 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>『ロマンシング サガ -ミンストレルソング- リマスター』クリア後レビュー</title><link>https://mizu.dev/posts/2023/romancingsaga_minstrelsong_remastered/</link><pubDate>Sun, 02 Apr 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/romancingsaga_minstrelsong_remastered/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on みず ねっとわーくさーびす</title><link>https://mizu.dev/posts/</link><description>Recent content in Posts on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Mon, 03 Apr 2023 11:40:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>unko.dev を役立てよう</title><link>https://mizu.dev/posts/2023/unkodev_start/</link><pubDate>Mon, 03 Apr 2023 11:40:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/unkodev_start/</guid><description>
+&lt;img src="https://mizu.dev/posts/2023/unkodev_start/cover.webp"/>
+&lt;p>2019年に &lt;strong>.dev&lt;/strong> ドメインが利用開始されました。
+そのときに &lt;a href="https://unko.dev/" target="_blank">unko.dev&lt;/a>
+を取得していたのですが、💩 がただぽっつんと表示されるのみで、まったく活用しておりませんでした。
+それをせっかくなので活用しようと思います。&lt;/p>
+&lt;p>このようなサイトを作成しようと思います。&lt;/p>
+&lt;ul>
+&lt;li>💩 に関わる物語がスターウォーズ風に下から上へ流れる&lt;/li>
+&lt;li>物語は ChatGPT に作成してもらう&lt;/li>
+&lt;li>物語は1日1回更新&lt;/li>
+&lt;li>物語は機械音声で読み上げてもらう&lt;/li>
+&lt;li>過去の物語も参照できるようにする&lt;/li>
+&lt;li>💩 が1秒に1回、画面のどこかに増えて表示される&lt;/li>
+&lt;li>できるだけ、低コストで運用できるようにする&lt;/li>
+&lt;li>賽銭箱を用意し投げ銭できるようにする&lt;/li>
+&lt;/ul>
+&lt;p>できるかどうかわかりませんが、がんばってみます！&lt;/p>
+&lt;hr>
+&lt;p>ちなみに、取得した時点での &lt;a href="https://unko.dev/" target="_blank">unko.dev&lt;/a>
+はこのようなサイトを作ろうと思っておりました。&lt;/p>
+&lt;ul>
+&lt;li>日本地図が表示されたサイト&lt;/li>
+&lt;li>Twitterで &lt;a href="https://twitter.com/search?q=%E3%81%86%E3%82%93%E3%81%93%E3%81%AA%E3%81%86&amp;amp;src=typed_query&amp;amp;f=live" target="_blank">うんこなう&lt;/a>
+とつぶやいたら、そのつぶやいた場所を取得し点滅させる&lt;/li>
+&lt;/ul>
+&lt;p>日本中でうんこしている人をリアルタイムで表示される活気的なサイトでした。
+Twitterの今後があまりわからないので、一旦開発停止ということで。&lt;/p></description></item><item><title>『ロマンシング サガ -ミンストレルソング- リマスター』クリア後レビュー</title><link>https://mizu.dev/posts/2023/romancingsaga_minstrelsong_remastered/</link><pubDate>Sun, 02 Apr 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/romancingsaga_minstrelsong_remastered/</guid><description>
 &lt;img src="https://mizu.dev/posts/2023/romancingsaga_minstrelsong_remastered/cover.webp"/>
 &lt;p>『ロマンシング サガ ミンストレルソング』リマスターは、自由度の高いゲームプレイと戦略的なバトルシステムが特徴の一作です。
 特に、やりごたえのある戦略性のあるバトル、伊藤賢治氏の美しい音楽が楽しめる点が魅力的です。
@@ -814,80 +841,4 @@ GeForce の 4000番台を期待しつつ、しばらくこれでいきます。&
 &lt;p>プレイ時間は34時間。さくっとクリアするつもりが、結構長く遊べました。&lt;/p>
 &lt;p>プレイ動画は、YouTubeにアップしております。&lt;br>
 &lt;a href="https://www.youtube.com/playlist?list=PLJvSWbOjYvVKAAPak4ivO1keWGkJjF4hO" target="_blank">https://www.youtube.com/playlist?list=PLJvSWbOjYvVKAAPak4ivO1keWGkJjF4hO&lt;/a>
-&lt;/p></description></item><item><title>Windows Terminal (Preview) の設定を変更してみた</title><link>https://mizu.dev/posts/2020/changed_the_settings_of_windows_terminal_preview/</link><pubDate>Tue, 14 Apr 2020 00:25:07 +0900</pubDate><guid>https://mizu.dev/posts/2020/changed_the_settings_of_windows_terminal_preview/</guid><description>
-&lt;p>若干使いづらかった、Windows Temrinalの設定を変更しました。&lt;/p>
-&lt;p>変更方法は、下記画像のSettingsを選択し、設定ファイルことprofile.jsonを変更するだけでできました。&lt;/p>
-&lt;p>&lt;img src="https://mizu.dev/posts/2020/2020-04-14_00h35_00.png" alt="設定変更への遷移">&lt;/p>
-&lt;p>変更箇所は、下記の4点です。&lt;/p>
-&lt;ul>
-&lt;li>defaultProfileの変更&lt;/li>
-&lt;li>profilesの順番変更
-&lt;ul>
-&lt;li>Ubuntuを先頭にもってくる&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Ubuntuのプロファイルの変更
-&lt;ul>
-&lt;li>commandlineの追加。ホームディレクトリから起動できるように変更&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Ctrl+C、Ctrl+Vでコピペできるように変更&lt;/li>
-&lt;/ul>
-&lt;p>このような感じにできました。これでしばらく利用してみます。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-profile.json" data-lang="profile.json">&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// To view the default settings, hold &amp;#34;alt&amp;#34; while clicking on the &amp;#34;Settings&amp;#34; button.
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// For documentation on these settings, see: https://aka.ms/terminal-documentation
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;$schema&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;https://aka.ms/terminal-profiles-schema&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;defaultProfile&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;{2c4de342-38b7-51cf-b940-2309a097f518}&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;profiles&amp;#34;&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;guid&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;{2c4de342-38b7-51cf-b940-2309a097f518}&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;hidden&amp;#34;&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Ubuntu&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;source&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Windows.Terminal.Wsl&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;commandline&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;wsl.exe ~&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// Make changes here to the powershell.exe profile
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#f92672">&amp;#34;guid&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;{61c54bbd-c2c6-5271-96e7-009a87ff44bf}&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Windows PowerShell&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;commandline&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;powershell.exe&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;hidden&amp;#34;&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// Make changes here to the cmd.exe profile
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#f92672">&amp;#34;guid&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;{0caa0dad-35be-5f56-a8ff-afceeeaa6101}&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;cmd&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;commandline&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;cmd.exe&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;hidden&amp;#34;&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;guid&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;{b453ae62-4e3d-5e58-b989-0a998ec441b8}&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;hidden&amp;#34;&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Azure Cloud Shell&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;source&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Windows.Terminal.Azure&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ],
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// Add custom color schemes to this array
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#f92672">&amp;#34;schemes&amp;#34;&lt;/span>: [],
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// Add any keybinding overrides to this array.
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75715e">// To unbind a default keybinding, set the command to &amp;#34;unbound&amp;#34;
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#f92672">&amp;#34;keybindings&amp;#34;&lt;/span>: [
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;command&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;copy&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;keys&amp;#34;&lt;/span>: [&lt;span style="color:#e6db74">&amp;#34;ctrl+c&amp;#34;&lt;/span>]
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;command&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;paste&amp;#34;&lt;/span>,
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;keys&amp;#34;&lt;/span>: [&lt;span style="color:#e6db74">&amp;#34;ctrl+v&amp;#34;&lt;/span>]
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ]
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
+&lt;/p></description></item></channel></rss>

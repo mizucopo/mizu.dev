@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発 on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/%E9%96%8B%E7%99%BA/</link><description>Recent content in 開発 on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 06 Sep 2011 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/%E9%96%8B%E7%99%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>CakePHP カスタムセッションでデータベースを利用する場合の注意点</title><link>https://mizu.dev/posts/2011/points_to_note_when_using_a_database_in_cakephp_custom_session/</link><pubDate>Tue, 06 Sep 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/points_to_note_when_using_a_database_in_cakephp_custom_session/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発 on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/%E9%96%8B%E7%99%BA/</link><description>Recent content in 開発 on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Mon, 03 Apr 2023 11:40:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/%E9%96%8B%E7%99%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>unko.dev を役立てよう</title><link>https://mizu.dev/posts/2023/unkodev_start/</link><pubDate>Mon, 03 Apr 2023 11:40:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/unkodev_start/</guid><description>
+&lt;img src="https://mizu.dev/posts/2023/unkodev_start/cover.webp"/>
+&lt;p>2019年に &lt;strong>.dev&lt;/strong> ドメインが利用開始されました。
+そのときに &lt;a href="https://unko.dev/" target="_blank">unko.dev&lt;/a>
+を取得していたのですが、💩 がただぽっつんと表示されるのみで、まったく活用しておりませんでした。
+それをせっかくなので活用しようと思います。&lt;/p>
+&lt;p>このようなサイトを作成しようと思います。&lt;/p>
+&lt;ul>
+&lt;li>💩 に関わる物語がスターウォーズ風に下から上へ流れる&lt;/li>
+&lt;li>物語は ChatGPT に作成してもらう&lt;/li>
+&lt;li>物語は1日1回更新&lt;/li>
+&lt;li>物語は機械音声で読み上げてもらう&lt;/li>
+&lt;li>過去の物語も参照できるようにする&lt;/li>
+&lt;li>💩 が1秒に1回、画面のどこかに増えて表示される&lt;/li>
+&lt;li>できるだけ、低コストで運用できるようにする&lt;/li>
+&lt;li>賽銭箱を用意し投げ銭できるようにする&lt;/li>
+&lt;/ul>
+&lt;p>できるかどうかわかりませんが、がんばってみます！&lt;/p>
+&lt;hr>
+&lt;p>ちなみに、取得した時点での &lt;a href="https://unko.dev/" target="_blank">unko.dev&lt;/a>
+はこのようなサイトを作ろうと思っておりました。&lt;/p>
+&lt;ul>
+&lt;li>日本地図が表示されたサイト&lt;/li>
+&lt;li>Twitterで &lt;a href="https://twitter.com/search?q=%E3%81%86%E3%82%93%E3%81%93%E3%81%AA%E3%81%86&amp;amp;src=typed_query&amp;amp;f=live" target="_blank">うんこなう&lt;/a>
+とつぶやいたら、そのつぶやいた場所を取得し点滅させる&lt;/li>
+&lt;/ul>
+&lt;p>日本中でうんこしている人をリアルタイムで表示される活気的なサイトでした。
+Twitterの今後があまりわからないので、一旦開発停止ということで。&lt;/p></description></item><item><title>CakePHP カスタムセッションでデータベースを利用する場合の注意点</title><link>https://mizu.dev/posts/2011/points_to_note_when_using_a_database_in_cakephp_custom_session/</link><pubDate>Tue, 06 Sep 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/points_to_note_when_using_a_database_in_cakephp_custom_session/</guid><description>
 &lt;p>セッション情報の格納先をデータベースにした場合で、かつ、カスタムセッションを利用している場合の注意点。&lt;/p>
 &lt;p>&lt;code>Configure::write('Session.save', 'database');&lt;/code> に戻すこと。&lt;/p>
 &lt;p>でないと、セッション情報を書き込み時に、データベースの接続が切れて、セッション情報が書き込めなくなる現象がおきる。&lt;/p>
@@ -153,11 +180,4 @@ CakePHP 1.3系では使用できなくなっているので、&lt;a href="https:
 &lt;/li>
 &lt;/ul>
 &lt;p>ライブドアで使用されているレコメンデーションエンジン。オープンソース。&lt;br>
-たとえば、「この記事を読んでいる人は、このような記事も読んでいます」というような情報を表示する。&lt;/p></description></item><item><title>jWikiParser</title><link>https://mizu.dev/posts/2009/jwikiparser/</link><pubDate>Fri, 27 Feb 2009 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2009/jwikiparser/</guid><description>
-&lt;p>ネットを巡回して、気になったものライブラリ。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="http://d.hatena.ne.jp/ja9/20080318/1205824766" target="_blank">jWikiParser&lt;/a>
-&lt;br>
-( pukiwiki と livedoor wiki 記法が使えるwikiパーサー)&lt;/li>
-&lt;/ul>
-&lt;p>FDG のシステムに導入してみよ。&lt;/p></description></item></channel></rss>
+たとえば、「この記事を読んでいる人は、このような記事も読んでいます」というような情報を表示する。&lt;/p></description></item></channel></rss>
