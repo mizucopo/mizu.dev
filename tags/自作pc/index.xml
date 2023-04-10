@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>自作PC on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/%E8%87%AA%E4%BD%9Cpc/</link><description>Recent content in 自作PC on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Thu, 26 May 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/%E8%87%AA%E4%BD%9Cpc/index.xml" rel="self" type="application/rss+xml"/><item><title>CPU (Ryzen 9 3900X) が壊れました</title><link>https://mizu.dev/posts/2022/cpu_ryzen_9_3900x_is_broken/</link><pubDate>Thu, 26 May 2022 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2022/cpu_ryzen_9_3900x_is_broken/</guid><description>
-&lt;img src="https://mizu.dev/posts/2022/cpu/20220525b.jpg"/>
+&lt;img src="https://mizu.dev/posts/2022/cpu_ryzen_9_3900x_is_broken/cover.webp"/>
 &lt;p>3月末の話になりますが、PCの電源が入らなくなりました。
 いろいろ代替パーツを切り替え問題個所を洗い出したところ、マザーボードもしくはCPUのどちらかが異常ということがわかりました。&lt;/p>
 &lt;p>というわけで、マザーボードおよびCPUを修理に出してきました。&lt;/p>
@@ -17,7 +17,7 @@
 &lt;li>Case: オープンフレーム ver.mini-ITX → Fractal Design Torrent&lt;/li>
 &lt;li>OS: Windows 10 Pro 21H1 (19043.1237) → Windows 11 Pro 21H2 (22000.675)&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://mizu.dev/posts/2022/cpu/20220525a.jpg" alt="PCケース">&lt;/p>
+&lt;p>&lt;img src="https://mizu.dev/posts/2022/cpu_ryzen_9_3900x_is_broken/20220525a.jpg" alt="PCケース">&lt;/p>
 &lt;ul>
 &lt;li>FIRE STRIKE (v1.1): 22742 → 21800
 &lt;ul>
