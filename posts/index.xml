@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on みず ねっとわーくさーびす</title><link>https://mizu.dev/posts/</link><description>Recent content in Posts on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Mon, 03 Apr 2023 11:40:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>unko.dev を役立てよう</title><link>https://mizu.dev/posts/2023/unkodev_start/</link><pubDate>Mon, 03 Apr 2023 11:40:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/unkodev_start/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on みず ねっとわーくさーびす</title><link>https://mizu.dev/posts/</link><description>Recent content in Posts on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>『初音ミク ロジックペイントS』クリア後レビュー</title><link>https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/</link><pubDate>Tue, 11 Apr 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/</guid><description>
+&lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/cover.webp"/>
+&lt;p>『初音ミク ロジックペイントS』をプレイし、クリア後の感想をお伝えします。
+本作は、大人気の「初音ミク ロジックペイント-ミクロジ-」がバージョンアップして登場したパズルゲームです。
+本記事では、そのゲーム内容に加え、良かった点や悪かった点を解説します。&lt;/p>
+&lt;div id="post-content-carousel" class="keen-slider">
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/title_hubf1236cb215b80c26f197ca08e12abcc_1446670_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="タイトル画面" />&lt;figcaption class="center">タイトル画面&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/03_hue86342f2c2ab5ce9b13ea6f65d84de33_2636659_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="ゲームモード選択画面" />&lt;figcaption class="center">ゲームモード選択画面&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/06_hua8acc70543a9a290199dde3ec822474c_2013649_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="ステージ選択画面" />&lt;figcaption class="center">ステージ選択画面&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/05_hu1c207e1fa6434cf3967f8a08d6f24990_1620149_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="ピクロス画面" />&lt;figcaption class="center">ピクロス画面&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/02_hu7e09ac3eb4ffe94faedb2fd94a98f1b6_1906099_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="ピクロス画面" />&lt;figcaption class="center">ピクロス画面&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/04_hu3ce1f4b2c051a88449a580f2992bc734_2000297_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="ピクロス画面" />&lt;figcaption class="center">ピクロス画面&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/09_hufaab2d336f0db2ccc51cbf527d354f6c_1725113_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="ピクロスクリア画面" />&lt;figcaption class="center">ピクロスクリア画面&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/10_hu8e261c5db302fbe84aefafc09f7ba060_2128578_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="ステージ選択画面" />&lt;figcaption class="center">ステージ選択画面&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/08_hue6b6f610301031640e3e15f5d2c0cb52_1513908_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="スペシャルパズル選択画面" />&lt;figcaption class="center">スペシャルパズル選択画面&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/11_hu2e5315d6aa586c1356f57d4f5671fe8f_2023624_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="ミュージック視聴画面" />&lt;figcaption class="center">ミュージック視聴画面&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/07_hufc8d28527e5d0dd92103ccc45bd58d38_1716730_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="ギャラリー鑑賞画面" />&lt;figcaption class="center">ギャラリー鑑賞画面&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/01_hufd7b525de591c93c5e9deb53838b5d87_2376182_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="オプション選択画面" />&lt;figcaption class="center">オプション選択画面&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;p>まずはゲーム内容を簡単にご紹介します。
+本作には350問以上のパズル問題が収録されており、5×5、15×15、さらに20×20のパズル問題が追加されています。
+また、好きなキャラクターを選べる新要素も実装されており、パズルを解いているプレイヤーを初音ミクたちが応援します。
+さらに、ピアプロ公募受賞楽曲も収録されており、楽曲を解放して設定することができます。&lt;/p>
+&lt;h2 id="良かった点">
+良かった点
+&lt;a href="#%e8%89%af%e3%81%8b%e3%81%a3%e3%81%9f%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h2>
+&lt;ol>
+&lt;li>難易度が低めで、1～3分程度でクリアできるパズルが多く、暇つぶしに適しています。難易度が高くても10分程度でクリアできるほどです。&lt;/li>
+&lt;li>間違った箇所をすぐに指摘してもらえるので、ミスをすぐに修正できます。&lt;/li>
+&lt;/ol>
+&lt;h2 id="悪かった点">
+悪かった点
+&lt;a href="#%e6%82%aa%e3%81%8b%e3%81%a3%e3%81%9f%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;/h2>
+&lt;ol>
+&lt;li>BGMが固定で、毎回設定画面からBGMを変更しなければならない。ランダム再生機能があればより快適に楽しめると感じました。&lt;/li>
+&lt;/ol>
+&lt;p>『初音ミク ロジックペイントS』は難易度が低めで手軽に楽しめるパズルゲームです。
+暇つぶしに適しており、音楽やキャラクター要素も魅力的です。
+ただし、BGMの再生機能に改善の余地があるため、今後のアップデートで改良されることを期待しています。&lt;/p>
+&lt;iframe src="https://store.steampowered.com/widget/2089350/" frameborder="0" width="100%" height="190">&lt;/iframe></description></item><item><title>unko.dev を役立てよう</title><link>https://mizu.dev/posts/2023/unkodev_start/</link><pubDate>Mon, 03 Apr 2023 11:40:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/unkodev_start/</guid><description>
 &lt;img src="https://mizu.dev/posts/2023/unkodev_start/cover.webp"/>
 &lt;p>2019年に &lt;strong>.dev&lt;/strong> ドメインが利用開始されました。
 そのときに &lt;a href="https://unko.dev/" target="_blank">unko.dev&lt;/a>
@@ -46,9 +87,9 @@ Twitterの今後があまりわからないので、一旦開発停止という�
 &lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/romancingsaga_minstrelsong_remastered/map01_huef71dde14b9a578320ad05ff70394660_2910805_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="マップ画面" />&lt;figcaption class="center">マップ画面&lt;/figcaption>&lt;/figure>
 &lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/romancingsaga_minstrelsong_remastered/status01_huc6e640f3b9b573b7b2d7599ebdd4dbaf_2743626_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="ステータス画面" />&lt;figcaption class="center">ステータス画面&lt;/figcaption>&lt;/figure>
 &lt;/div>
-&lt;h2 id="良い点">
-【良い点】
-&lt;a href="#%e8%89%af%e3%81%84%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;h2 id="良かった点">
+良かった点
+&lt;a href="#%e8%89%af%e3%81%8b%e3%81%a3%e3%81%9f%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h2>
 &lt;ol>
 &lt;li>武器や戦術の幅が広く、戦略性が高い&lt;/li>
@@ -61,9 +102,9 @@ Twitterの今後があまりわからないので、一旦開発停止という�
 &lt;li>アイテム収集の過程での苦痛な要素が減少&lt;/li>
 &lt;li>伊藤賢治による素晴らしい音楽&lt;/li>
 &lt;/ol>
-&lt;h2 id="悪い点">
-【悪い点】
-&lt;a href="#%e6%82%aa%e3%81%84%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;h2 id="悪かった点">
+悪かった点
+&lt;a href="#%e6%82%aa%e3%81%8b%e3%81%a3%e3%81%9f%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h2>
 &lt;ol>
 &lt;li>固定カメラ視点で敵を避けづらい&lt;/li>
@@ -88,18 +129,18 @@ Twitterの今後があまりわからないので、一旦開発停止という�
 &lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/physical_layer/carousel04_hu5486a49a6ab4c42adf1ba78d2902c525_2297013_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="ゲーム画面" />&lt;figcaption class="center">ゲーム画面&lt;/figcaption>&lt;/figure>
 &lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/physical_layer/carousel05_hu087926bfe2854fbb085a358b779c311d_1646049_1920x1080_resize_q90_h2_box_3.webp" width="100%" alt="コスチューム選択画面" />&lt;figcaption class="center">コスチューム選択画面&lt;/figcaption>&lt;/figure>
 &lt;/div>
-&lt;h2 id="良い点">
-【良い点】
-&lt;a href="#%e8%89%af%e3%81%84%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;h2 id="良かった点">
+良かった点
+&lt;a href="#%e8%89%af%e3%81%8b%e3%81%a3%e3%81%9f%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h2>
 &lt;ol>
 &lt;li>いろんなギミックがあり、それらを理解すると面白くなってくること。&lt;/li>
 &lt;li>反転スキルが斑鳩っぽいので、楽しめること。&lt;/li>
 &lt;li>コスチュームが可愛いこと。&lt;/li>
 &lt;/ol>
-&lt;h2 id="悪い点">
-【悪い点】
-&lt;a href="#%e6%82%aa%e3%81%84%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;h2 id="悪かった点">
+悪かった点
+&lt;a href="#%e6%82%aa%e3%81%8b%e3%81%a3%e3%81%9f%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h2>
 &lt;ol>
 &lt;li>オブジェクト投げが、オブジェクトが複数個ある場合、どのオブジェクトを投げるか選択できないため、やきもきすること。&lt;/li>
@@ -121,9 +162,9 @@ Twitterの今後があまりわからないので、一旦開発停止という�
 &lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/littlenoah_heir_of_paradise_post_clear_review/game02_huaa40368e975cc113c0e381afbaad5bbf_535940_1920x1080_resize_q90_h2_box.webp" width="100%" alt="ゲーム画面" />&lt;figcaption class="center">ゲーム画面&lt;/figcaption>&lt;/figure>
 &lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/littlenoah_heir_of_paradise_post_clear_review/game03_hu0ac14bc6ae253a3337d76511d1721dea_491031_1920x1080_resize_q90_h2_box.webp" width="100%" alt="ゲーム画面" />&lt;figcaption class="center">ゲーム画面&lt;/figcaption>&lt;/figure>
 &lt;/div>
-&lt;h2 id="良い点">
-【良い点】
-&lt;a href="#%e8%89%af%e3%81%84%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;h2 id="良かった点">
+良かった点
+&lt;a href="#%e8%89%af%e3%81%8b%e3%81%a3%e3%81%9f%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h2>
 &lt;ol>
 &lt;li>チェインコンボが楽しい: ゲームを進めるうちにコンボが増え、戦闘がより爽快感を持って楽しめました。&lt;/li>
@@ -131,9 +172,9 @@ Twitterの今後があまりわからないので、一旦開発停止という�
 &lt;li>遊びやすいプレイ時間: クリアまでのプレイ時間が適度であり、忙しい日常の中でも楽しむことができました。&lt;/li>
 &lt;li>ファストトラベルが便利: 物語の終盤でも移動が容易であるファストトラベル機能が役立ち、ストーリーに集中できました。&lt;/li>
 &lt;/ol>
-&lt;h2 id="悪い点">
-【悪い点】
-&lt;a href="#%e6%82%aa%e3%81%84%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
+&lt;h2 id="悪かった点">
+悪かった点
+&lt;a href="#%e6%82%aa%e3%81%8b%e3%81%a3%e3%81%9f%e7%82%b9" class="h-anchor" aria-hidden="true">#&lt;/a>
 &lt;/h2>
 &lt;ol>
 &lt;li>同じステージの繰り返し: 物語の途中で同じステージを何回もプレイすることになり、若干飽きを感じることがありました。&lt;/li>
@@ -154,7 +195,7 @@ Twitterの今後があまりわからないので、一旦開発停止という�
 &lt;/li>
 &lt;li>2023/03
 &lt;ul>
-&lt;li>&lt;a href="https://store.steampowered.com/app/2089350/_S/" target="_blank">初音ミク ロジックペイントS&lt;/a>
+&lt;li>&lt;a href="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/">初音ミク ロジックペイントS&lt;/a>
 (PC)&lt;/li>
 &lt;li>&lt;a href="https://mizu.dev/posts/2023/littlenoah_heir_of_paradise_post_clear_review/">リトルノア 楽園の後継者&lt;/a>
 (PC)&lt;/li>
@@ -843,12 +884,4 @@ GeForce の 4000番台を期待しつつ、しばらくこれでいきます。&
 &lt;p>序盤は敵のカウンターやジャマーなどあり、ザコ敵に苦戦しまくりでした。
 中盤以降から、ブレイブありのベルセルクの「横一文字斬り」でザコ敵殲滅、ボスはシーフの「神速瞬撃」で、コツつかめば、HARDでも結構楽にすすめることができました。
 終盤は、MHコンバート かつ ダメージ限界突破 かつ なんでも全体化 かつ アルテマ剣 で敵なし状態。ラスボス、隠しボスも瞬殺です。&lt;/p>
-&lt;p>70時間ほどプレイでき、結構満足。&lt;/p></description></item><item><title>パズル探偵スカウトをクリアしました</title><link>https://mizu.dev/posts/2020/puzzle_detective_scout_cleared/</link><pubDate>Wed, 15 Apr 2020 00:44:11 +0900</pubDate><guid>https://mizu.dev/posts/2020/puzzle_detective_scout_cleared/</guid><description>
-&lt;p>&lt;img src="https://mizu.dev/posts/2020/2020-04-15_00h51_10.png" alt="パズル探偵スカウトのゲーム画面">&lt;/p>
-&lt;p>ピクロスがやりたく、衝動買いをしてしまったタイトル「パズル探偵スカウト」をクリアしました。&lt;/p>
-&lt;p>&lt;img src="https://mizu.dev/posts/2020/2020-04-15_00h47_02.png" alt="パズル探偵スカウトのタイトル画面">
-&lt;img src="https://mizu.dev/posts/2020/2020-04-15_01h09_17.png" alt="パズル探偵スカウトのゲーム画面">&lt;/p>
-&lt;p>プレイ時間は34時間。さくっとクリアするつもりが、結構長く遊べました。&lt;/p>
-&lt;p>プレイ動画は、YouTubeにアップしております。&lt;br>
-&lt;a href="https://www.youtube.com/playlist?list=PLJvSWbOjYvVKAAPak4ivO1keWGkJjF4hO" target="_blank">https://www.youtube.com/playlist?list=PLJvSWbOjYvVKAAPak4ivO1keWGkJjF4hO&lt;/a>
-&lt;/p></description></item></channel></rss>
+&lt;p>70時間ほどプレイでき、結構満足。&lt;/p></description></item></channel></rss>
