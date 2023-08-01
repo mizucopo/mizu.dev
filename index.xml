@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>みず ねっとわーくさーびす</title><link>https://mizu.dev/</link><description>Recent content on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>『初音ミク ロジックペイントS』クリア後レビュー</title><link>https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/</link><pubDate>Tue, 11 Apr 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>みず ねっとわーくさーびす</title><link>https://mizu.dev/</link><description>Recent content on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>unko.dev の物語作成シーケンス図</title><link>https://mizu.dev/posts/2023/unkodev_sequence/</link><pubDate>Tue, 01 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/unkodev_sequence/</guid><description>
+&lt;img src="https://mizu.dev/posts/2023/unkodev_start/cover.webp"/>
+&lt;p>だいぶ時が経ちましたが、毎日更新されるうんこ物語の作成のシーケンス図を書いてみました。&lt;/p>
+&lt;div class="mermaid">%%{init:{'theme':'forest'}}%%
+sequenceDiagram
+EventBridge-->>Lambda: 物語更新依頼
+Lambda->>Lambda: 物語の設定の決定
+Lambda->>ChatGPT: 物語作成依頼
+ChatGPT->>Lambda: 物語のテキスト
+Lambda->>Polly: 物語の音声ファイル作成依頼
+Polly->>Lambda: 物語の音声ファイル
+Lambda->>GitHub(Priv): 物語および音声ファイルのコミットとプッシュ
+GitHub(Priv)-->>GitHub Actions: 自動起動
+GitHub Actions->>GitHub Actions: Hugoビルド
+GitHub Actions->>GitHub(Pub): Hugoビルド結果をプッシュ
+GitHub(Pub)-->>GitHub Pages: 公開
+&lt;/div>
+&lt;p>:::note info
+ブログのテーマがダークモードだと表示がうまくできません。現在調整中です。
+:::&lt;/p>
+&lt;p>このような感じでできました。
+はたして、このアーキテクチャでできるのでしょうか。
+やるだけやってみます。&lt;/p></description></item><item><title>『初音ミク ロジックペイントS』クリア後レビュー</title><link>https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/</link><pubDate>Tue, 11 Apr 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/</guid><description>
 &lt;img src="https://mizu.dev/posts/2023/hatsune_miku_logic_paint_s/cover.webp"/>
 &lt;p>『初音ミク ロジックペイントS』をプレイし、クリア後の感想をお伝えします。
 本作は、大人気の「初音ミク ロジックペイント-ミクロジ-」がバージョンアップして登場したパズルゲームです。
@@ -875,13 +897,4 @@ GeForce の 4000番台を期待しつつ、しばらくこれでいきます。&
 冥人(くろうど)としてプレイしていたので、容赦なく、サブウェポンを使いながら戦っていた感じで倒せました。毒矢は使わなかったけど。&lt;/p>
 &lt;p>そして、ストーリーが良い。
 典雄の癒やしや、政子殿の敵のここまで恨まれるかという表情、石川先生のポンコツっぷりもよい。
-最後のとある人物の笑顔のまま涙しているところが悲しくて、私自身涙しました。&lt;/p></description></item><item><title>ブレイブリーデフォルト2をクリアしました</title><link>https://mizu.dev/posts/2021/just_completed_bravely_default_2/</link><pubDate>Sun, 25 Apr 2021 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2021/just_completed_bravely_default_2/</guid><description>
-&lt;p>&lt;img src="https://mizu.dev/posts/2021/2021042501.png" alt="ブレイブリーデフォルト2のゲーム画面">&lt;/p>
-&lt;p>どこか懐かしい感じがするRPGの「ブレイブリーデフォルト2」をクリアしました。
-難易度はHARDでプレイ。&lt;/p>
-&lt;p>&lt;img src="https://mizu.dev/posts/2021/2021042502.png" alt="ブレイブリーデフォルト2のタイトル画面">
-&lt;img src="https://mizu.dev/posts/2021/2021042503.png" alt="ブレイブリーデフォルト2のゲーム画面">&lt;/p>
-&lt;p>序盤は敵のカウンターやジャマーなどあり、ザコ敵に苦戦しまくりでした。
-中盤以降から、ブレイブありのベルセルクの「横一文字斬り」でザコ敵殲滅、ボスはシーフの「神速瞬撃」で、コツつかめば、HARDでも結構楽にすすめることができました。
-終盤は、MHコンバート かつ ダメージ限界突破 かつ なんでも全体化 かつ アルテマ剣 で敵なし状態。ラスボス、隠しボスも瞬殺です。&lt;/p>
-&lt;p>70時間ほどプレイでき、結構満足。&lt;/p></description></item></channel></rss>
+最後のとある人物の笑顔のまま涙しているところが悲しくて、私自身涙しました。&lt;/p></description></item></channel></rss>

@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発 on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/%E9%96%8B%E7%99%BA/</link><description>Recent content in 開発 on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Mon, 03 Apr 2023 11:40:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/%E9%96%8B%E7%99%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>unko.dev を役立てよう</title><link>https://mizu.dev/posts/2023/unkodev_start/</link><pubDate>Mon, 03 Apr 2023 11:40:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/unkodev_start/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発 on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/%E9%96%8B%E7%99%BA/</link><description>Recent content in 開発 on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/%E9%96%8B%E7%99%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>unko.dev の物語作成シーケンス図</title><link>https://mizu.dev/posts/2023/unkodev_sequence/</link><pubDate>Tue, 01 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/unkodev_sequence/</guid><description>
+&lt;img src="https://mizu.dev/posts/2023/unkodev_start/cover.webp"/>
+&lt;p>だいぶ時が経ちましたが、毎日更新されるうんこ物語の作成のシーケンス図を書いてみました。&lt;/p>
+&lt;div class="mermaid">%%{init:{'theme':'forest'}}%%
+sequenceDiagram
+EventBridge-->>Lambda: 物語更新依頼
+Lambda->>Lambda: 物語の設定の決定
+Lambda->>ChatGPT: 物語作成依頼
+ChatGPT->>Lambda: 物語のテキスト
+Lambda->>Polly: 物語の音声ファイル作成依頼
+Polly->>Lambda: 物語の音声ファイル
+Lambda->>GitHub(Priv): 物語および音声ファイルのコミットとプッシュ
+GitHub(Priv)-->>GitHub Actions: 自動起動
+GitHub Actions->>GitHub Actions: Hugoビルド
+GitHub Actions->>GitHub(Pub): Hugoビルド結果をプッシュ
+GitHub(Pub)-->>GitHub Pages: 公開
+&lt;/div>
+&lt;p>:::note info
+ブログのテーマがダークモードだと表示がうまくできません。現在調整中です。
+:::&lt;/p>
+&lt;p>このような感じでできました。
+はたして、このアーキテクチャでできるのでしょうか。
+やるだけやってみます。&lt;/p></description></item><item><title>unko.dev を役立てよう</title><link>https://mizu.dev/posts/2023/unkodev_start/</link><pubDate>Mon, 03 Apr 2023 11:40:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/unkodev_start/</guid><description>
 &lt;img src="https://mizu.dev/posts/2023/unkodev_start/cover.webp"/>
 &lt;p>2019年に &lt;strong>.dev&lt;/strong> ドメインが利用開始されました。
 そのときに &lt;a href="https://unko.dev/" target="_blank">unko.dev&lt;/a>
@@ -173,11 +195,4 @@ CakePHP 1.3系では使用できなくなっているので、&lt;a href="https:
 &lt;p>調べたところ、「&lt;a href="http://www.dfc-e.com/metiers/multimedia/opensource/jquery-fancyzoom/" target="_blank">FancyZoom&lt;/a>
 」を使っているみたい。&lt;/p></description></item><item><title>jCaption</title><link>https://mizu.dev/posts/2009/jcaption/</link><pubDate>Sat, 07 Mar 2009 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2009/jcaption/</guid><description>
 &lt;p>&lt;img src="https://mizu.dev/posts/2009/20090307.jpg" alt="">&lt;/p>
-&lt;p>画像にキャプションをつける&lt;/p></description></item><item><title>Cicindela</title><link>https://mizu.dev/posts/2009/cicindela/</link><pubDate>Thu, 05 Mar 2009 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2009/cicindela/</guid><description>
-&lt;p>ネットを巡回して、気になったものライブラリ。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="http://labs.edge.jp/cicindela/" target="_blank">Cicindela&lt;/a>
-&lt;/li>
-&lt;/ul>
-&lt;p>ライブドアで使用されているレコメンデーションエンジン。オープンソース。&lt;br>
-たとえば、「この記事を読んでいる人は、このような記事も読んでいます」というような情報を表示する。&lt;/p></description></item></channel></rss>
+&lt;p>画像にキャプションをつける&lt;/p></description></item></channel></rss>
