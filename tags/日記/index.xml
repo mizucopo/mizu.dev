@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>日記 on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/%E6%97%A5%E8%A8%98/</link><description>Recent content in 日記 on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Sun, 06 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/%E6%97%A5%E8%A8%98/index.xml" rel="self" type="application/rss+xml"/><item><title>メインPCがサブPC落ちしました</title><link>https://mizu.dev/posts/2023/mainpc_to_subpc/</link><pubDate>Sun, 06 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/mainpc_to_subpc/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>日記 on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/%E6%97%A5%E8%A8%98/</link><description>Recent content in 日記 on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Mon, 07 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/%E6%97%A5%E8%A8%98/index.xml" rel="self" type="application/rss+xml"/><item><title>メインPCを新たに組み直しました</title><link>https://mizu.dev/posts/2023/rebuild_mainpc/</link><pubDate>Mon, 07 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/rebuild_mainpc/</guid><description>
+&lt;img src="https://mizu.dev/posts/2023/rebuild_mainpc/cover.webp"/>
+&lt;p>久しぶりにメインPCを刷新しました。
+『&lt;a href="https://mizu.dev/posts/2022/cpu_ryzen_9_3900x_is_broken/">CPU (Ryzen 9 3900X) が壊れました&lt;/a>
+』というのもあり、刷新した感じになります。
+今回はそのメインPCの、性能周りを確認していきます。&lt;/p>
+&lt;p>メインPCの構成は以下のようになっております。&lt;/p>
+&lt;ul>
+&lt;li>CPU: Intel Core i7 8700K (6Core 12Thread) → Intel Core i7 13700KF (16Core 24Thread)&lt;/li>
+&lt;li>CPU Cooler: noctua NH-L9i → DeepCool LT720&lt;/li>
+&lt;li>Mother: GIGABYTE H370N WIFI → Asrock Z790 LiveMixer&lt;/li>
+&lt;li>Memory: G.skill F4-3600C16-32GVKC (32GB) → ADATA AD5U480016G-BD-JP DDR5-4800 16GB * 4 (64GB)&lt;/li>
+&lt;li>Video: ELSA GeForce RTX 3060 Ti ERAZOR LHR → 玄人志向 GG-RTX4090-E24GB/OC/TP&lt;/li>
+&lt;li>Power Supply: Corsair SF600 (600W) → Corsair RM850e (850W)&lt;/li>
+&lt;li>Case: Fractal Design Torrent → NZXT H9 Flow&lt;/li>
+&lt;li>OS: Windows 11 Pro 21H2 (22000.675) → Windows 11 Pro 22H2 (22621.2070)&lt;/li>
+&lt;/ul>
+&lt;p>AI関連のツールを利用することもあり、かつ、最近のゲームはVRAM8GBというのは心もとないというのもあり、ここは奮発してRTX4090にしてみました。
+StableDiffusionを利用してみましたが、やはり画像生成はいままで比べ圧倒的に早いですね。
+ゲームはまだ未プレイなので、感動は味わえていないです。サイバーパンクがセール時に購入して試してみます。&lt;/p>
+&lt;div id="post-content-carousel" class="keen-slider">
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/rebuild_mainpc/2023080702_hu3ec1823742d30911fcd7e3de0c44bf8e_8361758_3024x4032_resize_q90_h2_box.webp" width="100%" alt="斜めから" />&lt;figcaption class="center">斜めから&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/rebuild_mainpc/2023080703_huff154e891767d0afe6a1cf91e1977ca6_8297476_3024x4032_resize_q90_h2_box.webp" width="100%" alt="正面から" />&lt;figcaption class="center">正面から&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;p>ベンチマークのスコアは下記になります。&lt;/p>
+&lt;ul>
+&lt;li>CINEBENCH R23.200
+&lt;ul>
+&lt;li>CPU (Multi Core) 6619 → 26977&lt;/li>
+&lt;li>CPU (Single Core) 1161 → 2050&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Fire Strike (v1.1): 22306 → 53533
+&lt;ul>
+&lt;li>グラフィックスのスコア: 29817 → 77371&lt;/li>
+&lt;li>物理スコア: 16806 → 42477&lt;/li>
+&lt;li>総合スコア: 8849 → 18332&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Fire Strike Extreme (v1.1): 39623
+&lt;ul>
+&lt;li>グラフィックスのスコア: 45647&lt;/li>
+&lt;li>物理スコア: 42211&lt;/li>
+&lt;li>総合スコア: 19034&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Fire Strike Ultra (v1.1): 24792
+&lt;ul>
+&lt;li>グラフィックスのスコア: 24949&lt;/li>
+&lt;li>物理スコア: 43310&lt;/li>
+&lt;li>総合スコア: 14683&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Time Spy (v1.2): 9909 → 32306
+&lt;ul>
+&lt;li>グラフィックスのスコア: 10662 → 36767&lt;/li>
+&lt;li>CPUスコア: 7080 → 19144&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Time Spy Extreme (v1.2): 17057
+&lt;ul>
+&lt;li>グラフィックスのスコア: 19466&lt;/li>
+&lt;li>CPUスコア: 10028&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Port Royal (v1.2): 6793 → 25728
+&lt;ul>
+&lt;li>グラフィックスのスコア 6793 → 25728&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>スコア的に前利用していたPCと比べ、2〜3倍になっておりますね。
+お金をかけただけあって、満足いく結果になっております。&lt;/p></description></item><item><title>メインPCがサブPC落ちしました</title><link>https://mizu.dev/posts/2023/mainpc_to_subpc/</link><pubDate>Sun, 06 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/mainpc_to_subpc/</guid><description>
 &lt;img src="https://mizu.dev/posts/2023/mainpc_to_subpc/cover.webp"/>
 &lt;p>今までメインとして利用してたPCですが、サブPC落ちしました。
 というのも、前に『&lt;a href="https://mizu.dev/posts/2022/cpu_ryzen_9_3900x_is_broken/">CPU (Ryzen 9 3900X) が壊れました&lt;/a>
@@ -15,7 +87,7 @@
 &lt;li>Case: Fractal Design Torrent → NZXT H5 Flow&lt;/li>
 &lt;li>OS: Windows 11 Pro 21H2 (22000.675) → Windows 11 Pro 22H2 (22621.2070)&lt;/li>
 &lt;/ul>
-&lt;p>新たに NZXT F5 Flow のケースを購入しました。
+&lt;p>新たに NZXT H5 Flow のケースを購入しました。
 H5 Flow は、デザインはかなり良いのですが、
 GPU用のファンの変更がめんどくさく、また、CPUファンのファンの取り付けがヒートシンクと天板の間が狭くファンクリップの取り付けに指が思うように入らず苦戦しました。
 天板が開けばよいもっと良いケースなんだけどなぁ。&lt;/p>
@@ -23,8 +95,8 @@ GPU用のファンの変更がめんどくさく、また、CPUファンのフ�
 そのリアに利用しているDeepCoolのファンは、簡易水冷に同梱されていたものを流用したので、ARCTIC P12 MAX が再販されたらそちらに変更しようと考えております。&lt;/p>
 &lt;p>ちなみにケース内にRGBテープを付けているのは、電源が入っているか入っていないか確認を容易にしたいためであります。&lt;/p>
 &lt;div id="post-content-carousel" class="keen-slider">
-&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/mainpc_to_subpc/2023080601_hu4b80d5c9db3c0be6a515868c35d26b4c_7576622_3024x4032_resize_q90_h2_box.webp" width="100%" alt="タイトル画面" />&lt;figcaption class="center">タイトル画面&lt;/figcaption>&lt;/figure>
-&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/mainpc_to_subpc/2023080602_hu301f2b5824341d64246ef4b320df14a9_8514229_3024x4032_resize_q90_h2_box.webp" width="100%" alt="タイトル画面" />&lt;figcaption class="center">タイトル画面&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/mainpc_to_subpc/2023080601_hu4b80d5c9db3c0be6a515868c35d26b4c_7576622_3024x4032_resize_q90_h2_box.webp" width="100%" alt="正面から" />&lt;figcaption class="center">正面から&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/mainpc_to_subpc/2023080602_hu301f2b5824341d64246ef4b320df14a9_8514229_3024x4032_resize_q90_h2_box.webp" width="100%" alt="斜めから" />&lt;figcaption class="center">斜めから&lt;/figcaption>&lt;/figure>
 &lt;/div>
 &lt;p>ベンチマークのスコアは下記になります。&lt;/p>
 &lt;ul>
@@ -864,15 +936,4 @@ PC版を購入予定。Switch版のカジュアルにプレイできるのも良
 鬼滅の刃の伊之助が好きなので、いのししでの作成をお願いしております。&lt;/p>
 &lt;p>上記のような感じの仕上がりです。&lt;/p>
 &lt;p>1,000円と安い依頼ながら、しっかり対応してもらいました。
-しばらく、このアイコンでいきます。&lt;/p></description></item><item><title>Hugoに移行しました</title><link>https://mizu.dev/posts/2020/moved_to_hugo/</link><pubDate>Tue, 11 Feb 2020 11:19:19 +0900</pubDate><guid>https://mizu.dev/posts/2020/moved_to_hugo/</guid><description>
-&lt;p>WordPress から Hugo に移行しました。
-移行したのは、ずっと前で、エントリーするのをめんどくさがってやっておりませんでした。&lt;/p>
-&lt;p>Hugo に移行した理由は、あまり管理していないブログにお金を支払い続けるのは、もったいないなと思ったのが理由です。&lt;/p>
-&lt;p>利用している技術構成は下記になります。&lt;/p>
-&lt;ul>
-&lt;li>Hugo&lt;/li>
-&lt;li>Github Pages&lt;/li>
-&lt;li>Github Action&lt;/li>
-&lt;/ul>
-&lt;p>Github にエントリーをプッシュすることで、ページがビルドされ、それを公開する形になります。
-できるだけ、手間をかけずにブログを更新できるようにしてます。&lt;/p></description></item></channel></rss>
+しばらく、このアイコンでいきます。&lt;/p></description></item></channel></rss>
