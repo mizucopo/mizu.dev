@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>みず ねっとわーくさーびす</title><link>https://mizu.dev/</link><description>Recent content on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Mon, 07 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>メインPCを新たに組み直しました</title><link>https://mizu.dev/posts/2023/rebuild_mainpc/</link><pubDate>Mon, 07 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/rebuild_mainpc/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>みず ねっとわーくさーびす</title><link>https://mizu.dev/</link><description>Recent content on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Analogue Pocket を購入してみた</title><link>https://mizu.dev/posts/2023/analogue_pocket/</link><pubDate>Tue, 15 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/analogue_pocket/</guid><description>
+&lt;img src="https://mizu.dev/posts/2023/analogue_pocket/cover.webp"/>
+&lt;p>FPGAで実装されているAnalogue社のPocketを購入してみました。
+Pocketは、ゲームボーイ、ゲームボーイカラー、ゲームボーイアドバンスとのカートリッジの互換性があり、本体に差し込むことでゲームプレイできます。&lt;/p>
+&lt;p>個人的に購入した理由は、ゲームボーイアドバンスを遊べる環境がほしく購入した次第です。
+ゲームボーイミクロは所有しておりますが、プレイに支障がでるくらい画面が小さく遊びづらかったので、そこを解決できたのはうれしいです。
+さらにドックと接続することで、HDMI出力も可能ということで、Nintendo Switchみたく、外出時は携帯モード、自宅ではTVモードと切り替えてプレイできるのもいいところです。
+とはいえ、自宅でも携帯モードでプレイすることが多いです。&lt;/p>
+&lt;div id="post-content-carousel" class="keen-slider">
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/analogue_pocket/02_huf6e72ece2c68c0f8f8449b4c2c0d2e64_5146873_4032x3024_resize_q90_h2_box.webp" width="100%" alt="購入したもの全部" />&lt;figcaption class="center">購入したもの全部&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/analogue_pocket/03_hu93645c1e563116ac64e69f3f06e8daeb_5232394_3024x4032_resize_q90_h2_box.webp" width="100%" alt="本体開封" />&lt;figcaption class="center">本体開封&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/analogue_pocket/04_hu72a621b0be49420e3465587be5638674_4945722_3024x4032_resize_q90_h2_box.webp" width="100%" alt="裏面から(手垢ガードのためフィルムはそのまま)" />&lt;figcaption class="center">裏面から(手垢ガードのためフィルムはそのまま)&lt;/figcaption>&lt;/figure>
+&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/analogue_pocket/05_hu78cc42ec12d5fce54a3dd7043e316d32_7364272_3024x4032_resize_q90_h2_box.webp" width="100%" alt="ドックを接続して設置" />&lt;figcaption class="center">ドックを接続して設置&lt;/figcaption>&lt;/figure>
+&lt;/div>
+&lt;p>PocketにはOpenFPGAがあり、ファミコンなどの他ハードの実装もできるのも素晴らしいことです。
+今壊れておりますが、SaveTheHeroのカセット吸い出し機を持っておりますので、そちらで吸い出したファミコン、スーパーファミコンのゲームがプレイできる胸熱です。&lt;/p>
+&lt;p>今現在、PCエンジンのHuカードリーダーを注文しておりますので、PCエンジンがプレイできるのを待っております。&lt;/p></description></item><item><title>メインPCを新たに組み直しました</title><link>https://mizu.dev/posts/2023/rebuild_mainpc/</link><pubDate>Mon, 07 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/rebuild_mainpc/</guid><description>
 &lt;img src="https://mizu.dev/posts/2023/rebuild_mainpc/cover.webp"/>
 &lt;p>久しぶりにメインPCを刷新しました。
 『&lt;a href="https://mizu.dev/posts/2022/cpu_ryzen_9_3900x_is_broken/">CPU (Ryzen 9 3900X) が壊れました&lt;/a>
@@ -969,14 +985,4 @@ PC版を購入予定。Switch版のカジュアルにプレイできるのも良
 &lt;p>E.M.M.I との追いかけっこも面白く、イライラもすることがありましたが、ドキドキ緊張感がありました。
 イライラしていたときは「E.M.M.I」を派遣した人戦犯やなと思っておりました。
 失敗してもリトライがすぐにできるのは良いですね。&lt;/p>
-&lt;p>プレイ時間はそれほど長くなく17時間ほどでした。&lt;/p></description></item><item><title>ブログ名を「みず ねっとわーくさーびす」に変更しました</title><link>https://mizu.dev/posts/2021/the_name_of_the_blog_has_been_changed_to_mizu_networkservice/</link><pubDate>Sat, 13 Nov 2021 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2021/the_name_of_the_blog_has_been_changed_to_mizu_networkservice/</guid><description>
-&lt;p>題名の通り、ブログ名を「こぽ ねっとわーくさーびす」から「みず ねっとわーくさーびす」に変更しました。&lt;/p>
-&lt;p>理由は下記の2つになります。&lt;/p>
-&lt;ul>
-&lt;li>copo.jp のドメイン更新維持費用が高い&lt;/li>
-&lt;li>mizu.dev のドメインを無駄にとっていて余っていた&lt;/li>
-&lt;/ul>
-&lt;p>ブログ名変更にあたり、 &lt;a href="https://mizu.dev/" target="_blank">https://mizu.dev/&lt;/a>
-がブログのURLになります。
-いままで使用してきた copo.jp は廃止する予定で、ドメインの期限が続くまで、自動的に mizu.dev まで飛ぶようにしております。&lt;/p>
-&lt;p>というわけで、よろしくお願いいたします。&lt;/p></description></item></channel></rss>
+&lt;p>プレイ時間はそれほど長くなく17時間ほどでした。&lt;/p></description></item></channel></rss>
