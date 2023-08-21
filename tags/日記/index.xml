@@ -1,4 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>日記 on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/%E6%97%A5%E8%A8%98/</link><description>Recent content in 日記 on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/%E6%97%A5%E8%A8%98/index.xml" rel="self" type="application/rss+xml"/><item><title>Analogue Pocket を購入してみた</title><link>https://mizu.dev/posts/2023/analogue_pocket/</link><pubDate>Tue, 15 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/analogue_pocket/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>日記 on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/%E6%97%A5%E8%A8%98/</link><description>Recent content in 日記 on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 22 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/%E6%97%A5%E8%A8%98/index.xml" rel="self" type="application/rss+xml"/><item><title>ディスプレイ周りの接続状況をまとめてみた</title><link>https://mizu.dev/posts/2023/connect_display/</link><pubDate>Tue, 22 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/connect_display/</guid><description>
+&lt;img src="https://mizu.dev/posts/2023/connect_display/cover.webp"/>
+&lt;p>最近「&lt;a href="https://mizu.dev/posts/2023/mainpc_to_subpc/">メインPCがサブPC落ちしました&lt;/a>
+」や「&lt;a href="https://mizu.dev/posts/2023/analogue_pocket/">Analogue Pocket を購入してみた&lt;/a>
+」をデジタル機器を追加したため、ディスプレイに接続する端末が増えました。
+これを機会にディスプレイ接続情報をまとめてみました。&lt;/p>
+&lt;p>下記のようにディスプレイ接続されており、気軽にHDMI切替器を利用して利用する端末の切り替えを行っております。&lt;/p>
+&lt;p>基本的なコンセプトとして、このような接続方法です。&lt;/p>
+&lt;ul>
+&lt;li>DisplayPort
+&lt;ul>
+&lt;li>メインPC&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>HDMI1
+&lt;ul>
+&lt;li>MacBookPro&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>HDMI2
+&lt;ul>
+&lt;li>ゲーム機などその他端末&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>また、デスク上にHDMIケーブルを持ってきており、&lt;strong>FREE&lt;/strong>のところがそれになっており、RaspberryPiの確認などテンポラリ的な利用もできるようにしております。&lt;/p>
+&lt;div class="mermaid">flowchart
+subgraph Display
+LG_27GN950_Main
+LG_27GN950_Sub
+end
+subgraph Capture
+Elgato_HD60_S
+end
+subgraph HDMI切替器
+HDMI切替器A
+HDMI切替器B
+HDMI切替器C
+end
+subgraph PC
+PC_Main
+PC_Sub
+MacBookPro
+end
+subgraph Game
+Switch
+PS5
+WiiU
+XBOX360
+Analogue_Pocket
+end
+subgraph Other
+FREE
+end
+PC_Main -->|DisplayPort| LG_27GN950_Main
+MacBookPro -->|HDMI1| LG_27GN950_Main
+HDMI切替器A -->|HDMI2| LG_27GN950_Main
+PC_Sub -->|HDMI1| HDMI切替器A
+Switch -->|HDMI2| HDMI切替器A
+PS5 -->|HDMI3| HDMI切替器A
+HDMI切替器B -->|HDMI4| HDMI切替器A
+PC_Main -->|DisplayPort| LG_27GN950_Sub
+MacBookPro -->|HDMI1| LG_27GN950_Sub
+HDMI切替器C -->|HDMI2| LG_27GN950_Sub
+PC_Sub -->|HDMI1| HDMI切替器C
+FREE -->|HDMI2| HDMI切替器C
+PC_Main -->|HDMI3| HDMI切替器B
+WiiU -->|HDMI1| HDMI切替器B
+XBOX360 -->|HDMI2| HDMI切替器B
+HDMI切替器A -->|HDMI| Elgato_HD60_S
+Analogue_Pocket -->|HDMI3| HDMI切替器B
+&lt;/div>
+&lt;p>ただ、この構築には若干失敗しており、HDMIセレクターを同じものを購入したため、リモコンが同時に反応してしまうのが問題となっております。
+安物のため、チャンネル切り替えなどできないです。残念。&lt;/p>
+&lt;p>今度はN100のミニPCが欲しく、また端末が増えちゃうなーと思っているところです。&lt;/p>
+/posts/2023/connect_display/01_hue01f27c040e816558b7d12e675376b75_7252042_4032x3024_resize_q90_h2_box.webp</description></item><item><title>Analogue Pocket を購入してみた</title><link>https://mizu.dev/posts/2023/analogue_pocket/</link><pubDate>Tue, 15 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/analogue_pocket/</guid><description>
 &lt;img src="https://mizu.dev/posts/2023/analogue_pocket/cover.webp"/>
 &lt;p>FPGAで実装されているAnalogue社のPocketを購入してみました。
 Pocketは、ゲームボーイ、ゲームボーイカラー、ゲームボーイアドバンスとのカートリッジの互換性があり、本体に差し込むことでゲームプレイできます。&lt;/p>
@@ -935,14 +1010,4 @@ PC版を購入予定。Switch版のカジュアルにプレイできるのも良
 &lt;p>E.M.M.I との追いかけっこも面白く、イライラもすることがありましたが、ドキドキ緊張感がありました。
 イライラしていたときは「E.M.M.I」を派遣した人戦犯やなと思っておりました。
 失敗してもリトライがすぐにできるのは良いですね。&lt;/p>
-&lt;p>プレイ時間はそれほど長くなく17時間ほどでした。&lt;/p></description></item><item><title>ブログ名を「みず ねっとわーくさーびす」に変更しました</title><link>https://mizu.dev/posts/2021/the_name_of_the_blog_has_been_changed_to_mizu_networkservice/</link><pubDate>Sat, 13 Nov 2021 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2021/the_name_of_the_blog_has_been_changed_to_mizu_networkservice/</guid><description>
-&lt;p>題名の通り、ブログ名を「こぽ ねっとわーくさーびす」から「みず ねっとわーくさーびす」に変更しました。&lt;/p>
-&lt;p>理由は下記の2つになります。&lt;/p>
-&lt;ul>
-&lt;li>copo.jp のドメイン更新維持費用が高い&lt;/li>
-&lt;li>mizu.dev のドメインを無駄にとっていて余っていた&lt;/li>
-&lt;/ul>
-&lt;p>ブログ名変更にあたり、 &lt;a href="https://mizu.dev/" target="_blank">https://mizu.dev/&lt;/a>
-がブログのURLになります。
-いままで使用してきた copo.jp は廃止する予定で、ドメインの期限が続くまで、自動的に mizu.dev まで飛ぶようにしております。&lt;/p>
-&lt;p>というわけで、よろしくお願いいたします。&lt;/p></description></item></channel></rss>
+&lt;p>プレイ時間はそれほど長くなく17時間ほどでした。&lt;/p></description></item></channel></rss>

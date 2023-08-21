@@ -1,4 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on みず ねっとわーくさーびす</title><link>https://mizu.dev/posts/</link><description>Recent content in Posts on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Analogue Pocket を購入してみた</title><link>https://mizu.dev/posts/2023/analogue_pocket/</link><pubDate>Tue, 15 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/analogue_pocket/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on みず ねっとわーくさーびす</title><link>https://mizu.dev/posts/</link><description>Recent content in Posts on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2023 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 22 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>ディスプレイ周りの接続状況をまとめてみた</title><link>https://mizu.dev/posts/2023/connect_display/</link><pubDate>Tue, 22 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/connect_display/</guid><description>
+&lt;img src="https://mizu.dev/posts/2023/connect_display/cover.webp"/>
+&lt;p>最近「&lt;a href="https://mizu.dev/posts/2023/mainpc_to_subpc/">メインPCがサブPC落ちしました&lt;/a>
+」や「&lt;a href="https://mizu.dev/posts/2023/analogue_pocket/">Analogue Pocket を購入してみた&lt;/a>
+」をデジタル機器を追加したため、ディスプレイに接続する端末が増えました。
+これを機会にディスプレイ接続情報をまとめてみました。&lt;/p>
+&lt;p>下記のようにディスプレイ接続されており、気軽にHDMI切替器を利用して利用する端末の切り替えを行っております。&lt;/p>
+&lt;p>基本的なコンセプトとして、このような接続方法です。&lt;/p>
+&lt;ul>
+&lt;li>DisplayPort
+&lt;ul>
+&lt;li>メインPC&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>HDMI1
+&lt;ul>
+&lt;li>MacBookPro&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>HDMI2
+&lt;ul>
+&lt;li>ゲーム機などその他端末&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>また、デスク上にHDMIケーブルを持ってきており、&lt;strong>FREE&lt;/strong>のところがそれになっており、RaspberryPiの確認などテンポラリ的な利用もできるようにしております。&lt;/p>
+&lt;div class="mermaid">flowchart
+subgraph Display
+LG_27GN950_Main
+LG_27GN950_Sub
+end
+subgraph Capture
+Elgato_HD60_S
+end
+subgraph HDMI切替器
+HDMI切替器A
+HDMI切替器B
+HDMI切替器C
+end
+subgraph PC
+PC_Main
+PC_Sub
+MacBookPro
+end
+subgraph Game
+Switch
+PS5
+WiiU
+XBOX360
+Analogue_Pocket
+end
+subgraph Other
+FREE
+end
+PC_Main -->|DisplayPort| LG_27GN950_Main
+MacBookPro -->|HDMI1| LG_27GN950_Main
+HDMI切替器A -->|HDMI2| LG_27GN950_Main
+PC_Sub -->|HDMI1| HDMI切替器A
+Switch -->|HDMI2| HDMI切替器A
+PS5 -->|HDMI3| HDMI切替器A
+HDMI切替器B -->|HDMI4| HDMI切替器A
+PC_Main -->|DisplayPort| LG_27GN950_Sub
+MacBookPro -->|HDMI1| LG_27GN950_Sub
+HDMI切替器C -->|HDMI2| LG_27GN950_Sub
+PC_Sub -->|HDMI1| HDMI切替器C
+FREE -->|HDMI2| HDMI切替器C
+PC_Main -->|HDMI3| HDMI切替器B
+WiiU -->|HDMI1| HDMI切替器B
+XBOX360 -->|HDMI2| HDMI切替器B
+HDMI切替器A -->|HDMI| Elgato_HD60_S
+Analogue_Pocket -->|HDMI3| HDMI切替器B
+&lt;/div>
+&lt;p>ただ、この構築には若干失敗しており、HDMIセレクターを同じものを購入したため、リモコンが同時に反応してしまうのが問題となっております。
+安物のため、チャンネル切り替えなどできないです。残念。&lt;/p>
+&lt;p>今度はN100のミニPCが欲しく、また端末が増えちゃうなーと思っているところです。&lt;/p>
+/posts/2023/connect_display/01_hue01f27c040e816558b7d12e675376b75_7252042_4032x3024_resize_q90_h2_box.webp</description></item><item><title>Analogue Pocket を購入してみた</title><link>https://mizu.dev/posts/2023/analogue_pocket/</link><pubDate>Tue, 15 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/analogue_pocket/</guid><description>
 &lt;img src="https://mizu.dev/posts/2023/analogue_pocket/cover.webp"/>
 &lt;p>FPGAで実装されているAnalogue社のPocketを購入してみました。
 Pocketは、ゲームボーイ、ゲームボーイカラー、ゲームボーイアドバンスとのカートリッジの互換性があり、本体に差し込むことでゲームプレイできます。&lt;/p>
@@ -971,18 +1046,4 @@ PC版を購入予定。Switch版のカジュアルにプレイできるのも良
 &lt;/blockquote>
 &lt;p>クリア条件がループを抜け出すことで、3名ともいい感じで終わってもクリアできなかったときは「どうすればいいの？」と絶望を感じました。&lt;/p>
 &lt;p>日本語訳に一部間違いがあり、姉と妹の間違いは、頭が混乱してしまいました。&lt;/p>
-&lt;p>プレイ時間は8時間でした。&lt;/p></description></item><item><title>メトロイドドレッドをクリアしました</title><link>https://mizu.dev/posts/2021/metroid_dreads_have_been_cleared/</link><pubDate>Sun, 14 Nov 2021 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2021/metroid_dreads_have_been_cleared/</guid><description>
-&lt;p>&lt;img src="https://mizu.dev/posts/2021/2021111401.png" alt="メトロイドドレッドのゲーム画面">&lt;/p>
-&lt;p>高難易度のアクションゲーこと「メトロイドドレッド」をクリアしました。&lt;/p>
-&lt;p>&lt;img src="https://mizu.dev/posts/2021/2021111403.png" alt="メトロイドドレッドのタイトル画面">
-&lt;img src="https://mizu.dev/posts/2021/2021111405.png" alt="メトロイドドレッドのゲーム画面">
-&lt;img src="https://mizu.dev/posts/2021/2021111402.png" alt="メトロイドドレッドのゲーム画面">
-&lt;img src="https://mizu.dev/posts/2021/2021111404.png" alt="メトロイドドレッドのゲーム画面">&lt;/p>
-&lt;p>難易度がちょうど良い感じに作られており、ボス戦には毎回毎回苦戦し、「どうやったら倒せるんだよ」と思いながらボス戦を楽しんでおりました。
-倒せることができるようになると、ボスの動作が頭に染み込んでおり、実際、ある程度ダメージこそ受けますが、ノーダメでもいけそうだなという感じが良かったです。&lt;/p>
-&lt;p>アイテムを獲得することで、主人公であるサムスがどんどん強くなるのですが、操作するボタンが多くなり、操作ミスをすることが多数ありました。
-未だにシャインスパークが難しいです。&lt;/p>
-&lt;p>E.M.M.I との追いかけっこも面白く、イライラもすることがありましたが、ドキドキ緊張感がありました。
-イライラしていたときは「E.M.M.I」を派遣した人戦犯やなと思っておりました。
-失敗してもリトライがすぐにできるのは良いですね。&lt;/p>
-&lt;p>プレイ時間はそれほど長くなく17時間ほどでした。&lt;/p></description></item></channel></rss>
+&lt;p>プレイ時間は8時間でした。&lt;/p></description></item></channel></rss>
