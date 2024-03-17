@@ -1,0 +1,5 @@
+Contact: mailto:mizu.copo@gmail.com
+Contact: https://twitter.com/mizu_copo
+Expires: 2025-02-28T00:00:00.000Z
+Preferred-Languages: jp
+Canonical: https://mizu.dev/.well-known/security.txt
