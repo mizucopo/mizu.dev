@@ -1,97 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CakePHP on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/cakephp/</link><description>Recent content in CakePHP on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2025 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 06 Sep 2011 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/cakephp/index.xml" rel="self" type="application/rss+xml"/><item><title>CakePHP カスタムセッションでデータベースを利用する場合の注意点</title><link>https://mizu.dev/posts/2011/points_to_note_when_using_a_database_in_cakephp_custom_session/</link><pubDate>Tue, 06 Sep 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/points_to_note_when_using_a_database_in_cakephp_custom_session/</guid><description>
-&lt;p>セッション情報の格納先をデータベースにした場合で、かつ、カスタムセッションを利用している場合の注意点。&lt;/p>
-&lt;p>&lt;code>Configure::write('Session.save', 'database');&lt;/code> に戻すこと。&lt;/p>
-&lt;p>でないと、セッション情報を書き込み時に、データベースの接続が切れて、セッション情報が書き込めなくなる現象がおきる。&lt;/p>
-&lt;p>原因は、ConnectionManager のデストラクタで Session.save が database のときだけ session_write_close() を実行するから。&lt;/p>
-&lt;p>ちなみに、カスタムセッションとは、&lt;code>Configure::write('Session.save', 'custom');&lt;/code> などにして、php、cake、database、cache にしていない場合のことです。&lt;/p>
-&lt;p>CakePHP (v1.3.11) で確認。&lt;/p></description></item><item><title>CakePHP で Google +1 ボタン を表示 (日本語で)</title><link>https://mizu.dev/posts/2011/google_plue_one_button_in_cakephp_in_japanese/</link><pubDate>Wed, 29 Jun 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/google_plue_one_button_in_cakephp_in_japanese/</guid><description>
-&lt;p>CakePHPであろうがなかろうが、通常は、Googleが用意しているコードを貼り付ければ問題ない。&lt;/p>
-&lt;p>今回は、layout ファイルにある $scripts_for_layout を使用しての +1ボタンの表示のやり方。&lt;/p>
-&lt;p>viewファイル(またはelement) に&lt;/p>
-&lt;pre>&lt;code>$html-&amp;gt;scriptBlock(
-&amp;quot;{lang: 'ja'}&amp;quot;,
-array(
-'inline' =&amp;gt; false,
-'safe' =&amp;gt; false,
-'src' =&amp;gt; 'https://apis.google.com/js/plusone.js',
-)
-);
-&lt;/code>&lt;/pre>
-&lt;p>と記述すれば、&lt;/p>
-&lt;pre>&lt;code>&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;https://apis.google.com/js/plusone.js&amp;quot;&amp;gt;
-{lang: 'ja'}
-&amp;lt;/script&amp;gt;
-&lt;/code>&lt;/pre>
-&lt;p>のように展開される。これはGoogleが用意しているコードと同じ。&lt;/p>
-&lt;p>後は +1ボタンを表示する場所に&lt;/p>
-&lt;pre>&lt;code>&amp;lt;g:plusone&amp;gt;&amp;lt;/g:plusone&amp;gt;
-&lt;/code>&lt;/pre>
-&lt;p>を記述する。&lt;/p>
-&lt;p>何故、このようなめんどくさいことをやるのかと言えば「JavaScript は body終了タグ直前に書きたいよね」という要件に答えたいってことで。&lt;/p></description></item><item><title>CakePHP の shell のウェルカムメッセージを非表示に</title><link>https://mizu.dev/posts/2011/hide_cakephp_shell_welcome_message/</link><pubDate>Sun, 03 Apr 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/hide_cakephp_shell_welcome_message/</guid><description>
-&lt;pre>&lt;code>Class WelcomeShell extends Shell {
-function startup() {
-}
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CakePHP on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/cakephp/</link><description>Recent content in CakePHP on みず ねっとわーくさーびす</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Tue, 06 Sep 2011 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/cakephp/index.xml" rel="self" type="application/rss+xml"/><item><title>CakePHP カスタムセッションでデータベースを利用する場合の注意点</title><link>https://mizu.dev/posts/2011/points_to_note_when_using_a_database_in_cakephp_custom_session/</link><pubDate>Tue, 06 Sep 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/points_to_note_when_using_a_database_in_cakephp_custom_session/</guid><description>&lt;p>セッション情報の格納先をデータベースにした場合で、かつ、カスタムセッションを利用している場合の注意点。&lt;/p></description></item><item><title>CakePHP で Google +1 ボタン を表示 (日本語で)</title><link>https://mizu.dev/posts/2011/google_plue_one_button_in_cakephp_in_japanese/</link><pubDate>Wed, 29 Jun 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/google_plue_one_button_in_cakephp_in_japanese/</guid><description>&lt;p>CakePHPであろうがなかろうが、通常は、Googleが用意しているコードを貼り付ければ問題ない。&lt;/p>
+&lt;p>今回は、layout ファイルにある $scripts_for_layout を使用しての +1ボタンの表示のやり方。&lt;/p></description></item><item><title>CakePHP の shell のウェルカムメッセージを非表示に</title><link>https://mizu.dev/posts/2011/hide_cakephp_shell_welcome_message/</link><pubDate>Sun, 03 Apr 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/hide_cakephp_shell_welcome_message/</guid><description>&lt;pre>&lt;code>Class WelcomeShell extends Shell {
+ function startup() {
+ }
 }
 &lt;/code>&lt;/pre>
-&lt;p>startup() メソッドをオーバーライドすれば、ウェルカムメッセージが表示されない。&lt;/p>
-&lt;p>ちなみにウェルカムメッセージは _welcome() メソッド定義されている。&lt;/p>
-&lt;h2 id="おまけ">
-おまけ
-&lt;a href="#%e3%81%8a%e3%81%be%e3%81%91" class="h-anchor" aria-hidden="true">#&lt;/a>
-&lt;/h2>
-&lt;p>shell での文字列の出力ですが、echo すれば文字列が出力されるが、ここは、out() メソッドを使うのがいいみたい。&lt;br>
-また、ラインの出力は hr() メソッド。&lt;/p></description></item><item><title>CakePHP 1.3.8 での shell で -app パラメータが効かない問題点</title><link>https://mizu.dev/posts/2011/problem_with_app_parameter_not_working_in_shell_in_cakephp_138/</link><pubDate>Mon, 28 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/problem_with_app_parameter_not_working_in_shell_in_cakephp_138/</guid><description>
-&lt;p>CakePHP を ver1.3.8にバージョンアップしたら、cronで動かしていた shellが動かなくなる問題が起こった。&lt;/p>
+&lt;p>startup() メソッドをオーバーライドすれば、ウェルカムメッセージが表示されない。&lt;/p></description></item><item><title>CakePHP 1.3.8 での shell で -app パラメータが効かない問題点</title><link>https://mizu.dev/posts/2011/problem_with_app_parameter_not_working_in_shell_in_cakephp_138/</link><pubDate>Mon, 28 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/problem_with_app_parameter_not_working_in_shell_in_cakephp_138/</guid><description>&lt;p>CakePHP を ver1.3.8にバージョンアップしたら、cronで動かしていた shellが動かなくなる問題が起こった。&lt;/p>
 &lt;p>調べると -app の引数がうまく利用されていない。&lt;/p>
 &lt;p>とりあえず、「&lt;a href="https://github.com/cakephp/cakephp/commit/e2773242f7aad215834071837461b946f0dc5c5c" target="_blank">Commit e2773242f7aad215834071837461b946f0dc5c5c to cakephp/cakephp - GitHub&lt;/a>
-」を参考に、該当ファイルを修正すると動くようになった。&lt;/p></description></item><item><title>debug=0 でのSQLログの取得</title><link>https://mizu.dev/posts/2011/acquisition_of_sql_log_with_debug_eq_0/</link><pubDate>Thu, 10 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/acquisition_of_sql_log_with_debug_eq_0/</guid><description>
-&lt;p>&lt;code>Configure::read('debug') = 0&lt;/code> だと、SQLログは変数($db-&amp;gt;_queriesLog)に格納されない。&lt;/p>
-&lt;p>本番運用でのSQLログを取得するためには、$db-&amp;gt;fullDebug = true; にして運用する必要がある。&lt;/p>
-&lt;pre>&lt;code>$db =&amp;amp; ConnectionManager::getDataSource('default');
-$db-&amp;gt;fullDebug = true;
-&lt;/code>&lt;/pre>
-&lt;p>コントローラだったら、BeforeFilter()、シェルだったら、startup(); に記述する&lt;/p></description></item><item><title>CakePHP の Model.find のコールバック順番</title><link>https://mizu.dev/posts/2011/cakephp_model_find_callback_order/</link><pubDate>Fri, 04 Feb 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/cakephp_model_find_callback_order/</guid><description>
-&lt;p>ソースを見た段階でのモデルのfindのコールバックメソッドの実行順番&lt;/p>
-&lt;ol>
-&lt;li>Behavior.beforeFind();&lt;/li>
-&lt;/ol>
-&lt;ul>
-&lt;li>Model.beforeFind();&lt;/li>
-&lt;li>DboSource.read(); // SQLの実行&lt;/li>
-&lt;li>AssociatesModel.afterFind();&lt;/li>
-&lt;li>Behavior.afterFind();&lt;/li>
-&lt;li>Model.afterFind();&lt;/li>
-&lt;/ul>
-&lt;p>関連を持っているモデルのコールバックメソッドは、afterFindしか実行されない。&lt;/p>
-&lt;p>間違いがあったら、コメントをお願いいたします。&lt;/p></description></item><item><title>CakePHP での実行した SQL の表示</title><link>https://mizu.dev/posts/2010/display_of_sql_executed_by_cakephp/</link><pubDate>Thu, 06 May 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/display_of_sql_executed_by_cakephp/</guid><description>
-&lt;p>CakePHP 1.2系でしたら、debug=2 にすれば、ページ下部にSQLが表示されていたが、1.3系にすると表示されない問題にぶち当たった。&lt;/p>
-&lt;p>解決方法は、レイアウトファイルなりに&lt;/p>
-&lt;pre>&lt;code>$this-&amp;gt;element('sql_dump');
-&lt;/code>&lt;/pre>
-&lt;p>を記述すること。これでおｋ&lt;/p></description></item><item><title>CakePHP 1.3系 でPearを使う</title><link>https://mizu.dev/posts/2010/using_pear_with_cakephp_version_13/</link><pubDate>Wed, 28 Apr 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/using_pear_with_cakephp_version_13/</guid><description>
-&lt;p>&lt;a href="https://mizu.dev/posts/2010/using_pear_with_cakephp/">CakePHP でPearを使う&lt;/a>
-が 1.3系のCakePHPでは使用できなくなっている。&lt;/p>
-&lt;p>1.3系 では、/app/config/bootstrap.php に&lt;/p>
-&lt;pre>&lt;code>App::build(array('pears' =&amp;gt; array('/usr/share/php')), true);
-&lt;/code>&lt;/pre>
-&lt;p>Pear を使用するところに&lt;/p>
-&lt;pre>&lt;code>App::import('pear', 'TagCloud', array('file' =&amp;gt; 'HTML/TagCloud.php'));
-&lt;/code>&lt;/pre></description></item><item><title>CakePHPのパンくずリストの文字のエスケープ処理</title><link>https://mizu.dev/posts/2010/escaping_characters_in_cakephp_breadcrumb_list/</link><pubDate>Tue, 09 Mar 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/escaping_characters_in_cakephp_breadcrumb_list/</guid><description>
-&lt;p>エスケープ処理をやりすぎて失敗したのでメモ。&lt;/p>
-&lt;p>HtmlHelper の &lt;code>addCrumb($name, $link = null, $options = null)&lt;/code> メソッド ですが、$name のエスケープ処理が$linkによってエスケープ処理が違うので注意が必要。&lt;/p>
-&lt;p>$link が指定された場合、HtmlHelper の link メソッドを使用するのでエスケープされる。
-$link が null だった場合、エスケープされず、そのまま使用される。&lt;/p>
-&lt;p>パンくずリストの最後はリンクさせない実装だと、最後の $name は h($name) などでエスケープした方が安全。&lt;/p></description></item><item><title>CakePHPでPearを使う</title><link>https://mizu.dev/posts/2010/using_pear_with_cakephp/</link><pubDate>Sun, 14 Feb 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/using_pear_with_cakephp/</guid><description>
-&lt;p>サイト内にてTagCloudを使用しているのだが、今までは、requireしていたので、CakePHPの文化にあわせて、App::importでやってみたい。&lt;/p>
-&lt;p>&lt;code>/app/config/bootstrap.php&lt;/code>に&lt;/p>
-&lt;pre>&lt;code>Configure::write('pearPaths', '/xampp/php/PEAR/');
-&lt;/code>&lt;/pre>
-&lt;p>Pearを使用するところに&lt;/p>
-&lt;pre>&lt;code>App::import('pear', 'TagCloud', array('file' =&amp;amp;gt; 'HTML/TagCloud.php'));
-&lt;/code>&lt;/pre>
-&lt;p>でいけるようになった。&lt;/p>
-&lt;p>&lt;code>/app/vendors&lt;/code>に該当ファイルを入れればできるけど、やっぱり、Pearのファイル群は一元管理がいいよね。&lt;/p>
-&lt;hr>
-&lt;p>[追記] 2010/04/28
-CakePHP 1.3系では使用できなくなっているので、&lt;a href="https://mizu.dev/posts/2010/using_pear_with_cakephp_version_13/">cakephp-1.3系-でpearを使う&lt;/a>
-を参照してください。&lt;/p></description></item></channel></rss>
+」を参考に、該当ファイルを修正すると動くようになった。&lt;/p></description></item><item><title>debug=0 でのSQLログの取得</title><link>https://mizu.dev/posts/2011/acquisition_of_sql_log_with_debug_eq_0/</link><pubDate>Thu, 10 Mar 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/acquisition_of_sql_log_with_debug_eq_0/</guid><description>&lt;p>&lt;code>Configure::read('debug') = 0&lt;/code> だと、SQLログは変数($db-&amp;gt;_queriesLog)に格納されない。&lt;/p></description></item><item><title>CakePHP の Model.find のコールバック順番</title><link>https://mizu.dev/posts/2011/cakephp_model_find_callback_order/</link><pubDate>Fri, 04 Feb 2011 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2011/cakephp_model_find_callback_order/</guid><description>&lt;p>ソースを見た段階でのモデルのfindのコールバックメソッドの実行順番&lt;/p></description></item><item><title>CakePHP での実行した SQL の表示</title><link>https://mizu.dev/posts/2010/display_of_sql_executed_by_cakephp/</link><pubDate>Thu, 06 May 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/display_of_sql_executed_by_cakephp/</guid><description>&lt;p>CakePHP 1.2系でしたら、debug=2 にすれば、ページ下部にSQLが表示されていたが、1.3系にすると表示されない問題にぶち当たった。&lt;/p></description></item><item><title>CakePHP 1.3系 でPearを使う</title><link>https://mizu.dev/posts/2010/using_pear_with_cakephp_version_13/</link><pubDate>Wed, 28 Apr 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/using_pear_with_cakephp_version_13/</guid><description>&lt;p>&lt;a href="https://mizu.dev/posts/2010/using_pear_with_cakephp/">CakePHP でPearを使う&lt;/a>
+ が 1.3系のCakePHPでは使用できなくなっている。&lt;/p></description></item><item><title>CakePHPのパンくずリストの文字のエスケープ処理</title><link>https://mizu.dev/posts/2010/escaping_characters_in_cakephp_breadcrumb_list/</link><pubDate>Tue, 09 Mar 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/escaping_characters_in_cakephp_breadcrumb_list/</guid><description>&lt;p>エスケープ処理をやりすぎて失敗したのでメモ。&lt;/p></description></item><item><title>CakePHPでPearを使う</title><link>https://mizu.dev/posts/2010/using_pear_with_cakephp/</link><pubDate>Sun, 14 Feb 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/using_pear_with_cakephp/</guid><description>&lt;p>サイト内にてTagCloudを使用しているのだが、今までは、requireしていたので、CakePHPの文化にあわせて、App::importでやってみたい。&lt;/p></description></item></channel></rss>

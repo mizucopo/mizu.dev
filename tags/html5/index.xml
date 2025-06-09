@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HTML5 on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/html5/</link><description>Recent content in HTML5 on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2025 みず ねっとわーくさーびす</copyright><lastBuildDate>Wed, 10 Mar 2010 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/html5/index.xml" rel="self" type="application/rss+xml"/><item><title>HTML5のオフライン</title><link>https://mizu.dev/posts/2010/html5_offline/</link><pubDate>Wed, 10 Mar 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/html5_offline/</guid><description>
-&lt;p>HTML5を利用して、オフラインキャッシュを使ってみた&lt;/p>
-&lt;ul>
-&lt;li>&lt;del>&lt;a href="http://copo.jp/html5/offline.html" target="_blank">http://copo.jp/html5/offline.html&lt;/a>
-&lt;/del>&lt;/li>
-&lt;li>&lt;del>&lt;a href="http://copo.jp/html5/storage.html" target="_blank">http://copo.jp/html5/storage.html&lt;/a>
-&lt;/del>&lt;/li>
-&lt;/ul>
-&lt;p>iPhoneでも動作確認済。&lt;br>
-手こずったのは、マニフェストファイルのコンテンツタイプかな。&lt;/p>
-&lt;p>&lt;code>Content-Type: text/cache-manifest&lt;/code> をはかないとiPhoneでは無理だった&lt;/p>
-&lt;p>(2012/01/02 追記)&lt;br>
-上記ファイルは削除致しました。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HTML5 on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/html5/</link><description>Recent content in HTML5 on みず ねっとわーくさーびす</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Wed, 10 Mar 2010 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/html5/index.xml" rel="self" type="application/rss+xml"/><item><title>HTML5のオフライン</title><link>https://mizu.dev/posts/2010/html5_offline/</link><pubDate>Wed, 10 Mar 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/html5_offline/</guid><description>&lt;p>HTML5を利用して、オフラインキャッシュを使ってみた&lt;/p></description></item></channel></rss>

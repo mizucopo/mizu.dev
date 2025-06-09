@@ -1,10 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MySQL on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/mysql/</link><description>Recent content in MySQL on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2025 みず ねっとわーくさーびす</copyright><lastBuildDate>Wed, 21 Apr 2010 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/mysql/index.xml" rel="self" type="application/rss+xml"/><item><title>Q4Mでのレプリケーション</title><link>https://mizu.dev/posts/2010/replication_with_q4m/</link><pubDate>Wed, 21 Apr 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/replication_with_q4m/</guid><description>
-&lt;p>Q4Mを使用したテーブルにデータをインサートすると&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MySQL on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/mysql/</link><description>Recent content in MySQL on みず ねっとわーくさーびす</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Wed, 21 Apr 2010 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/mysql/index.xml" rel="self" type="application/rss+xml"/><item><title>Q4Mでのレプリケーション</title><link>https://mizu.dev/posts/2010/replication_with_q4m/</link><pubDate>Wed, 21 Apr 2010 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2010/replication_with_q4m/</guid><description>&lt;p>Q4Mを使用したテーブルにデータをインサートすると&lt;/p>
 &lt;pre>&lt;code>#1598 - Binary logging not possible. Message: Statement cannot be logged to the binary log in row-based nor statement-based format
 &lt;/code>&lt;/pre>
-&lt;p>というエラーが表示される。バイナリログが有効だとインサートにミスるみたい。ということで、バイナリログを使用しないようにする。&lt;/p>
-&lt;p>…とはいかず、バイナリログを使用するレプリケーションはどうするのか？&lt;/p>
-&lt;p>&lt;a href="http://groups.google.co.jp/group/q4m-general/browse_thread/thread/adc11c0561f54767" target="_blank">http://groups.google.co.jp/group/q4m-general/browse_thread/thread/adc11c0561f54767&lt;/a>
-&lt;/p>
-&lt;p>上記URLを見る限りでは、専用のDBを作り、それをレプリケーションの対象外にするとある。&lt;/p>
-&lt;p>とりあえず、メモ書き。検証等は一切行っていない。嘘があるかも。&lt;/p></description></item></channel></rss>
+&lt;p>というエラーが表示される。バイナリログが有効だとインサートにミスるみたい。ということで、バイナリログを使用しないようにする。&lt;/p></description></item></channel></rss>

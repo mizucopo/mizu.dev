@@ -1,17 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Analogue on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/analogue/</link><description>Recent content in Analogue on みず ねっとわーくさーびす</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>&amp;copy; 2025 みず ねっとわーくさーびす</copyright><lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/analogue/index.xml" rel="self" type="application/rss+xml"/><item><title>Analogue Pocket を購入してみた</title><link>https://mizu.dev/posts/2023/analogue_pocket/</link><pubDate>Tue, 15 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/analogue_pocket/</guid><description>
-&lt;img src="https://mizu.dev/posts/2023/analogue_pocket/cover.webp"/>
-&lt;p>FPGAで実装されているAnalogue社のPocketを購入してみました。
-Pocketは、ゲームボーイ、ゲームボーイカラー、ゲームボーイアドバンスとのカートリッジの互換性があり、本体に差し込むことでゲームプレイできます。&lt;/p>
-&lt;p>個人的に購入した理由は、ゲームボーイアドバンスを遊べる環境がほしく購入した次第です。
-ゲームボーイミクロは所有しておりますが、プレイに支障がでるくらい画面が小さく遊びづらかったので、そこを解決できたのはうれしいです。
-さらにドックと接続することで、HDMI出力も可能ということで、Nintendo Switchみたく、外出時は携帯モード、自宅ではTVモードと切り替えてプレイできるのもいいところです。
-とはいえ、自宅でも携帯モードでプレイすることが多いです。&lt;/p>
-&lt;div id="post-content-carousel" class="keen-slider">
-&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/analogue_pocket/02_huf6e72ece2c68c0f8f8449b4c2c0d2e64_5146873_4032x3024_resize_q90_h2_box.webp" width="100%" alt="購入したもの全部" />&lt;figcaption class="center">購入したもの全部&lt;/figcaption>&lt;/figure>
-&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/analogue_pocket/03_hu93645c1e563116ac64e69f3f06e8daeb_5232394_3024x4032_resize_q90_h2_box.webp" width="100%" alt="本体開封" />&lt;figcaption class="center">本体開封&lt;/figcaption>&lt;/figure>
-&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/analogue_pocket/04_hu72a621b0be49420e3465587be5638674_4945722_3024x4032_resize_q90_h2_box.webp" width="100%" alt="裏面から(手垢ガードのためフィルムはそのまま)" />&lt;figcaption class="center">裏面から(手垢ガードのためフィルムはそのまま)&lt;/figcaption>&lt;/figure>
-&lt;figure class="keen-slider__slide">&lt;img src="https://mizu.dev/posts/2023/analogue_pocket/05_hu78cc42ec12d5fce54a3dd7043e316d32_7364272_3024x4032_resize_q90_h2_box.webp" width="100%" alt="ドックを接続して設置" />&lt;figcaption class="center">ドックを接続して設置&lt;/figcaption>&lt;/figure>
-&lt;/div>
-&lt;p>PocketにはOpenFPGAがあり、ファミコンなどの他ハードの実装もできるのも素晴らしいことです。
-今壊れておりますが、SaveTheHeroのカセット吸い出し機を持っておりますので、そちらで吸い出したファミコン、スーパーファミコンのゲームがプレイできる胸熱です。&lt;/p>
-&lt;p>今現在、PCエンジンのHuカードリーダーを注文しておりますので、PCエンジンがプレイできるのを待っております。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Analogue on みず ねっとわーくさーびす</title><link>https://mizu.dev/tags/analogue/</link><description>Recent content in Analogue on みず ねっとわーくさーびす</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://mizu.dev/tags/analogue/index.xml" rel="self" type="application/rss+xml"/><item><title>Analogue Pocket を購入してみた</title><link>https://mizu.dev/posts/2023/analogue_pocket/</link><pubDate>Tue, 15 Aug 2023 00:00:00 +0900</pubDate><guid>https://mizu.dev/posts/2023/analogue_pocket/</guid><description>&lt;p>FPGAで実装されているAnalogue社のPocketを購入してみました。
+Pocketは、ゲームボーイ、ゲームボーイカラー、ゲームボーイアドバンスとのカートリッジの互換性があり、本体に差し込むことでゲームプレイできます。&lt;/p></description></item></channel></rss>
