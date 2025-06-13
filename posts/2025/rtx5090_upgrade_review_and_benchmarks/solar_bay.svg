@@ -2,7 +2,7 @@
   <rect width="800" height="400" fill="white"/>
 
   <!-- Title -->
-  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">Solar Bay 1.0</text>
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">Solar Bay v1.0</text>
 
   <!-- Y-axis labels -->
   <text x="120" y="120" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#666">RTX4090</text>
