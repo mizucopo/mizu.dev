@@ -29,12 +29,10 @@
 </span></span><span style=display:flex><span>docker stop/waiting
 </span></span></code></pre></div><p>うーむ、すぐに停止するようです。</p><p>/var/log/upstart/docker.log を見る限り、下記にエラーがあるようです。</p><pre><code>[f59cf284] -job init_networkdriver() = ERR (1)
 </code></pre><p>詳しくはわからないのですが、LXC非対応だからでしょうか。
-Dockerでビルドするのは諦めました。</p><h2 id=自力でビルドしてみる>自力でビルドしてみる</h2><h3 id=ruby-のインストール>Ruby のインストール</h3><p>まずは、Rubyが必要なので、rbenv で Ruby をインストール</p><p><a href=http://qiita.com/u6k/items/ffb0265f6cbb58f2227d target=_blank>rbenvを使用したRuby環境構築 (Raspbian) - Qiita</a>
-を参考に2.3.0をインストール。
+Dockerでビルドするのは諦めました。</p><h2 id=自力でビルドしてみる>自力でビルドしてみる</h2><h3 id=ruby-のインストール>Ruby のインストール</h3><p>まずは、Rubyが必要なので、rbenv で Ruby をインストール</p><p><a href=http://qiita.com/u6k/items/ffb0265f6cbb58f2227d target=_blank>rbenvを使用したRuby環境構築 (Raspbian) - Qiita</a> を参考に2.3.0をインストール。
 依存パッケージは、libssl-dev libreadline-dev でいけました。
 Gem のインストールに bundle が必要なので、bundler のインストールも忘れずに。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>$ gem install bundler
-</span></span></code></pre></div><p><a href=https://github.com/sensu/sensu-build#build-packages-on-the-currentlocal-platform target=_blank>sensu/sensu-build: Omnibus build tooling for Sensu.</a>
-のページを参考にしてビルドをしてみました。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>$ cd /tmp
+</span></span></code></pre></div><p><a href=https://github.com/sensu/sensu-build#build-packages-on-the-currentlocal-platform target=_blank>sensu/sensu-build: Omnibus build tooling for Sensu.</a> のページを参考にしてビルドをしてみました。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>$ cd /tmp
 </span></span><span style=display:flex><span>$ wget https://github.com/sensu/sensu-build/archive/0.22.2-1.zip
 </span></span><span style=display:flex><span>$ unzip 0.22.2-1.zip
 </span></span><span style=display:flex><span>$ export SENSU_VERSION<span style=color:#f92672>=</span>0.22.2
@@ -111,7 +109,7 @@ Gem のインストールに bundle が必要なので、bundler のインスト
 2016年3月1日
 </time><span class=mr-2><svg class="inline-block h-4 w-4 mr-1 -mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12A1 1 0 109 6v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.414-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
 <span class=sr-only>読了時間:</span>
-3 min read
+2 min read
 </span><a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fmizu.dev%2fposts%2f2016%2ffile_server_using_dropbox%2f&text=Dropbox%e3%82%92%e5%88%a9%e7%94%a8%e3%81%97%e3%81%9f%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc" target=_blank rel="noopener noreferrer" class="inline-flex items-center text-slate-500 hover:text-sky-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 rounded" aria-label=この記事をXで共有する><svg class="inline-block h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.257 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
 <span class="hidden sm:inline">POST</span></a></div><div class="flex flex-wrap gap-2 mt-3" role=list aria-label=タグ><a href=/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/ class="px-3 py-1 text-xs font-medium bg-gradient-to-r from-sky-100 to-blue-100 text-sky-700 rounded-full border border-sky-200/50 hover:from-sky-200 hover:to-blue-200 hover:text-sky-800 hover:border-sky-300 transition-all duration-300 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2" role=listitem aria-label="タグ: サーバー">#サーバー
 </a><a href=/tags/windows/ class="px-3 py-1 text-xs font-medium bg-gradient-to-r from-sky-100 to-blue-100 text-sky-700 rounded-full border border-sky-200/50 hover:from-sky-200 hover:to-blue-200 hover:text-sky-800 hover:border-sky-300 transition-all duration-300 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2" role=listitem aria-label="タグ: Windows">#Windows
